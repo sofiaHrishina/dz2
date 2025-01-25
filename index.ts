@@ -1,7 +1,7 @@
 function generateRandomNumberAndReact(): void {
     const randomNumber = Math.floor(Math.random() * 10) + 1;
 // Author is Sofiia Hryshyna, email is sofka2708@gmail.com
-console.log(`Generated random number: ${randomNumber}`);
+console.log(`Generated random11 number: ${randomNumber}`);
 
     if (randomNumber >= 6) {
         console.log("😊 Yay! This is a happy number!");
