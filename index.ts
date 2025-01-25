@@ -14,3 +14,6 @@ function generateRandomNumberAndReact(): void {
 function isEven(number: number): boolean {
     return number % 2 === 0;
 }
+
+const testNumber = 7;
+console.log(`${testNumber} is ${isEven(testNumber) ? "even" : "odd"}.`);
