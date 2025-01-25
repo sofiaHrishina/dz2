@@ -1,3 +1,5 @@
+import { isPositive } from './checkispositive';
+
 function generateRandomNumberAndReact(): void {
     const randomNumber = Math.floor(Math.random() * 10) + 1;
 // Author is Sofiia Hryshyna, email is sofka2708@gmail.com
@@ -17,3 +19,6 @@ function isEven(number: number): boolean {
 
 const testNumber = 7;
 console.log(`${testNumber} is ${isEven(testNumber) ? "even" : "odd"}.`);
+
+const testNumber2 = -5;
+console.log(`${testNumber} is ${isPositive(testNumber) ? "positive" : "negative"}.`);
