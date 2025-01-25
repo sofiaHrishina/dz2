@@ -8,4 +8,5 @@ function generateRandomNumberAndReact(): void {
     } else {
         console.log("😢 Oh no! This is a sad number.");
     }
+    console.log("Thanks for playing!");
 }
