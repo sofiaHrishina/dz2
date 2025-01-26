@@ -1,4 +1,4 @@
-import { isPositive } from './checkispositive';
+import { isPositive } from './ispos';
 
 function generateRandomNumberAndReact(): void {
     const randomNumber = Math.floor(Math.random() * 10) + 1;
@@ -16,9 +16,19 @@ console.log(`Generated number: ${randomNumber}`);
 function isEven(number: number): boolean {
     return number % 2 === 0;
 }
+function drawFlower(): void {
+    console.log("   @");
+    console.log("  @@@");
+    console.log(" @@@@@");
+    console.log("@@@@@@@@@");
+    console.log("   |||");
+    console.log("   |||");
+    console.log("   |||");
+} 
 
 const testNumber = 7;
 console.log(`${testNumber} is ${isEven(testNumber) ? "even" : "odd"}.`);
 
 const testNumber2 = -5;
 console.log(`${testNumber} is ${isPositive(testNumber) ? "positive" : "negative"}.`);
+drawFlower();
