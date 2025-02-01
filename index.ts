@@ -1,4 +1,4 @@
-import { isPositive } from './checkispositive';
+import { isPositive } from './ispos';
 
 function generateRandomNumberAndReact(): void {
     const randomNumber = Math.floor(Math.random() * 10) + 1;
