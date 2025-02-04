@@ -1,2 +1,3 @@
-This is my dz that contains several ts and txt files and a dir
+dz2 - dz for lesson2
+dz3 - dz for lesson3
 Have a good day!
