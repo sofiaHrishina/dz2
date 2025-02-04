@@ -12,7 +12,7 @@ switch (userRole) {
         roleMessage = 'Unknown role.';
 }
 console.log(roleMessage);
-
+const number = 5;
 switch (number) {
     case -1:
         console.log('less than 0');
@@ -27,6 +27,6 @@ switch (number) {
         console.log('unknown number');
 }
 
-const number = 5;
+
 const result = number % 2 === 0 ? 'even' : 'odd';
 console.log(number + ' is ' + result);
