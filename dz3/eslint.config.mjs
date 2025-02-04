@@ -35,6 +35,9 @@ export default [
                     ignoreTemplateLiterals: true
                 }
             ],
+            'no-unused-vars': ['warn', { args: 'none' }],
+            'prefer-const': ['error'],
+            'key-spacing': ['error', { beforeColon: false, afterColon: true }],
             'brace-style': ['warn'],
             'comma-dangle': ['error', 'never'],
             'no-multiple-empty-lines': ['error', { max: 2 }],
