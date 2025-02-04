@@ -1,2 +1,2 @@
-This is my dz that contains several ts and txt files and a dir
+This is my fixed dz3 
 Have a good day!
