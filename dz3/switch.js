@@ -1,40 +1,32 @@
-let number = 4;
+const userRole = 'admin';
+let roleMessage;
 
-switch (number % 2 === 0) {
-    case true:
-        console.log(number + ' is even');
+switch (userRole) {
+    case 'admin':
+        roleMessage = 'You are admin.';
         break;
-    case false:
-        console.log(number + ' is odd');
-        break;
-}
-
-switch (number % 2 === 0 || number % 2 !== 0) {
-    case true:
-        console.log('is either even or odd');
-        break;
-}
-number =-6;
-switch (true) {
-    case number % 2 === 0 && number >= 0:
-        console.log(number + ' is even and >0');
-        break;
-    case number % 2 === 0 && number < 0:
-        console.log(number + ' is even number but <0');
-        break;
-}
-number = 3;
-switch (number) {
-    case 1:
-        console.log(number + ' is the smallest odd number');
-        break;
-    case number % 2 === 0:
-        console.log(number + ' is even');
+    case 'user':
+        roleMessage = 'You are user.';
         break;
     default:
-        console.log(number + ' is odd');
+        roleMessage = 'Unknown role.';
+}
+console.log(roleMessage);
+const number = 5;
+switch (number) {
+    case -1:
+        console.log('less than 0');
         break;
+    case 1:
+        console.log('greater than 0');
+        break;
+    case 0:
+        console.log('equal to 0');
+        break;
+    default:
+        console.log('unknown number');
 }
 
-let result = number % 2 === 0 ? 'even' : 'odd';
+
+const result = number % 2 === 0 ? 'even' : 'odd';
 console.log(number + ' is ' + result);
