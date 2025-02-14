@@ -19,12 +19,16 @@ const cat = {
         return `${this.age} y. o.`;
     },
 
-    set updateOwner(newOwner) {
+    set _owner(newOwner) {
         if (newOwner.name && newOwner.city) {
             this.owner = newOwner;
         } else {
             console.log("Error");
         }
+    },
+
+    get _owner() {
+        return this.owner || null;
     },
 
     printInfo: function() {
