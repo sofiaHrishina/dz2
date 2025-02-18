@@ -1,0 +1,1 @@
+This is dz7. Array summation function using ts
