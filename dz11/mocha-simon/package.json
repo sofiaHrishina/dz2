@@ -7,7 +7,7 @@
     "lint": "eslint src/",
     "lint:fix": "npm run lint -- --fix",
     "build": "npm run lint && tsc --build",
-    "start": "ts-node src/index-heater.ts ",
+    "start": "ts-node src/index.ts ",
     "test": "npx eslint . && mocha"
   },
   "author": "",
@@ -32,8 +32,10 @@
     "globals": "^15.14.0",
     "mocha": "^11.1.0",
     "prettier": "3.4.2",
+    "sinon": "^19.0.2",
     "ts-mocha": "^11.1.0",
     "ts-node": "^10.9.2",
+    "ts-sinon": "^2.0.2",
     "tsx": "^4.19.3",
     "typescript-eslint": "^8.21.0"
   }
