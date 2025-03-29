@@ -1,0 +1,112 @@
+{
+  "consumer": {
+    "name": "OrderConsumer"
+  },
+  "interactions": [
+    {
+      "description": "POST a new order",
+      "providerStates": [
+        {
+          "name": "Order with ID 1334 exists"
+        }
+      ],
+      "request": {
+        "body": {
+          "complete": true,
+          "id": 1334,
+          "petId": 5678,
+          "quantity": 3,
+          "shipDate": "2025-03-30T12:00:00.000Z",
+          "status": "placed"
+        },
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "method": "POST",
+        "path": "/v2/store/order"
+      },
+      "response": {
+        "body": {
+          "complete": true,
+          "id": 1334,
+          "petId": 5678,
+          "quantity": 3,
+          "shipDate": "2025-03-30T12:00:00.000Z",
+          "status": "placed"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "matchingRules": {
+          "body": {
+            "$": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          },
+          "header": {},
+          "status": {}
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "GET order by ID",
+      "request": {
+        "headers": {
+          "Accept": "application/json"
+        },
+        "method": "GET",
+        "path": "/v2/store/order/1234"
+      },
+      "response": {
+        "body": {
+          "complete": true,
+          "id": 1334,
+          "petId": 5678,
+          "quantity": 3,
+          "shipDate": "2025-03-30T12:00:00.000Z",
+          "status": "placed"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "matchingRules": {
+          "body": {
+            "$": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          },
+          "header": {},
+          "status": {}
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-js": {
+      "version": "15.0.0"
+    },
+    "pactRust": {
+      "ffi": "0.4.22",
+      "models": "1.2.3"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "OrderProvider"
+  }
+}
