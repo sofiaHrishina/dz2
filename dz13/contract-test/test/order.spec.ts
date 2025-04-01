@@ -14,7 +14,7 @@ describe('PactV3 Order consumer contract', () => {
     });
 
     const testOrder = new OrderDto(
-        1334,
+        3,
         5678,
         3,
         '2025-03-30T12:00:00.000Z',
@@ -26,7 +26,7 @@ describe('PactV3 Order consumer contract', () => {
 
     it('create and fetch order by ID', () => {
         provider
-            .given('Order with ID 1334 exists')
+            .given('Order with ID 3 exists')
             .uponReceiving('POST a new order')
             .withRequest({
                 method: 'POST',
@@ -45,7 +45,7 @@ describe('PactV3 Order consumer contract', () => {
             .uponReceiving('GET order by ID')
             .withRequest({
                 method: 'GET',
-                path: '/v2/store/order/1334',
+                path: '/v2/store/order/3',
                 headers: {
                     Accept: 'application/json'
                 }
@@ -63,7 +63,7 @@ describe('PactV3 Order consumer contract', () => {
             expect(createRes.status).to.eq(200);
             expect(createRes.data).to.deep.equal(testOrder);
 
-            const getRes = await orderService.getOrder(1234);
+            const getRes = await orderService.getOrder(3);
             expect(getRes.status).to.eq(200);
             expect(getRes.data).to.deep.equal(testOrder);
         });

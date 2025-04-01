@@ -7,13 +7,13 @@
       "description": "POST a new order",
       "providerStates": [
         {
-          "name": "Order with ID 1334 exists"
+          "name": "Order with ID 3 exists"
         }
       ],
       "request": {
         "body": {
           "complete": true,
-          "id": 1334,
+          "id": 3,
           "petId": 5678,
           "quantity": 3,
           "shipDate": "2025-03-30T12:00:00.000Z",
@@ -29,7 +29,7 @@
       "response": {
         "body": {
           "complete": true,
-          "id": 1334,
+          "id": 3,
           "petId": 5678,
           "quantity": 3,
           "shipDate": "2025-03-30T12:00:00.000Z",
@@ -62,12 +62,12 @@
           "Accept": "application/json"
         },
         "method": "GET",
-        "path": "/v2/store/order/1234"
+        "path": "/v2/store/order/3"
       },
       "response": {
         "body": {
           "complete": true,
-          "id": 1334,
+          "id": 3,
           "petId": 5678,
           "quantity": 3,
           "shipDate": "2025-03-30T12:00:00.000Z",

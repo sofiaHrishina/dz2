@@ -1,11 +1,18 @@
+import path from 'path';
+import fs from 'fs';
 import { Verifier } from '@pact-foundation/pact';
 
 describe('Order Provider Verification', () => {
-    it('verifies contract from OrderConsumer', () => {
+    const pactFile = path.resolve(process.cwd(), './pacts/OrderConsumer-OrderProvider.json');
+
+    it('verifies contract from OrderConsumer', function () {
+        if (!fs.existsSync(pactFile)) {
+            this.skip();
+        }
+
         return new Verifier({
-            // providerBaseUrl: 'https://petstore.swagger.io/v2',
-            providerBaseUrl: 'http://localhost:8080',
-            pactUrls: ['C:/Users/sofka/alldz/dz13/contract-test/pacts/orderconsumer-orderprovider.json']
+            providerBaseUrl: 'https://petstore.swagger.io/',
+            pactUrls: [pactFile]
         }).verifyProvider();
     });
 });
