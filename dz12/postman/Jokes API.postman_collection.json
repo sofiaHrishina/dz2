@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "d7f9c858-76ae-4505-b421-622a1787c796",
+		"name": "Jokes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28017003"
+	},
+	"item": [
+		{
+			"name": "General jokes",
+			"item": [
+				{
+					"name": "Random joke",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.test(\"Response contains setup amd punchline properties\",() => {\r",
+									"        let jsonData = pm.response.json();\r",
+									"        pm.expect(jsonData).to.have.property(\"setup\");\r",
+									"        pm.expect(jsonData).to.have.property(\"punchline\");\r",
+									"    });\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/jokes/random",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"jokes",
+								"random"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "10 Random jokes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.test(\"Response contains an array of jokes\", () => {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData).to.be.an(\"array\").that.has.lengthOf(10)});\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/jokes/ten",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"jokes",
+								"ten"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Joke by ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.test(\"Response contains valid joke structure\", () => {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData).to.have.all.keys(\"id\", \"type\", \"setup\", \"punchline\");\r",
+									"});\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.variables.set(\"randomJokeId\", Math.floor(Math.random() * 100) + 1);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/jokes/{{randomJokeId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"jokes",
+								"{{randomJokeId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Joke types",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"\r",
+									"});\r",
+									"pm.test(\"Response is an array\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(Array.isArray(jsonData)).to.be.true;\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/types",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"types"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Programming jokes",
+			"item": [
+				{
+					"name": "Random programming joke",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.test(\"Jokes are of type 'programming'\", () => {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    jsonData.forEach(joke => pm.expect(joke.type).to.eql(\"programming\"));\r",
+									"});\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/jokes/programming/random",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"jokes",
+								"programming",
+								"random"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "10 Random programming jokes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Response is an array\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(Array.isArray(jsonData)).to.be.true;\r",
+									"});\r",
+									"pm.test(\"All jokes are of programming type\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    jsonData.forEach(function(joke) {\r",
+									"        pm.expect(joke.type).to.equal(\"programming\");\r",
+									"    });\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/jokes/programming/ten",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"jokes",
+								"programming",
+								"ten"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3005",
+			"type": "string"
+		},
+		{
+			"key": "randomJokeId",
+			"value": "10",
+			"type": "string"
+		}
+	]
+}
