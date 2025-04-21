@@ -1,0 +1,12 @@
+[10508:15596:0421/185755.191:INFO:chrome_browser_cloud_management_controller.cc(202)] No machine level policy manager exists.
+[15916:13168:0421/185755.318:ERROR:direct_composition_support.cc(1126)] QueryInterface to IDCompositionDevice4 failed: Интерфейс не поддерживается (0x80004002)
+[7916:18132:0421/185803.127:WARNING:spdy_session.cc(2980)] Received HEADERS for invalid stream 1
+[10508:15596:0421/185805.607:INFO:CONSOLE(117)] "VIDEOJS: WARN: Using hls options is deprecated. Use vhs instead.", source: https://images-na.ssl-images-amazon.com/images/I/21fOfDNeAIL._RC%7C01x4giTy+uL.js,01r9LpT6pbL.js,41hfXdtHKjL.js,11QfrzttlqL.js,91qahXPBdEL.js,01ELLYeIOkL.js_.js?AUIClients/Brila (117)
+[10508:15596:0421/185805.635:INFO:CONSOLE(117)] "VIDEOJS: WARN: Using hls options is deprecated. Use vhs instead.", source: https://images-na.ssl-images-amazon.com/images/I/21fOfDNeAIL._RC%7C01x4giTy+uL.js,01r9LpT6pbL.js,41hfXdtHKjL.js,11QfrzttlqL.js,91qahXPBdEL.js,01ELLYeIOkL.js_.js?AUIClients/Brila (117)
+[10508:15596:0421/185806.091:INFO:CONSOLE(117)] "VIDEOJS: WARN: Using hls options is deprecated. Use vhs instead.", source: https://images-na.ssl-images-amazon.com/images/I/21fOfDNeAIL._RC%7C01x4giTy+uL.js,01r9LpT6pbL.js,41hfXdtHKjL.js,11QfrzttlqL.js,91qahXPBdEL.js,01ELLYeIOkL.js_.js?AUIClients/Brila (117)
+[7916:18132:0421/185806.412:WARNING:spdy_session.cc(2980)] Received HEADERS for invalid stream 9
+[7916:18132:0421/185806.412:WARNING:spdy_session.cc(2980)] Received HEADERS for invalid stream 11
+[7916:18132:0421/185806.687:WARNING:spdy_session.cc(2980)] Received HEADERS for invalid stream 5
+[7916:18132:0421/185806.702:WARNING:spdy_session.cc(2980)] Received HEADERS for invalid stream 5
+[7916:18132:0421/185806.717:WARNING:spdy_session.cc(2980)] Received HEADERS for invalid stream 3
+[7916:18132:0421/185806.728:WARNING:spdy_session.cc(2980)] Received HEADERS for invalid stream 1

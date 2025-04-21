@@ -1,0 +1,9 @@
+2025/04/21-18:57:55.314 46cc Reusing MANIFEST C:\Users\sofka\alldz\dz17\selenium-webdriver\mocha\chrome-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2025/04/21-18:57:55.324 46cc Recovering log #3
+2025/04/21-18:57:55.326 46cc Level-0 table #3: started
+2025/04/21-18:57:55.338 46cc Level-0 table #3: 79669 bytes OK
+2025/04/21-18:57:55.339 46cc Recovering log #4
+2025/04/21-18:57:55.341 46cc Level-0 table #4: started
+2025/04/21-18:57:55.354 46cc Level-0 table #4: 152802 bytes OK
+2025/04/21-18:57:55.368 46cc Delete type=0 #3
+2025/04/21-18:57:55.368 46cc Delete type=0 #4
