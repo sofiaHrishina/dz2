@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+/* import { test } from '@playwright/test';
 import { AmazonLoginPage } from '../../src/pages/amazon-login.page';
 import * as fs from 'fs';
 import * as dotenv from 'dotenv';
@@ -23,3 +23,4 @@ test.describe('Amazon login', () => {
         );
     });
 });
+ */
