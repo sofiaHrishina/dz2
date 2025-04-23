@@ -1,0 +1,9 @@
+Tab names: [
+  "Today's Deals",
+  'Prime Video',
+  'Buy Again',
+  'Customer Service',
+  'Registry',
+  'Gift Cards',
+  'Sell'
+]

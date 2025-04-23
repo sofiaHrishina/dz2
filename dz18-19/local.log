@@ -1,0 +1,673 @@
+"" 
+
+Wed Apr 23 2025 16:23:59:648 GMT+0300 (Финляндия (лето)) -- Binary semantic version is v8.9.14
+Wed Apr 23 2025 16:23:59:648 GMT+0300 (Финляндия (лето)) -- Setting output as extra verbose with request parsing
+Wed Apr 23 2025 16:24:01:76 GMT+0300 (Финляндия (лето)) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Wed Apr 23 2025 16:24:01:538 GMT+0300 (Финляндия (лето)) -- Connecting to BrowserStack using WebSocket protocol...
+Wed Apr 23 2025 16:24:01:539 GMT+0300 (Финляндия (лето)) -- Platform supports WebSocket connections.
+
+Wed Apr 23 2025 16:24:01:642 GMT+0300 (Финляндия (лето)) -- Press Ctrl-C to exit
+
+
+Wed Apr 23 2025 16:24:02:187 GMT+0300 (Финляндия (лето)) -- Starting configuration console on http://localhost:45454
+Wed Apr 23 2025 16:24:38:770 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:38:770 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995428] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:38:771 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:38:803 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:38:803 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:24:38:804 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:38:805 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:38:807 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:38:912 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:38:912 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995438] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:38:912 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:38:913 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:38:914 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:24:38:915 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:38:915 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:38:916 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:39:78 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:39:78 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995444] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:39:79 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:39:82 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:39:83 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:24:39:84 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:39:84 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:39:84 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:39:377 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:39:377 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995461] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:39:377 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:39:378 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:39:378 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:24:39:379 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:39:379 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:39:379 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:39:872 GMT+0300 (Финляндия (лето)) -- Request to: tags.bluekai.com:443
+Wed Apr 23 2025 16:24:39:872 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995494] Handshake request to tags.bluekai.com:443
+Wed Apr 23 2025 16:24:39:872 GMT+0300 (Финляндия (лето)) -- Connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:24:39:881 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:39:881 GMT+0300 (Финляндия (лето)) -- Connecting to tags.bluekai.com:443 with IPv6
+Wed Apr 23 2025 16:24:39:882 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:39:883 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:39:884 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:24:40:106 GMT+0300 (Финляндия (лето)) -- Request to: beacon.krxd.net:443
+Wed Apr 23 2025 16:24:40:107 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995504] Handshake request to beacon.krxd.net:443
+Wed Apr 23 2025 16:24:40:107 GMT+0300 (Финляндия (лето)) -- Connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:24:40:136 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:40:136 GMT+0300 (Финляндия (лето)) -- Connecting to beacon.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:24:40:137 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:40:137 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:40:138 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:24:47:990 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:47:990 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995783] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:47:990 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:47:999 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:47:999 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:24:48:0 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:48:0 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:48:1 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:48:73 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:48:74 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995789] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:48:74 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:48:75 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:48:75 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:24:48:76 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:48:77 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:48:78 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:24:48:234 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:48:234 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995805] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:48:234 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:48:238 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:48:238 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:24:48:239 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:48:239 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:48:240 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:48:314 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:48:314 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995814] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:48:314 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:48:315 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:48:315 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:24:48:316 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:48:316 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:48:317 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:24:48:879 GMT+0300 (Финляндия (лето)) -- Request to: tags.bluekai.com:443
+Wed Apr 23 2025 16:24:48:879 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995859] Handshake request to tags.bluekai.com:443
+Wed Apr 23 2025 16:24:48:879 GMT+0300 (Финляндия (лето)) -- Connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:24:48:884 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:48:884 GMT+0300 (Финляндия (лето)) -- Connecting to tags.bluekai.com:443 with IPv6
+Wed Apr 23 2025 16:24:48:885 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:48:885 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:48:886 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:24:49:47 GMT+0300 (Финляндия (лето)) -- Request to: beacon.krxd.net:443
+Wed Apr 23 2025 16:24:49:47 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995869] Handshake request to beacon.krxd.net:443
+Wed Apr 23 2025 16:24:49:47 GMT+0300 (Финляндия (лето)) -- Connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:24:49:53 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:49:53 GMT+0300 (Финляндия (лето)) -- Connecting to beacon.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:24:49:54 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:49:54 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:49:55 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:24:49:81 GMT+0300 (Финляндия (лето)) -- Request to: tags.bluekai.com:443
+Wed Apr 23 2025 16:24:49:81 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995874] Handshake request to tags.bluekai.com:443
+Wed Apr 23 2025 16:24:49:82 GMT+0300 (Финляндия (лето)) -- Connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:24:49:83 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:49:83 GMT+0300 (Финляндия (лето)) -- Connecting to tags.bluekai.com:443 with IPv6
+Wed Apr 23 2025 16:24:49:84 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:49:84 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:49:85 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:24:49:117 GMT+0300 (Финляндия (лето)) -- Request to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:24:49:117 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995878] Handshake request to usermatch.krxd.net:443
+Wed Apr 23 2025 16:24:49:117 GMT+0300 (Финляндия (лето)) -- Connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:24:49:125 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:49:125 GMT+0300 (Финляндия (лето)) -- Connecting to usermatch.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:24:49:126 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:49:126 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:49:127 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:24:49:317 GMT+0300 (Финляндия (лето)) -- Request to: beacon.krxd.net:443
+Wed Apr 23 2025 16:24:49:317 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995889] Handshake request to beacon.krxd.net:443
+Wed Apr 23 2025 16:24:49:317 GMT+0300 (Финляндия (лето)) -- Connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:24:49:318 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:49:318 GMT+0300 (Финляндия (лето)) -- Connecting to beacon.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:24:49:318 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:49:318 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:49:319 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:24:49:341 GMT+0300 (Финляндия (лето)) -- Request to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:24:49:341 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4995890] Handshake request to usermatch.krxd.net:443
+Wed Apr 23 2025 16:24:49:341 GMT+0300 (Финляндия (лето)) -- Connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:24:49:342 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:49:342 GMT+0300 (Финляндия (лето)) -- Connecting to usermatch.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:24:49:342 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:24:49:342 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:24:49:343 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:25:28:775 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:28:778 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:28:778 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:28:918 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:28:921 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:28:921 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:29:86 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:29:87 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:29:87 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:29:223 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:29:223 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][4][4817209] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:29:223 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:29:227 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:29:227 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:25:29:228 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:29:228 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:25:29:228 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:29:293 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:29:293 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][4][4817228] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:29:293 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:29:294 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:29:294 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:25:29:295 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:29:295 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:25:29:295 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:29:382 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:29:383 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:29:383 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:29:463 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:29:463 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][4][4817236] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:29:463 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:29:472 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:29:472 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:25:29:474 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:29:474 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:25:29:474 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:29:556 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:29:556 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][4][4817247] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:29:556 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:29:557 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:29:557 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:25:29:558 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:29:558 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:25:29:558 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:29:884 GMT+0300 (Финляндия (лето)) -- Closing connection to tags.bluekai.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:29:886 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:29:886 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:25:30:69 GMT+0300 (Финляндия (лето)) -- Request to: tags.bluekai.com:443
+Wed Apr 23 2025 16:25:30:69 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][4][4817290] Handshake request to tags.bluekai.com:443
+Wed Apr 23 2025 16:25:30:69 GMT+0300 (Финляндия (лето)) -- Connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:25:30:74 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:30:74 GMT+0300 (Финляндия (лето)) -- Connecting to tags.bluekai.com:443 with IPv6
+Wed Apr 23 2025 16:25:30:76 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:30:76 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:25:30:77 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:25:30:119 GMT+0300 (Финляндия (лето)) -- Closing connection to beacon.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:30:121 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:30:121 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:25:30:176 GMT+0300 (Финляндия (лето)) -- Request to: tags.bluekai.com:443
+Wed Apr 23 2025 16:25:30:177 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][4][4817307] Handshake request to tags.bluekai.com:443
+Wed Apr 23 2025 16:25:30:177 GMT+0300 (Финляндия (лето)) -- Connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:25:30:178 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:30:178 GMT+0300 (Финляндия (лето)) -- Connecting to tags.bluekai.com:443 with IPv6
+Wed Apr 23 2025 16:25:30:179 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:30:179 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:25:30:180 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:25:30:204 GMT+0300 (Финляндия (лето)) -- Request to: beacon.krxd.net:443
+Wed Apr 23 2025 16:25:30:204 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][4][4817305] Handshake request to beacon.krxd.net:443
+Wed Apr 23 2025 16:25:30:204 GMT+0300 (Финляндия (лето)) -- Connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:25:30:210 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:30:210 GMT+0300 (Финляндия (лето)) -- Connecting to beacon.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:25:30:211 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:30:211 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:25:30:212 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:25:30:353 GMT+0300 (Финляндия (лето)) -- Request to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:25:30:353 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][4][4817320] Handshake request to usermatch.krxd.net:443
+Wed Apr 23 2025 16:25:30:353 GMT+0300 (Финляндия (лето)) -- Connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:25:30:357 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:30:358 GMT+0300 (Финляндия (лето)) -- Connecting to usermatch.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:25:30:358 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:30:358 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:25:30:359 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:25:30:617 GMT+0300 (Финляндия (лето)) -- Request to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:25:30:617 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][4][4817340] Handshake request to usermatch.krxd.net:443
+Wed Apr 23 2025 16:25:30:617 GMT+0300 (Финляндия (лето)) -- Connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:25:30:618 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:30:618 GMT+0300 (Финляндия (лето)) -- Connecting to usermatch.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:25:30:619 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:25:30:619 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:25:30:619 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:25:37:999 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:38:3 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:38:3 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:38:77 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:38:79 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:38:80 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:25:38:247 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:38:249 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:38:249 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:38:326 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:38:328 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:38:328 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:25:38:888 GMT+0300 (Финляндия (лето)) -- Closing connection to tags.bluekai.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:38:889 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:38:889 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:25:39:59 GMT+0300 (Финляндия (лето)) -- Closing connection to beacon.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:39:62 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:39:62 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:25:39:90 GMT+0300 (Финляндия (лето)) -- Closing connection to tags.bluekai.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:39:91 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:39:91 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:25:39:122 GMT+0300 (Финляндия (лето)) -- Closing connection to usermatch.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:39:125 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:39:125 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:25:39:325 GMT+0300 (Финляндия (лето)) -- Closing connection to beacon.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:39:326 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:39:326 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:25:39:356 GMT+0300 (Финляндия (лето)) -- Closing connection to usermatch.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:25:39:357 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:25:39:357 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:25:49:845 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:25:49:953 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:25:50:125 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:25:50:439 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:25:50:926 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:25:51:160 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:25:59:45 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:25:59:123 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:25:59:294 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:25:59:373 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:25:59:927 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:00:101 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:00:134 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:00:165 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:00:371 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:00:404 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:13:791 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:13:791 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4998845] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:13:791 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:13:796 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:13:797 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:26:13:797 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:13:798 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:13:798 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:13:923 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:13:923 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4998852] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:13:923 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:13:924 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:13:924 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:26:13:926 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:13:926 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:13:927 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:14:39 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:14:39 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4998859] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:14:40 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:14:46 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:14:46 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:26:14:47 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:14:47 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:14:48 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:14:191 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:14:191 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4998869] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:14:192 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:14:193 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:14:194 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:26:14:195 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:14:195 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:14:196 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:15:675 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:15:675 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4998922] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:15:675 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:15:676 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:15:676 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:26:15:677 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:15:677 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:15:678 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:15:694 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:15:694 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4998928] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:15:694 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:15:695 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:15:695 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:26:15:696 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:15:696 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:15:696 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:15:770 GMT+0300 (Финляндия (лето)) -- Request to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:15:771 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4998933] Handshake request to tags.bluekai.com:443
+Wed Apr 23 2025 16:26:15:771 GMT+0300 (Финляндия (лето)) -- Connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:15:775 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:15:776 GMT+0300 (Финляндия (лето)) -- Connecting to tags.bluekai.com:443 with IPv6
+Wed Apr 23 2025 16:26:15:777 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:15:777 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:15:778 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:16:1 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:16:1 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4998952] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:16:2 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:16:2 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:16:2 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:26:16:3 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:16:3 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:16:3 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:16:127 GMT+0300 (Финляндия (лето)) -- Request to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:16:127 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4998960] Handshake request to tags.bluekai.com:443
+Wed Apr 23 2025 16:26:16:127 GMT+0300 (Финляндия (лето)) -- Connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:16:128 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:16:128 GMT+0300 (Финляндия (лето)) -- Connecting to tags.bluekai.com:443 with IPv6
+Wed Apr 23 2025 16:26:16:128 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:16:129 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:16:130 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:16:159 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:16:159 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4998963] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:16:159 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:16:160 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:16:160 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:26:16:161 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:16:161 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:16:162 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:19:230 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:26:19:231 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:26:19:231 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:19:305 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:26:19:306 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:26:19:306 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:19:464 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:26:19:465 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:26:19:466 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:19:559 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:26:19:561 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:26:19:561 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:20:45 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:20:45 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999103] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:20:45 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:20:51 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:51 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:26:20:51 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:51 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:20:52 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:20:74 GMT+0300 (Финляндия (лето)) -- Closing connection to tags.bluekai.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:26:20:75 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:26:20:75 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:20:160 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:20:160 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999111] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:20:160 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:20:161 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:161 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:26:20:161 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:161 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:20:162 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:20:184 GMT+0300 (Финляндия (лето)) -- Closing connection to tags.bluekai.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:26:20:185 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:26:20:185 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:20:213 GMT+0300 (Финляндия (лето)) -- Closing connection to beacon.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:26:20:215 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:26:20:216 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:20:255 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:20:255 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999120] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:20:255 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:20:265 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:265 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:26:20:265 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:265 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:20:266 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:20:355 GMT+0300 (Финляндия (лето)) -- Closing connection to usermatch.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:26:20:356 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:26:20:356 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:20:357 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:20:357 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999128] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:20:357 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:20:358 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:358 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:26:20:358 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:358 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:20:359 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:20:630 GMT+0300 (Финляндия (лето)) -- Closing connection to usermatch.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:26:20:631 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:26:20:631 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:20:747 GMT+0300 (Финляндия (лето)) -- Request to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:20:748 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999155] Handshake request to tags.bluekai.com:443
+Wed Apr 23 2025 16:26:20:748 GMT+0300 (Финляндия (лето)) -- Connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:20:753 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:754 GMT+0300 (Финляндия (лето)) -- Connecting to tags.bluekai.com:443 with IPv6
+Wed Apr 23 2025 16:26:20:754 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:754 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:20:755 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:20:849 GMT+0300 (Финляндия (лето)) -- Request to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:20:849 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999164] Handshake request to tags.bluekai.com:443
+Wed Apr 23 2025 16:26:20:849 GMT+0300 (Финляндия (лето)) -- Connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:20:850 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:850 GMT+0300 (Финляндия (лето)) -- Connecting to tags.bluekai.com:443 with IPv6
+Wed Apr 23 2025 16:26:20:851 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:851 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:20:852 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:20:878 GMT+0300 (Финляндия (лето)) -- Request to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:20:878 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999165] Handshake request to beacon.krxd.net:443
+Wed Apr 23 2025 16:26:20:878 GMT+0300 (Финляндия (лето)) -- Connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:20:910 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:910 GMT+0300 (Финляндия (лето)) -- Connecting to beacon.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:26:20:911 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:20:911 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:20:912 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:21:21 GMT+0300 (Финляндия (лето)) -- Request to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:21:24 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999174] Handshake request to usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:21:25 GMT+0300 (Финляндия (лето)) -- Connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:21:29 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:21:29 GMT+0300 (Финляндия (лето)) -- Connecting to usermatch.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:26:21:30 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:21:30 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:21:30 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:21:178 GMT+0300 (Финляндия (лето)) -- Request to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:21:178 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999182] Handshake request to beacon.krxd.net:443
+Wed Apr 23 2025 16:26:21:178 GMT+0300 (Финляндия (лето)) -- Connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:21:179 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:21:179 GMT+0300 (Финляндия (лето)) -- Connecting to beacon.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:26:21:180 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:21:180 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:21:180 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:21:400 GMT+0300 (Финляндия (лето)) -- Request to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:21:400 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999197] Handshake request to usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:21:400 GMT+0300 (Финляндия (лето)) -- Connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:21:400 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:21:401 GMT+0300 (Финляндия (лето)) -- Connecting to usermatch.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:26:21:401 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:21:401 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:21:402 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:27:154 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:27:155 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999371] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:27:155 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:27:160 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:160 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:26:27:160 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:161 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:27:161 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:27:271 GMT+0300 (Финляндия (лето)) -- Request to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:27:271 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999382] Handshake request to amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:27:271 GMT+0300 (Финляндия (лето)) -- Connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:27:272 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:272 GMT+0300 (Финляндия (лето)) -- Connecting to amazon.partners.tremorhub.com:443 with IPv6
+Wed Apr 23 2025 16:26:27:272 GMT+0300 (Финляндия (лето)) -- Connection to amazon.partners.tremorhub.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:273 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:27:273 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:26:27:354 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:27:355 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999396] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:27:355 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:27:359 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:359 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:26:27:360 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:360 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:27:360 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:27:445 GMT+0300 (Финляндия (лето)) -- Request to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:27:445 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999401] Handshake request to bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:27:445 GMT+0300 (Финляндия (лето)) -- Connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:27:446 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:446 GMT+0300 (Финляндия (лето)) -- Connecting to bs.serving-sys.com:443 with IPv6
+Wed Apr 23 2025 16:26:27:446 GMT+0300 (Финляндия (лето)) -- Connection to bs.serving-sys.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:446 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:27:447 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:26:27:865 GMT+0300 (Финляндия (лето)) -- Request to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:27:865 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999433] Handshake request to tags.bluekai.com:443
+Wed Apr 23 2025 16:26:27:866 GMT+0300 (Финляндия (лето)) -- Connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:27:869 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:869 GMT+0300 (Финляндия (лето)) -- Connecting to tags.bluekai.com:443 with IPv6
+Wed Apr 23 2025 16:26:27:870 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:870 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:27:871 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:27:954 GMT+0300 (Финляндия (лето)) -- Request to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:27:954 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999442] Handshake request to tags.bluekai.com:443
+Wed Apr 23 2025 16:26:27:955 GMT+0300 (Финляндия (лето)) -- Connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:27:955 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:955 GMT+0300 (Финляндия (лето)) -- Connecting to tags.bluekai.com:443 with IPv6
+Wed Apr 23 2025 16:26:27:956 GMT+0300 (Финляндия (лето)) -- Connection to tags.bluekai.com:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:27:956 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:27:956 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:26:28:0 GMT+0300 (Финляндия (лето)) -- Request to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:28:1 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999445] Handshake request to beacon.krxd.net:443
+Wed Apr 23 2025 16:26:28:1 GMT+0300 (Финляндия (лето)) -- Connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:28:6 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:28:6 GMT+0300 (Финляндия (лето)) -- Connecting to beacon.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:26:28:7 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:28:7 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:28:7 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:28:269 GMT+0300 (Финляндия (лето)) -- Request to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:28:269 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999459] Handshake request to usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:28:269 GMT+0300 (Финляндия (лето)) -- Connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:28:274 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:28:274 GMT+0300 (Финляндия (лето)) -- Connecting to usermatch.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:26:28:275 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:28:275 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:28:276 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:28:300 GMT+0300 (Финляндия (лето)) -- Request to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:28:300 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999472] Handshake request to beacon.krxd.net:443
+Wed Apr 23 2025 16:26:28:300 GMT+0300 (Финляндия (лето)) -- Connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:28:301 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:28:301 GMT+0300 (Финляндия (лето)) -- Connecting to beacon.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:26:28:302 GMT+0300 (Финляндия (лето)) -- Connection to beacon.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:28:302 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:28:303 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:26:28:511 GMT+0300 (Финляндия (лето)) -- Request to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:28:512 GMT+0300 (Финляндия (лето)) -- [PARSING HANDSHAKE][6][4999482] Handshake request to usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:28:512 GMT+0300 (Финляндия (лето)) -- Connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:28:512 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:28:513 GMT+0300 (Финляндия (лето)) -- Connecting to usermatch.krxd.net:443 with IPv6
+Wed Apr 23 2025 16:26:28:513 GMT+0300 (Финляндия (лето)) -- Connection to usermatch.krxd.net:443 failed with ENOTFOUND
+Wed Apr 23 2025 16:26:28:513 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to ENOTFOUND
+Wed Apr 23 2025 16:26:28:514 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:26:40:279 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:40:357 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:40:513 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:40:591 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:41:126 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:41:219 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:41:249 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:41:390 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:26:41:666 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:03:804 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:03:806 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:03:807 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:27:03:928 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:03:929 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:03:930 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:27:04:52 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:04:53 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:04:53 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:27:04:207 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:04:210 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:04:210 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:27:05:681 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:05:685 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:05:685 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:27:05:697 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:05:700 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:05:700 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:27:05:775 GMT+0300 (Финляндия (лето)) -- Closing connection to tags.bluekai.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:05:776 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:05:777 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:27:06:11 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:06:14 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:06:14 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:27:06:136 GMT+0300 (Финляндия (лето)) -- Closing connection to tags.bluekai.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:06:139 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:06:139 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:27:06:168 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:06:169 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:06:169 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:27:10:55 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:10:57 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:10:58 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:27:10:163 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:10:165 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:10:165 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:27:10:257 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:10:258 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:10:258 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:27:10:366 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:10:369 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:10:369 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:27:10:756 GMT+0300 (Финляндия (лето)) -- Closing connection to tags.bluekai.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:10:758 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:10:759 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:27:10:865 GMT+0300 (Финляндия (лето)) -- Closing connection to tags.bluekai.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:10:867 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:10:868 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:27:10:880 GMT+0300 (Финляндия (лето)) -- Closing connection to beacon.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:10:882 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:10:882 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:27:11:37 GMT+0300 (Финляндия (лето)) -- Closing connection to usermatch.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:11:40 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:11:40 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:27:11:193 GMT+0300 (Финляндия (лето)) -- Closing connection to beacon.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:11:196 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:11:196 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:27:11:410 GMT+0300 (Финляндия (лето)) -- Closing connection to usermatch.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:11:412 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:11:412 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:27:17:167 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:17:169 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:17:170 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:27:17:276 GMT+0300 (Финляндия (лето)) -- Closing connection to amazon.partners.tremorhub.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:17:278 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to amazon.partners.tremorhub.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:17:278 GMT+0300 (Финляндия (лето)) -- Failed connecting to: amazon.partners.tremorhub.com:443
+Wed Apr 23 2025 16:27:17:369 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:17:372 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:17:372 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:27:17:448 GMT+0300 (Финляндия (лето)) -- Closing connection to bs.serving-sys.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:17:449 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to bs.serving-sys.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:17:449 GMT+0300 (Финляндия (лето)) -- Failed connecting to: bs.serving-sys.com:443
+Wed Apr 23 2025 16:27:17:869 GMT+0300 (Финляндия (лето)) -- Closing connection to tags.bluekai.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:17:871 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:17:871 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:27:17:960 GMT+0300 (Финляндия (лето)) -- Closing connection to tags.bluekai.com:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:17:961 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to tags.bluekai.com:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:17:961 GMT+0300 (Финляндия (лето)) -- Failed connecting to: tags.bluekai.com:443
+Wed Apr 23 2025 16:27:18:7 GMT+0300 (Финляндия (лето)) -- Closing connection to beacon.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:18:8 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:18:8 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:27:18:272 GMT+0300 (Финляндия (лето)) -- Closing connection to usermatch.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:18:274 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:18:274 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:27:18:304 GMT+0300 (Финляндия (лето)) -- Closing connection to beacon.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:18:306 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to beacon.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:18:306 GMT+0300 (Финляндия (лето)) -- Failed connecting to: beacon.krxd.net:443
+Wed Apr 23 2025 16:27:18:521 GMT+0300 (Финляндия (лето)) -- Closing connection to usermatch.krxd.net:443 without proxy.Could not connect within 50s.
+Wed Apr 23 2025 16:27:18:522 GMT+0300 (Финляндия (лето)) -- [ERROR] Connection to usermatch.krxd.net:443 without proxyfailed due to TIMEOUT_CONNECTING
+Wed Apr 23 2025 16:27:18:522 GMT+0300 (Финляндия (лето)) -- Failed connecting to: usermatch.krxd.net:443
+Wed Apr 23 2025 16:27:24:844 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:24:985 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:25:110 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:25:264 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:26:719 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:26:719 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:26:814 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:27:46 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:27:186 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:27:202 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:31:108 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:31:217 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:31:295 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:31:405 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:31:789 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:31:898 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:31:915 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:32:85 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:32:241 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:32:445 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:38:204 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:38:314 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:38:408 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:38:486 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:38:906 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:39:1 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:39:47 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:39:312 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:39:343 GMT+0300 (Финляндия (лето)) -- onXhrError
+Wed Apr 23 2025 16:27:39:576 GMT+0300 (Финляндия (лето)) -- onXhrError

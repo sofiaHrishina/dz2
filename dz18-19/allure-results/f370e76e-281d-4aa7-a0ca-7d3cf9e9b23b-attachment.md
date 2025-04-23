@@ -1,0 +1,837 @@
+# Test info
+
+- Name: Amazon tests >> should click on selected specific nav link
+- Location: C:\Users\sofka\alldz\dz18-19\tests\amazon.spec.ts:36:9
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('#nav-xshop').locator('ul.nav-ul li.nav-li a.nav-a').nth(1)
+    - locator resolved to <a tabindex="0" class="nav-a  " data-csa-c-type="link" data-csa-c-slot-id="nav_cs_1" data-csa-c-content-id="nav_cs_prime_video" data-csa-c-id="ygi5lp-99c9hj-mihalj-45derh" href="/Amazon-Video/b/?ie=UTF8&node=2858778011&ref_=nav_cs_prime_video">Prime Video</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <span class="a-size-base">…</span> from <div id="nav-flyout-anchor">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <span class="a-size-base">…</span> from <div id="nav-flyout-anchor">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - element is outside of the viewport
+  - retrying click action
+    - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <span class="a-size-base">…</span> from <div id="nav-flyout-anchor">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="glow-toaster-footer">…</div> from <div id="nav-flyout-anchor">…</div> subtree intercepts pointer events
+  23 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <span class="a-size-base">…</span> from <div id="nav-flyout-anchor">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+
+    at AmazonNavElement.selectLink (C:\Users\sofka\alldz\dz18-19\src\elements\amazon-nav-horizontal-links.ts:29:47)
+    at C:\Users\sofka\alldz\dz18-19\tests\amazon.spec.ts:42:9
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, alt, forward slash"
+    - listitem:
+      - link "Cart, shift, alt, c"
+    - listitem:
+      - link "Home, shift, alt, h"
+    - listitem:
+      - link "Your orders, shift, alt, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, alt, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon":
+      - /url: /ref=nav_logo
+    - button "Deliver to Ukraine"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Departments" [selected]
+        - option "Arts & Crafts"
+        - option "Automotive"
+        - option "Baby"
+        - option "Beauty & Personal Care"
+        - option "Books"
+        - option "Boys' Fashion"
+        - option "Computers"
+        - option "Deals"
+        - option "Digital Music"
+        - option "Electronics"
+        - option "Girls' Fashion"
+        - option "Health & Household"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Kindle Store"
+        - option "Luggage"
+        - option "Men's Fashion"
+        - option "Movies & TV"
+        - option "Music, CDs & Vinyl"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Software"
+        - option "Sports & Outdoors"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Video Games"
+        - option "Women's Fashion"
+      - searchbox "Search Amazon"
+      - button "Go"
+    - link "Choose a language for shopping in Amazon United States. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang_ais
+      - img "United States"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, Sofiia Account & Lists":
+      - /url: https://www.amazon.com/gp/css/homepage.html?ref_=nav_youraccount_btn
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - alertdialog "International Shopping Transition Alert":
+      - text: We're showing you items that ship to
+      - strong: Ukraine
+      - text: . To see items that ship to a different country, change your delivery address.
+      - button "Submit"
+      - button "Submit"
+    - button "Open All Categories Menu": All
+    - button "Open Rufus panel": Rufus
+    - list:
+      - listitem:
+        - link "Today's Deals":
+          - /url: /gp/goldbox?ref_=nav_cs_gb
+      - listitem:
+        - link "Prime Video":
+          - /url: /Amazon-Video/b/?ie=UTF8&node=2858778011&ref_=nav_cs_prime_video
+      - listitem:
+        - link "Buy Again":
+          - /url: /gp/buyagain?ie=UTF8&ref_=nav_cs_buy_again
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_help
+      - listitem:
+        - link "Registry":
+          - /url: /gp/browse.html?node=16115931011&ref_=nav_cs_registry
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc
+      - listitem:
+        - link "Sell":
+          - /url: /b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell
+      - link "Click to call our Disability Customer Support line, or reach us directly at 1-888-283-1678":
+        - /url: /gp/help/customer/accessibility
+        - text: Disability Customer Support
+- main:
+  - banner:
+    - group "Featured content":
+      - link "Previous slide" [disabled]:
+        - /url: "#"
+      - group:
+        - list:
+          - listitem:
+            - link "Gifts for Mother's Day":
+              - /url: /b/?_encoding=UTF8&node=23175097011&pd_rd_w=XaBXw&content-id=amzn1.sym.7f6948cc-efbf-471e-a144-026549e64ad8&pf_rd_p=7f6948cc-efbf-471e-a144-026549e64ad8&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=9gOKj&pd_rd_r=1636d244-1fb4-43f9-a351-b9c7b3d28809&ref_=pd_hp_d_hero_unk
+              - img "Gifts for Mother's Day"
+      - link "Next slide":
+        - /url: "#"
+  - heading "Get your game on" [level=2]
+  - link "Get your game on Shop gaming":
+    - /url: /s/?_encoding=UTF8&k=gaming&pd_rd_w=BKHoF&content-id=amzn1.sym.3ee8a8b8-12a8-4ba9-9886-109b6d3579a2&pf_rd_p=3ee8a8b8-12a8-4ba9-9886-109b6d3579a2&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Get your game on"
+    - text: Shop gaming
+  - heading "Shop for your home essentials" [level=2]
+  - link "Cleaning Tools":
+    - /url: /s/?_encoding=UTF8&k=cleaning%20tools&pd_rd_w=A5ZlA&content-id=amzn1.sym.eb31339a-1b5a-4e8d-acc5-00ebd6beec90&pf_rd_p=eb31339a-1b5a-4e8d-acc5-00ebd6beec90&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Cleaning Tools"
+    - text: Cleaning Tools
+  - link "Home Storage":
+    - /url: /s/?_encoding=UTF8&k=home%20storage&pd_rd_w=A5ZlA&content-id=amzn1.sym.eb31339a-1b5a-4e8d-acc5-00ebd6beec90&pf_rd_p=eb31339a-1b5a-4e8d-acc5-00ebd6beec90&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Home Storage"
+    - text: Home Storage
+  - link "Home Decor":
+    - /url: /s/?_encoding=UTF8&k=home%20decor&pd_rd_w=A5ZlA&content-id=amzn1.sym.eb31339a-1b5a-4e8d-acc5-00ebd6beec90&pf_rd_p=eb31339a-1b5a-4e8d-acc5-00ebd6beec90&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Home Decor"
+    - text: Home Decor
+  - link "Bedding":
+    - /url: /s/?_encoding=UTF8&k=bedding&pd_rd_w=A5ZlA&content-id=amzn1.sym.eb31339a-1b5a-4e8d-acc5-00ebd6beec90&pf_rd_p=eb31339a-1b5a-4e8d-acc5-00ebd6beec90&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Bedding"
+    - text: Bedding
+  - link "Shop for your home essentials - Discover more in Home":
+    - /url: /s/?_encoding=UTF8&k=home&pd_rd_w=A5ZlA&content-id=amzn1.sym.eb31339a-1b5a-4e8d-acc5-00ebd6beec90&pf_rd_p=eb31339a-1b5a-4e8d-acc5-00ebd6beec90&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - text: Discover more in Home
+  - heading "Top categories in Kitchen appliances" [level=2]
+  - link "Cooker":
+    - /url: /s/?_encoding=UTF8&k=cooker&pd_rd_w=4VfJk&content-id=amzn1.sym.6750a477-b756-4495-9032-f19cde6d7085&pf_rd_p=6750a477-b756-4495-9032-f19cde6d7085&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Cooker"
+    - text: Cooker
+  - link "Coffee":
+    - /url: /s/?_encoding=UTF8&k=coffee%20machine&pd_rd_w=4VfJk&content-id=amzn1.sym.6750a477-b756-4495-9032-f19cde6d7085&pf_rd_p=6750a477-b756-4495-9032-f19cde6d7085&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Coffee"
+    - text: Coffee
+  - link "Pots and Pans":
+    - /url: /s/?_encoding=UTF8&k=pots%20and%20pans&pd_rd_w=4VfJk&content-id=amzn1.sym.6750a477-b756-4495-9032-f19cde6d7085&pf_rd_p=6750a477-b756-4495-9032-f19cde6d7085&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Pots and Pans"
+    - text: Pots and Pans
+  - link "Kettles":
+    - /url: /s/?_encoding=UTF8&k=kettle&pd_rd_w=4VfJk&content-id=amzn1.sym.6750a477-b756-4495-9032-f19cde6d7085&pf_rd_p=6750a477-b756-4495-9032-f19cde6d7085&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Kettles"
+    - text: Kettles
+  - link "Explore all products in Kitchen":
+    - /url: /s/?_encoding=UTF8&k=kitchen%20products&pd_rd_w=4VfJk&content-id=amzn1.sym.6750a477-b756-4495-9032-f19cde6d7085&pf_rd_p=6750a477-b756-4495-9032-f19cde6d7085&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+  - heading "Refresh your space" [level=2]
+  - link "Dining":
+    - /url: /s/?_encoding=UTF8&k=Dinnerware%20%26%20accessories&crid=IBML6MYDLJ4A&sprefix=dinnerware%20%26%20accessorie%2Caps%2C190&ref=nb_sb_noss&pd_rd_w=geseB&content-id=amzn1.sym.0f1ddd2e-dc49-404c-9cb8-157e3c873622&pf_rd_p=0f1ddd2e-dc49-404c-9cb8-157e3c873622&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Dining"
+    - text: Dining
+  - link "Home":
+    - /url: /s/?_encoding=UTF8&k=Home&i=kitchen-intl-ship&crid=1QBODY970JKYC&sprefix=home%2Ckitchen-intl-ship%2C164&ref=nb_sb_noss_1&pd_rd_w=geseB&content-id=amzn1.sym.0f1ddd2e-dc49-404c-9cb8-157e3c873622&pf_rd_p=0f1ddd2e-dc49-404c-9cb8-157e3c873622&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Home"
+    - text: Home
+  - link "Kitchen":
+    - /url: /s/?_encoding=UTF8&k=Kitchen&i=kitchen-intl-ship&crid=2LRTV3593NEHX&sprefix=kitchen%2Ckitchen-intl-ship%2C202&ref=nb_sb_noss_1&pd_rd_w=geseB&content-id=amzn1.sym.0f1ddd2e-dc49-404c-9cb8-157e3c873622&pf_rd_p=0f1ddd2e-dc49-404c-9cb8-157e3c873622&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Kitchen"
+    - text: Kitchen
+  - link "Health and Beauty":
+    - /url: /s/?_encoding=UTF8&k=health%20and%20beauty&i=beauty-intl-ship&crid=2036DM6EKNYNA&sprefix=health%20and%20beauty%2Cbeauty-intl-ship%2C173&ref=nb_sb_noss_2&pd_rd_w=geseB&content-id=amzn1.sym.0f1ddd2e-dc49-404c-9cb8-157e3c873622&pf_rd_p=0f1ddd2e-dc49-404c-9cb8-157e3c873622&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Health and Beauty"
+    - text: Health and Beauty
+  - link "Refresh your space - See more":
+    - /url: /s/?_encoding=UTF8&k=home%20and%20kitchen&pd_rd_w=geseB&content-id=amzn1.sym.0f1ddd2e-dc49-404c-9cb8-157e3c873622&pf_rd_p=0f1ddd2e-dc49-404c-9cb8-157e3c873622&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - text: See more
+  - separator
+  - heading "Shop deals in Fashion" [level=2]
+  - link "Jeans under $50":
+    - /url: /s/?_encoding=UTF8&k=Jeans&rh=n%3A1040660%2Cn%3A1048188%2Cp_36%3A-5000&dc=&ds=v1%3AZrh2YeJ%2Bmo6tc5p1QJD9idnCpBDTF2pKNTUbGqlhFKk&crid=1TZCO6ZC2HZVA&qid=1684823801&rnid=2941120011&sprefix=jeans%2Caps%2C155&ref=sr_nr_n_4&pd_rd_w=qqWB3&content-id=amzn1.sym.3f0b5582-cddc-487f-b495-164e3b7a142b&pf_rd_p=3f0b5582-cddc-487f-b495-164e3b7a142b&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Jeans under $50"
+    - text: Jeans under $50
+  - link "Tops under $25":
+    - /url: /s/?_encoding=UTF8&k=Tops&rh=p_36%3A-2500&crid=19AKO4YZK6ZPJ&qid=1684823853&rnid=2661611011&sprefix=tops%2Caps%2C250&ref=sr_nr_p_36_5&pd_rd_w=qqWB3&content-id=amzn1.sym.3f0b5582-cddc-487f-b495-164e3b7a142b&pf_rd_p=3f0b5582-cddc-487f-b495-164e3b7a142b&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Tops under $25"
+    - text: Tops under $25
+  - link "Dresses under $30":
+    - /url: /s/?_encoding=UTF8&k=Dresses&rh=p_36%3A-3000&crid=Y67PJX929LXO&qid=1684823891&rnid=2661611011&sprefix=dresses%2Caps%2C149&ref=sr_nr_p_36_5&pd_rd_w=qqWB3&content-id=amzn1.sym.3f0b5582-cddc-487f-b495-164e3b7a142b&pf_rd_p=3f0b5582-cddc-487f-b495-164e3b7a142b&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Dresses under $30"
+    - text: Dresses under $30
+  - link "Shoes under $50":
+    - /url: /s/?_encoding=UTF8&k=Shoes&rh=p_36%3A-5000&crid=1QEZIUFPCL3YZ&qid=1684823927&rnid=2661611011&sprefix=shoes%2Caps%2C145&ref=sr_nr_p_36_5&pd_rd_w=qqWB3&content-id=amzn1.sym.3f0b5582-cddc-487f-b495-164e3b7a142b&pf_rd_p=3f0b5582-cddc-487f-b495-164e3b7a142b&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Shoes under $50"
+    - text: Shoes under $50
+  - link "Shop deals in Fashion - See all deals":
+    - /url: /gp/goldbox/?ie=UTF8&ref_=nav_cs_gb&deals-widget=%257B%2522version%2522%253A1%252C%2522viewIndex%2522%253A0%252C%2522presetId%2522%253A%252215E8DB96732AF8CA9C14916141BB1C4C%2522%252C%2522departments%2522%253A%255B%25227147440011%2522%252C%25227192394011%2522%252C%2522679337011%2522%252C%25226358543011%2522%255D%252C%2522sorting%2522%253A%2522FEATURED%2522%257D&pd_rd_w=qqWB3&content-id=amzn1.sym.3f0b5582-cddc-487f-b495-164e3b7a142b&pf_rd_p=3f0b5582-cddc-487f-b495-164e3b7a142b&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1
+    - text: See all deals
+  - heading "Toys under $25" [level=2]
+  - link "Toys under $25 Shop now":
+    - /url: /s/?_encoding=UTF8&k=toys&rh=p_36%3A-2500&pd_rd_w=ReynB&content-id=amzn1.sym.8596ce56-6e6f-4ba4-b23a-4a5abe13dae6&pf_rd_p=8596ce56-6e6f-4ba4-b23a-4a5abe13dae6&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Toys under $25"
+    - text: Shop now
+  - heading "Gifts for Mother's Day" [level=2]
+  - link "Gifts for Mother's Day See more":
+    - /url: /b/?_encoding=UTF8&node=23175097011&pd_rd_w=qWLLZ&content-id=amzn1.sym.e230249e-19ea-4ec0-a337-e07e2bc27582&pf_rd_p=e230249e-19ea-4ec0-a337-e07e2bc27582&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Gifts for Mother's Day"
+    - text: See more
+  - heading "Easy updates for elevated spaces" [level=2]
+  - link "Baskets & hampers":
+    - /url: /b/?_encoding=UTF8&ie=UTF8&node=87586343011&pd_rd_w=U5ihx&content-id=amzn1.sym.f79b1efa-eb9d-49a5-992e-7b5b287be980&pf_rd_p=f79b1efa-eb9d-49a5-992e-7b5b287be980&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Baskets & hampers"
+    - text: Baskets & hampers
+  - link "Hardware":
+    - /url: /b/?_encoding=UTF8&ie=UTF8&node=87586178011&pd_rd_w=U5ihx&content-id=amzn1.sym.f79b1efa-eb9d-49a5-992e-7b5b287be980&pf_rd_p=f79b1efa-eb9d-49a5-992e-7b5b287be980&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Hardware"
+    - text: Hardware
+  - link "Accent furniture":
+    - /url: /b/?_encoding=UTF8&ie=UTF8&node=87586177011&pd_rd_w=U5ihx&content-id=amzn1.sym.f79b1efa-eb9d-49a5-992e-7b5b287be980&pf_rd_p=f79b1efa-eb9d-49a5-992e-7b5b287be980&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Accent furniture"
+    - text: Accent furniture
+  - link "Wallpaper & paint":
+    - /url: /b/?_encoding=UTF8&ie=UTF8&node=87586176011&pd_rd_w=U5ihx&content-id=amzn1.sym.f79b1efa-eb9d-49a5-992e-7b5b287be980&pf_rd_p=f79b1efa-eb9d-49a5-992e-7b5b287be980&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - img "Wallpaper & paint"
+    - text: Wallpaper & paint
+  - link "Easy updates for elevated spaces - Shop home products":
+    - /url: /b/?_encoding=UTF8&ie=UTF8&node=87586174011&pd_rd_w=U5ihx&content-id=amzn1.sym.f79b1efa-eb9d-49a5-992e-7b5b287be980&pf_rd_p=f79b1efa-eb9d-49a5-992e-7b5b287be980&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=q7rPB&pd_rd_r=8f8e5c80-e3f4-480c-9355-3471970efcc1&ref_=pd_hp_d_atf_unk
+    - text: Shop home products
+  - heading "Most-loved travel essentials" [level=2]
+  - link "Backpacks":
+    - /url: /s/?_encoding=UTF8&k=travel%20backpack&pd_rd_w=4DJJl&content-id=amzn1.sym.41b63905-8227-4707-958b-3928e735686a&pf_rd_p=41b63905-8227-4707-958b-3928e735686a&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Backpacks"
+    - text: Backpacks
+  - link "Suitcases":
+    - /url: s/?_encoding=UTF8&k=suitcases&pd_rd_w=4DJJl&content-id=amzn1.sym.41b63905-8227-4707-958b-3928e735686a&pf_rd_p=41b63905-8227-4707-958b-3928e735686a&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Suitcases"
+    - text: Suitcases
+  - link "Accessories":
+    - /url: /s/?_encoding=UTF8&k=travel%20accessories&pd_rd_w=4DJJl&content-id=amzn1.sym.41b63905-8227-4707-958b-3928e735686a&pf_rd_p=41b63905-8227-4707-958b-3928e735686a&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Accessories"
+    - text: Accessories
+  - link "Handbags":
+    - /url: /s/?_encoding=UTF8&k=handbags&pd_rd_w=4DJJl&content-id=amzn1.sym.41b63905-8227-4707-958b-3928e735686a&pf_rd_p=41b63905-8227-4707-958b-3928e735686a&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Handbags"
+    - text: Handbags
+  - link "Most-loved travel essentials - Discover more":
+    - /url: /s/?_encoding=UTF8&k=travel&pd_rd_w=4DJJl&content-id=amzn1.sym.41b63905-8227-4707-958b-3928e735686a&pf_rd_p=41b63905-8227-4707-958b-3928e735686a&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - text: Discover more
+  - heading "Elevate Your Electronics" [level=2]
+  - link "Headphones":
+    - /url: /s/?_encoding=UTF8&k=headphones&pd_rd_w=OU3pO&content-id=amzn1.sym.c5a7d37a-5c33-49fd-8f64-6c0469427acd&pf_rd_p=c5a7d37a-5c33-49fd-8f64-6c0469427acd&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Headphones"
+    - text: Headphones
+  - link "Tablets":
+    - /url: s/?_encoding=UTF8&k=electroinc%20tablets&pd_rd_w=OU3pO&content-id=amzn1.sym.c5a7d37a-5c33-49fd-8f64-6c0469427acd&pf_rd_p=c5a7d37a-5c33-49fd-8f64-6c0469427acd&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Tablets"
+    - text: Tablets
+  - link "Gaming":
+    - /url: /s/?_encoding=UTF8&k=video%20gaming&pd_rd_w=OU3pO&content-id=amzn1.sym.c5a7d37a-5c33-49fd-8f64-6c0469427acd&pf_rd_p=c5a7d37a-5c33-49fd-8f64-6c0469427acd&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Gaming"
+    - text: Gaming
+  - link "Speakers":
+    - /url: /s/?_encoding=UTF8&k=speakers&pd_rd_w=OU3pO&content-id=amzn1.sym.c5a7d37a-5c33-49fd-8f64-6c0469427acd&pf_rd_p=c5a7d37a-5c33-49fd-8f64-6c0469427acd&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Speakers"
+    - text: Speakers
+  - link "Elevate Your Electronics - Discover more":
+    - /url: /s/?_encoding=UTF8&k=electronics&pd_rd_w=OU3pO&content-id=amzn1.sym.c5a7d37a-5c33-49fd-8f64-6c0469427acd&pf_rd_p=c5a7d37a-5c33-49fd-8f64-6c0469427acd&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - text: Discover more
+  - heading "Gear up to get fit" [level=2]
+  - link "Clothing":
+    - /url: /s/?_encoding=UTF8&k=fitness%20clothing&pd_rd_w=WFcpb&content-id=amzn1.sym.323d3bbe-6bb1-4070-aba0-bb128c77fa96&pf_rd_p=323d3bbe-6bb1-4070-aba0-bb128c77fa96&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Clothing"
+    - text: Clothing
+  - link "Trackers":
+    - /url: /s/?_encoding=UTF8&k=fitness%20trackers&pd_rd_w=WFcpb&content-id=amzn1.sym.323d3bbe-6bb1-4070-aba0-bb128c77fa96&pf_rd_p=323d3bbe-6bb1-4070-aba0-bb128c77fa96&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Trackers"
+    - text: Trackers
+  - link "Equipment":
+    - /url: /s/?_encoding=UTF8&k=fitness%20equipment&pd_rd_w=WFcpb&content-id=amzn1.sym.323d3bbe-6bb1-4070-aba0-bb128c77fa96&pf_rd_p=323d3bbe-6bb1-4070-aba0-bb128c77fa96&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Equipment"
+    - text: Equipment
+  - link "Deals":
+    - /url: /gp/goldbox/?ie=UTF8&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%255C%2522departments%255C%2522%253A%255B%255C%25223375301%252F3407731%255C%2522%255D%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&pd_rd_w=WFcpb&content-id=amzn1.sym.323d3bbe-6bb1-4070-aba0-bb128c77fa96&pf_rd_p=323d3bbe-6bb1-4070-aba0-bb128c77fa96&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Deals"
+    - text: Deals
+  - link "Gear up to get fit - Discover more":
+    - /url: /s/?_encoding=UTF8&k=fitness%20gear&pd_rd_w=WFcpb&content-id=amzn1.sym.323d3bbe-6bb1-4070-aba0-bb128c77fa96&pf_rd_p=323d3bbe-6bb1-4070-aba0-bb128c77fa96&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - text: Discover more
+  - heading "Upgrade on Tech" [level=2]
+  - link "PC":
+    - /url: /s/?_encoding=UTF8&k=pc&pd_rd_w=YjtRa&content-id=amzn1.sym.634e1edd-1269-48db-9628-a938cb1c7a52&pf_rd_p=634e1edd-1269-48db-9628-a938cb1c7a52&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "PC"
+    - text: PC
+  - link "Wireless":
+    - /url: /s/?_encoding=UTF8&k=wireless%20tech&pd_rd_w=YjtRa&content-id=amzn1.sym.634e1edd-1269-48db-9628-a938cb1c7a52&pf_rd_p=634e1edd-1269-48db-9628-a938cb1c7a52&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Wireless"
+    - text: Wireless
+  - link "Software":
+    - /url: /s/?_encoding=UTF8&k=software&pd_rd_w=YjtRa&content-id=amzn1.sym.634e1edd-1269-48db-9628-a938cb1c7a52&pf_rd_p=634e1edd-1269-48db-9628-a938cb1c7a52&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Software"
+    - text: Software
+  - link "Home entertainment":
+    - /url: /s/?_encoding=UTF8&k=home%20entertainment&pd_rd_w=YjtRa&content-id=amzn1.sym.634e1edd-1269-48db-9628-a938cb1c7a52&pf_rd_p=634e1edd-1269-48db-9628-a938cb1c7a52&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Home entertainment"
+    - text: Home entertainment
+  - link "Upgrade on Tech - Shop all tech deals":
+    - /url: /gp/goldbox/?ie=UTF8&ref_=nav_cs_gb&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%255C%2522departments%255C%2522%253A%255B%255C%2522493964%252F541966%255C%2522%255D%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&pd_rd_w=YjtRa&content-id=amzn1.sym.634e1edd-1269-48db-9628-a938cb1c7a52&pf_rd_p=634e1edd-1269-48db-9628-a938cb1c7a52&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73
+    - text: Shop all tech deals
+  - separator
+  - heading "Level up your beauty routine" [level=2]
+  - link "Makeup":
+    - /url: /s/?_encoding=UTF8&k=makeup&pd_rd_w=XgghR&content-id=amzn1.sym.e7c0723b-b462-490f-b8b0-8108304a3a80&pf_rd_p=e7c0723b-b462-490f-b8b0-8108304a3a80&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Makeup"
+    - text: Makeup
+  - link "Brushes":
+    - /url: /s/?_encoding=UTF8&k=makeup%20brushes&pd_rd_w=XgghR&content-id=amzn1.sym.e7c0723b-b462-490f-b8b0-8108304a3a80&pf_rd_p=e7c0723b-b462-490f-b8b0-8108304a3a80&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Brushes"
+    - text: Brushes
+  - link "Sponges":
+    - /url: /s/?_encoding=UTF8&k=makeup%20sponge&pd_rd_w=XgghR&content-id=amzn1.sym.e7c0723b-b462-490f-b8b0-8108304a3a80&pf_rd_p=e7c0723b-b462-490f-b8b0-8108304a3a80&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Sponges"
+    - text: Sponges
+  - link "Mirrors":
+    - /url: /s/?_encoding=UTF8&k=makeup%20mirror&pd_rd_w=XgghR&content-id=amzn1.sym.e7c0723b-b462-490f-b8b0-8108304a3a80&pf_rd_p=e7c0723b-b462-490f-b8b0-8108304a3a80&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Mirrors"
+    - text: Mirrors
+  - link "Level up your beauty routine - See more":
+    - /url: /s/?_encoding=UTF8&k=beauty%20and%20personal%20care&pd_rd_w=XgghR&content-id=amzn1.sym.e7c0723b-b462-490f-b8b0-8108304a3a80&pf_rd_p=e7c0723b-b462-490f-b8b0-8108304a3a80&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - text: See more
+  - heading "Wireless Tech" [level=2]
+  - link "Smartphones":
+    - /url: /s/?_encoding=UTF8&k=smartphones&pd_rd_w=R6BO0&content-id=amzn1.sym.2957e129-713b-41c5-852d-24ccdaa74dee&pf_rd_p=2957e129-713b-41c5-852d-24ccdaa74dee&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Smartphones"
+    - text: Smartphones
+  - link "Watches":
+    - /url: /s/?_encoding=UTF8&k=smart%20watches&pd_rd_w=R6BO0&content-id=amzn1.sym.2957e129-713b-41c5-852d-24ccdaa74dee&pf_rd_p=2957e129-713b-41c5-852d-24ccdaa74dee&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Watches"
+    - text: Watches
+  - link "Headphones":
+    - /url: /s/?_encoding=UTF8&k=headphones&pd_rd_w=R6BO0&content-id=amzn1.sym.2957e129-713b-41c5-852d-24ccdaa74dee&pf_rd_p=2957e129-713b-41c5-852d-24ccdaa74dee&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Headphones"
+    - text: Headphones
+  - link "Tablets":
+    - /url: /s/?_encoding=UTF8&k=tablets&pd_rd_w=R6BO0&content-id=amzn1.sym.2957e129-713b-41c5-852d-24ccdaa74dee&pf_rd_p=2957e129-713b-41c5-852d-24ccdaa74dee&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Tablets"
+    - text: Tablets
+  - link "Wireless Tech - Discover more":
+    - /url: /s/?_encoding=UTF8&k=electronics&pd_rd_w=R6BO0&content-id=amzn1.sym.2957e129-713b-41c5-852d-24ccdaa74dee&pf_rd_p=2957e129-713b-41c5-852d-24ccdaa74dee&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - text: Discover more
+  - heading "Toys for all ages" [level=2]
+  - link "Ride on's":
+    - /url: /s/?_encoding=UTF8&k=ride%20on%20toys&pd_rd_w=iOE5M&content-id=amzn1.sym.821dcb06-350f-473d-a04a-a722dc6b7191&pf_rd_p=821dcb06-350f-473d-a04a-a722dc6b7191&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Ride on's"
+    - text: Ride on's
+  - link "Building & construction":
+    - /url: /s/?_encoding=UTF8&k=building%20construction%20toys&pd_rd_w=iOE5M&content-id=amzn1.sym.821dcb06-350f-473d-a04a-a722dc6b7191&pf_rd_p=821dcb06-350f-473d-a04a-a722dc6b7191&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Building & construction"
+    - text: Building & construction
+  - link "Doll & Doll House":
+    - /url: /s/?_encoding=UTF8&k=doll%20and%20doll%20house&pd_rd_w=iOE5M&content-id=amzn1.sym.821dcb06-350f-473d-a04a-a722dc6b7191&pf_rd_p=821dcb06-350f-473d-a04a-a722dc6b7191&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Doll & Doll House"
+    - text: Dolls & Doll Houses
+  - link "Swimming pools":
+    - /url: /s/?_encoding=UTF8&k=Swimming%20pools&pd_rd_w=iOE5M&content-id=amzn1.sym.821dcb06-350f-473d-a04a-a722dc6b7191&pf_rd_p=821dcb06-350f-473d-a04a-a722dc6b7191&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Swimming pools"
+    - text: Swimming pools
+  - link "Toys for all ages - See all":
+    - /url: /s/?_encoding=UTF8&k=toys&pd_rd_w=iOE5M&content-id=amzn1.sym.821dcb06-350f-473d-a04a-a722dc6b7191&pf_rd_p=821dcb06-350f-473d-a04a-a722dc6b7191&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - text: See all
+  - heading "Fantastic Finds for Home" [level=2]
+  - link "Kitchen":
+    - /url: /s/?_encoding=UTF8&k=kitchen&pd_rd_w=9TPlX&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Kitchen"
+    - text: Kitchen
+  - link "Home Decor":
+    - /url: /s/?_encoding=UTF8&k=home%20decor&pd_rd_w=9TPlX&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Home Decor"
+    - text: Home Decor
+  - link "Dining":
+    - /url: /s/?_encoding=UTF8&k=kitchen%20and%20dining&pd_rd_w=9TPlX&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Dining"
+    - text: Dining
+  - link "Smart Home":
+    - /url: /s/?_encoding=UTF8&k=smart%20home&pd_rd_w=9TPlX&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Smart Home"
+    - text: Smart Home
+  - link "Fantastic Finds for Home - See more":
+    - /url: /s/?_encoding=UTF8&k=home%20and%20kitchen&pd_rd_w=9TPlX&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - text: See more
+  - separator
+  - heading "New home arrivals under $50" [level=2]
+  - link "Kitchen & dining":
+    - /url: /s/?_encoding=UTF8&k=kitchen%20and%20dining&rh=p_36%3A-5000&s=date-desc-rank&pd_rd_w=c0gTA&content-id=amzn1.sym.9ff0ec97-10ec-45c5-8a45-e12d656872fd&pf_rd_p=9ff0ec97-10ec-45c5-8a45-e12d656872fd&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Kitchen & dining"
+    - text: Kitchen & Dining
+  - link "Home improvement":
+    - /url: /s/?_encoding=UTF8&k=home%20improvement&i=tools&rh=n%3A228013%2Cp_36%3A-5000&dc=&ds=v1%3AU%2F9vxcfd6LLqNGLcdfGjetkk3KJGd0ZuNoxWMV3LcAk&pd_rd_w=c0gTA&content-id=amzn1.sym.9ff0ec97-10ec-45c5-8a45-e12d656872fd&pf_rd_p=9ff0ec97-10ec-45c5-8a45-e12d656872fd&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Home improvement"
+    - text: Home Improvement
+  - link "Décor":
+    - /url: /s/?_encoding=UTF8&k=home%20decor&rh=p_36%3A-5000&s=date-desc-rank&pd_rd_w=c0gTA&content-id=amzn1.sym.9ff0ec97-10ec-45c5-8a45-e12d656872fd&pf_rd_p=9ff0ec97-10ec-45c5-8a45-e12d656872fd&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Décor"
+    - text: Décor
+  - link "Bedding & bath":
+    - /url: /s/?_encoding=UTF8&k=bedding%20and%20bath&rh=p_36%3A-5000&s=date-desc-rank&pd_rd_w=c0gTA&content-id=amzn1.sym.9ff0ec97-10ec-45c5-8a45-e12d656872fd&pf_rd_p=9ff0ec97-10ec-45c5-8a45-e12d656872fd&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Bedding & bath"
+    - text: Bedding & Bath
+  - link "New home arrivals under $50 - Shop the latest from Home":
+    - /url: /s/?_encoding=UTF8&k=home&i=garden&rh=n%3A1055398%2Cp_36%3A-5000&s=exact-aware-popularity-rank&dc=&pd_rd_w=c0gTA&content-id=amzn1.sym.9ff0ec97-10ec-45c5-8a45-e12d656872fd&pf_rd_p=9ff0ec97-10ec-45c5-8a45-e12d656872fd&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - text: Shop the latest from Home
+  - heading "Explore more in Sports" [level=2]
+  - link "Cycling":
+    - /url: /s/?_encoding=UTF8&k=cycling&pd_rd_w=w1sGb&content-id=amzn1.sym.8034b125-aa83-48fe-a567-4a4512670b56&pf_rd_p=8034b125-aa83-48fe-a567-4a4512670b56&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Cycling"
+    - text: Cycling
+  - link "Running":
+    - /url: /s/?_encoding=UTF8&k=running&pd_rd_w=w1sGb&content-id=amzn1.sym.8034b125-aa83-48fe-a567-4a4512670b56&pf_rd_p=8034b125-aa83-48fe-a567-4a4512670b56&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Running"
+    - text: Running
+  - link "Exercise & Fitness":
+    - /url: /s/?_encoding=UTF8&k=exercise%20and%20fitness&pd_rd_w=w1sGb&content-id=amzn1.sym.8034b125-aa83-48fe-a567-4a4512670b56&pf_rd_p=8034b125-aa83-48fe-a567-4a4512670b56&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Exercise & Fitness"
+    - text: Exercise & Fitness
+  - link "Golf":
+    - /url: /s/?_encoding=UTF8&k=golf&pd_rd_w=w1sGb&content-id=amzn1.sym.8034b125-aa83-48fe-a567-4a4512670b56&pf_rd_p=8034b125-aa83-48fe-a567-4a4512670b56&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Golf"
+    - text: Golf
+  - link "Explore more in Sports - Explore more":
+    - /url: /s/?_encoding=UTF8&k=sports&pd_rd_w=w1sGb&content-id=amzn1.sym.8034b125-aa83-48fe-a567-4a4512670b56&pf_rd_p=8034b125-aa83-48fe-a567-4a4512670b56&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - text: Explore more
+  - heading "Level up your gaming" [level=2]
+  - link "PC gaming":
+    - /url: /s/?_encoding=UTF8&k=pc%20gaming&pd_rd_w=r1lgZ&content-id=amzn1.sym.bd1d9f99-8fa5-48ff-9c39-3905e4244a22&pf_rd_p=bd1d9f99-8fa5-48ff-9c39-3905e4244a22&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "PC gaming"
+    - text: PC gaming
+  - link "Xbox":
+    - /url: /s/?_encoding=UTF8&k=Xbox&pd_rd_w=r1lgZ&content-id=amzn1.sym.bd1d9f99-8fa5-48ff-9c39-3905e4244a22&pf_rd_p=bd1d9f99-8fa5-48ff-9c39-3905e4244a22&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Xbox"
+    - text: Xbox
+  - link "PlayStation":
+    - /url: /s/?_encoding=UTF8&k=Play%20Station&pd_rd_w=r1lgZ&content-id=amzn1.sym.bd1d9f99-8fa5-48ff-9c39-3905e4244a22&pf_rd_p=bd1d9f99-8fa5-48ff-9c39-3905e4244a22&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "PlayStation"
+    - text: PlayStation
+  - link "Nintendo Switch":
+    - /url: /s/?_encoding=UTF8&k=Nintendo%20Switch&pd_rd_w=r1lgZ&content-id=amzn1.sym.bd1d9f99-8fa5-48ff-9c39-3905e4244a22&pf_rd_p=bd1d9f99-8fa5-48ff-9c39-3905e4244a22&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Nintendo Switch"
+    - text: Nintendo Switch
+  - link "Level up your gaming - Shop the latest in gaming":
+    - /url: /b/?_encoding=UTF8&node=23508887011&pd_rd_w=r1lgZ&content-id=amzn1.sym.bd1d9f99-8fa5-48ff-9c39-3905e4244a22&pf_rd_p=bd1d9f99-8fa5-48ff-9c39-3905e4244a22&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - text: Shop the latest in gaming
+  - heading "Most-loved watches" [level=2]
+  - link "Women":
+    - /url: /s/?_encoding=UTF8&k=women%20watch&pd_rd_w=6ffS5&content-id=amzn1.sym.e2a91cb1-958d-4bba-8477-9476d1a6a928&pf_rd_p=e2a91cb1-958d-4bba-8477-9476d1a6a928&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Women"
+    - text: Women
+  - link "Men":
+    - /url: /s/?_encoding=UTF8&k=men%20watches&pd_rd_w=6ffS5&content-id=amzn1.sym.e2a91cb1-958d-4bba-8477-9476d1a6a928&pf_rd_p=e2a91cb1-958d-4bba-8477-9476d1a6a928&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Men"
+    - text: Men
+  - link "Girls":
+    - /url: /s/?_encoding=UTF8&k=girls%20watches&pd_rd_w=6ffS5&content-id=amzn1.sym.e2a91cb1-958d-4bba-8477-9476d1a6a928&pf_rd_p=e2a91cb1-958d-4bba-8477-9476d1a6a928&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Girls"
+    - text: Girls
+  - link "Boys":
+    - /url: /s/?_encoding=UTF8&k=Boys%20watches&pd_rd_w=6ffS5&content-id=amzn1.sym.e2a91cb1-958d-4bba-8477-9476d1a6a928&pf_rd_p=e2a91cb1-958d-4bba-8477-9476d1a6a928&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - img "Boys"
+    - text: Boys
+  - link "Most-loved watches - Discover more":
+    - /url: /s/?_encoding=UTF8&k=watches&pd_rd_w=6ffS5&content-id=amzn1.sym.e2a91cb1-958d-4bba-8477-9476d1a6a928&pf_rd_p=e2a91cb1-958d-4bba-8477-9476d1a6a928&pf_rd_r=8PFM4NGNXST5SNQ448JK&pd_rd_wg=qYhrf&pd_rd_r=cd83b076-0a2a-4cab-9723-b15abf017e73&ref_=pd_hp_d_btf_unk
+    - text: Discover more
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "Careers":
+      - /url: https://www.amazon.jobs
+  - listitem:
+    - link "Blog":
+      - /url: https://blog.aboutamazon.com/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Investor Relations":
+      - /url: https://www.amazon.com/ir
+  - listitem:
+    - link "Amazon Devices":
+      - /url: /gp/browse.html?node=2102313011&ref_=footer_devices
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell products on Amazon":
+      - /url: https://services.amazon.com/sell.html?ld=AZFSSOA&ref_=footer_soa
+  - listitem:
+    - link "Sell on Amazon Business":
+      - /url: https://services.amazon.com/amazon-business.html?ld=usb2bunifooter&ref_=footer_b2b
+  - listitem:
+    - link "Sell apps on Amazon":
+      - /url: https://developer.amazon.com
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.com/
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.com/?ref=ext_amzn_ftr
+  - listitem:
+    - link "Self-Publish with Us":
+      - /url: /gp/seller-account/mm-summary-page.html?ld=AZFooterSelfPublish&topic=200260520&ref_=footer_publishing
+  - listitem:
+    - link "Host an Amazon Hub":
+      - /url: https://go.thehub-amazon.com/amazon-hub-locker
+  - listitem:
+    - link "See More Make Money with Us":
+      - /url: /b/?node=18190131011&ld=AZUSSOA-seemore&ref_=footer_seemore
+- heading "Amazon Payment Products" [level=6]
+- list:
+  - listitem:
+    - link "Amazon Business Card":
+      - /url: /dp/B07984JN3L?plattr=ACOMFO&ie=UTF-8
+  - listitem:
+    - link "Shop with Points":
+      - /url: /gp/browse.html?node=16218619011&ref_=footer_swp
+  - listitem:
+    - link "Reload Your Balance":
+      - /url: /dp/B0CHTVMXZJ?th=1?ref_=footer_reload_us
+  - listitem:
+    - link "Amazon Currency Converter":
+      - /url: /gp/browse.html?node=388305011&ref_=footer_tfx
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Amazon and COVID-19":
+      - /url: /gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid
+  - listitem:
+    - link "Your Account":
+      - /url: https://www.amazon.com/gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Your Orders":
+      - /url: https://www.amazon.com/gp/css/order-history?ref_=footer_yo
+  - listitem:
+    - link "Shipping Rates & Policies":
+      - /url: /gp/help/customer/display.html?nodeId=468520&ref_=footer_shiprates
+  - listitem:
+    - link "Returns & Replacements":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Manage Your Content and Devices":
+      - /url: /gp/digital/fiona/manage?ref_=footer_myk
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=508510&ref_=footer_gw_m_b_he
+- link "Amazon US Home":
+  - /url: /?ref_=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- link "$ USD - U.S. Dollar":
+  - /url: /customer-preferences/edit?ie=UTF8&ref_=footer_cop&preferencesReturnUrl=%2F
+- button "Choose a country/region for shopping. The current selection is United States.": United States
+- navigation "More on Amazon":
+  - list:
+    - listitem:
+      - link "Amazon Music Stream millions of songs":
+        - /url: https://music.amazon.com?ref=dm_aff_amz_com
+        - heading "Amazon Music" [level=5]
+        - text: Stream millions of songs
+    - listitem:
+      - link "Amazon Ads Reach customers wherever they spend their time":
+        - /url: https://advertising.amazon.com/?ref=footer_advtsing_amzn_com
+        - heading "Amazon Ads" [level=5]
+        - text: Reach customers wherever they spend their time
+    - listitem:
+      - link "6pm Score deals on fashion brands":
+        - /url: https://www.6pm.com
+        - heading "6pm" [level=5]
+        - text: Score deals on fashion brands
+    - listitem:
+      - link "AbeBooks Books, art & collectibles":
+        - /url: https://www.abebooks.com
+        - heading "AbeBooks" [level=5]
+        - text: Books, art & collectibles
+    - listitem:
+      - link "ACX Audiobook Publishing Made Easy":
+        - /url: https://www.acx.com/
+        - heading "ACX" [level=5]
+        - text: Audiobook Publishing Made Easy
+    - listitem:
+      - link "Sell on Amazon Start a Selling Account":
+        - /url: https://sell.amazon.com/?ld=AZUSSOA-footer-aff&ref_=footer_sell
+        - heading "Sell on Amazon" [level=5]
+        - text: Start a Selling Account
+    - listitem:
+      - link "Veeqo Shipping Software Inventory Management":
+        - /url: https://www.veeqo.com/?utm_source=amazon&utm_medium=website&utm_campaign=footer
+        - heading "Veeqo" [level=5]
+        - text: Shipping Software Inventory Management
+  - list:
+    - listitem:
+      - link "Amazon Business Everything For Your Business":
+        - /url: /business?ref_=footer_retail_b2b
+        - heading "Amazon Business" [level=5]
+        - text: Everything For Your Business
+    - listitem:
+      - link "AmazonGlobal Ship Orders Internationally":
+        - /url: /gp/browse.html?node=230659011&ref_=footer_amazonglobal
+        - heading "AmazonGlobal" [level=5]
+        - text: Ship Orders Internationally
+    - listitem:
+      - link "Amazon Web Services Scalable Cloud Computing Services":
+        - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=amazonfooter
+        - heading "Amazon Web Services" [level=5]
+        - text: Scalable Cloud Computing Services
+    - listitem:
+      - link "Audible Listen to Books & Original Audio Performances":
+        - /url: https://www.audible.com
+        - heading "Audible" [level=5]
+        - text: Listen to Books & Original Audio Performances
+    - listitem:
+      - link "Box Office Mojo Find Movie Box Office Data":
+        - /url: https://www.boxofficemojo.com/?ref_=amzn_nav_ftr
+        - heading "Box Office Mojo" [level=5]
+        - text: Find Movie Box Office Data
+    - listitem:
+      - link "Goodreads Book reviews & recommendations":
+        - /url: https://www.goodreads.com
+        - heading "Goodreads" [level=5]
+        - text: Book reviews & recommendations
+    - listitem:
+      - link "IMDb Movies, TV & Celebrities":
+        - /url: https://www.imdb.com
+        - heading "IMDb" [level=5]
+        - text: Movies, TV & Celebrities
+  - list:
+    - listitem:
+      - link "IMDbPro Get Info Entertainment Professionals Need":
+        - /url: https://pro.imdb.com?ref_=amzn_nav_ftr
+        - heading "IMDbPro" [level=5]
+        - text: Get Info Entertainment Professionals Need
+    - listitem:
+      - link "Kindle Direct Publishing Indie Digital & Print Publishing Made Easy":
+        - /url: https://kdp.amazon.com
+        - heading "Kindle Direct Publishing" [level=5]
+        - text: Indie Digital & Print Publishing Made Easy
+    - listitem:
+      - link "Prime Video Direct Video Distribution Made Easy":
+        - /url: https://videodirect.amazon.com/home/landing
+        - heading "Prime Video Direct" [level=5]
+        - text: Video Distribution Made Easy
+    - listitem:
+      - link "Shopbop Designer Fashion Brands":
+        - /url: https://www.shopbop.com
+        - heading "Shopbop" [level=5]
+        - text: Designer Fashion Brands
+    - listitem:
+      - link "Woot! Deals and Shenanigans":
+        - /url: https://www.woot.com/
+        - heading "Woot!" [level=5]
+        - text: Deals and Shenanigans
+    - listitem:
+      - link "Zappos Shoes & Clothing":
+        - /url: https://www.zappos.com
+        - heading "Zappos" [level=5]
+        - text: Shoes & Clothing
+    - listitem:
+      - link "Ring Smart Home Security Systems":
+        - /url: https://ring.com
+        - heading "Ring" [level=5]
+        - text: Smart Home Security Systems
+  - list:
+    - listitem:
+      - link "eero WiFi Stream 4K Video in Every Room":
+        - /url: https://eero.com/
+        - heading "eero WiFi" [level=5]
+        - text: Stream 4K Video in Every Room
+    - listitem:
+      - link "Blink Smart Security for Every Home":
+        - /url: https://blinkforhome.com/?ref=nav_footer
+        - heading "Blink" [level=5]
+        - text: Smart Security for Every Home
+    - listitem:
+      - link "Neighbors App Real-Time Crime & Safety Alerts":
+        - /url: https://shop.ring.com/pages/neighbors-app
+        - heading "Neighbors App" [level=5]
+        - text: Real-Time Crime & Safety Alerts
+    - listitem:
+      - link "Amazon Subscription Boxes Top subscription boxes – right to your door":
+        - /url: /gp/browse.html?node=14498690011&ref_=amzn_nav_ftr_swa
+        - heading "Amazon Subscription Boxes" [level=5]
+        - text: Top subscription boxes – right to your door
+    - listitem:
+      - link "PillPack Pharmacy Simplified":
+        - /url: https://www.pillpack.com
+        - heading "PillPack" [level=5]
+        - text: Pharmacy Simplified
+- list:
+  - listitem:
+    - link "Conditions of Use":
+      - /url: /gp/help/customer/display.html?nodeId=508088&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=468496&ref_=footer_privacy
+  - listitem:
+    - link "Consumer Health Data Privacy Disclosure":
+      - /url: /gp/help/customer/display.html?ie=UTF8&nodeId=TnACMrGVghHocjL8KB&ref_=footer_consumer_health_data_privacy
+  - listitem:
+    - link "Your Ads Privacy Choices":
+      - /url: /privacyprefs?ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | import { Locator } from '@playwright/test';
+   2 |
+   3 | export class AmazonNavElement {
+   4 |     private get allTabs(): Locator {
+   5 |         return this.baseLocator.locator('ul.nav-ul li.nav-li a.nav-a');
+   6 |     }
+   7 |
+   8 |     public constructor(private baseLocator: Locator) {}
+   9 |
+  10 |     public async getLinkNames(): Promise<string[]> {
+  11 |         const tabNames: string[] = [];
+  12 |
+  13 |         const tabs = await this.allTabs.all();
+  14 |         for (const tab of tabs) {
+  15 |             const text = await tab.textContent();
+  16 |             tabNames.push(text?.trim() ?? '');
+  17 |         }
+  18 |
+  19 |         return tabNames;
+  20 |     }
+  21 |
+  22 |     public async selectLink(tabName: string): Promise<void> {
+  23 |         const tabNames = await this.getLinkNames();
+  24 |         if (!tabNames.includes(tabName)) {
+  25 |             throw new Error(`Tab "${tabName}" not found`);
+  26 |         }
+  27 |
+  28 |         const tabs = await this.allTabs.all();
+> 29 |         await tabs[tabNames.indexOf(tabName)].click();
+     |                                               ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  30 |     }
+  31 |
+  32 |     public async selectRandomLink(): Promise<string> {
+  33 |         const tabs = await this.allTabs.all();
+  34 |         if (tabs.length === 0) {
+  35 |             throw new Error('No tabs found');
+  36 |         }
+  37 |
+  38 |         const randomIndex = Math.floor(Math.random() * tabs.length);
+  39 |         const randomTab = tabs[randomIndex];
+  40 |         const tabText = (await randomTab.textContent())?.trim() ?? 'Unknown';
+  41 |
+  42 |         await randomTab.click();
+  43 |         return tabText;
+  44 |     }
+  45 |
+  46 | }
+  47 |
+```
