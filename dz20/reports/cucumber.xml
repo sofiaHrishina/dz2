@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="10.588" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-04-23T08:59:02.193Z">
+  <testcase classname="Amazon Cucumber.js Autotests" name="User is able to open Amazon web-site" time="4.26">
+    <system-out><![CDATA[Given the user is authenticated on Amazon...................................passed
+When the user navigates to the Amazon homepage..............................passed
+Then the user is able to see the Amazon logo................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Amazon Cucumber.js Autotests" name="Search for a product" time="5.851">
+    <system-out><![CDATA[Given the user is authenticated on Amazon...................................passed
+Given I am on the Amazon website............................................passed
+When I search for "chair"...................................................passed
+Then I should see results containing "chair"................................passed]]></system-out>
+  </testcase>
+</testsuite>

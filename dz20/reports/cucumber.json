@@ -1,0 +1,190 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "amazon-cucumber.js-autotests;user-is-able-to-open-amazon-web-site",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "User is able to open Amazon web-site",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 491971700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 67389900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is authenticated on Amazon",
+            "match": {
+              "location": "file:\\C:\\Users\\sofka\\alldz\\dz20\\src\\steps\\amazon-login.step.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2242843600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user navigates to the Amazon homepage",
+            "match": {
+              "location": "file:\\C:\\Users\\sofka\\alldz\\dz20\\src\\steps\\amazon.step.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 871549600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user is able to see the Amazon logo",
+            "match": {
+              "location": "file:\\C:\\Users\\sofka\\alldz\\dz20\\src\\steps\\amazon.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15033700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 48357899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 503986699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "amazon-cucumber.js-autotests;search-for-a-product",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Search for a product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 359647399
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 62693800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is authenticated on Amazon",
+            "match": {
+              "location": "file:\\C:\\Users\\sofka\\alldz\\dz20\\src\\steps\\amazon-login.step.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2095042699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I am on the Amazon website",
+            "match": {
+              "location": "file:\\C:\\Users\\sofka\\alldz\\dz20\\src\\steps\\amazon-search.step.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1428748400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I search for \"chair\"",
+            "match": {
+              "location": "file:\\C:\\Users\\sofka\\alldz\\dz20\\src\\steps\\amazon-search.step.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1009199199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see results containing \"chair\"",
+            "match": {
+              "location": "file:\\C:\\Users\\sofka\\alldz\\dz20\\src\\steps\\amazon-search.step.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 194150999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18651299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 674211400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "amazon-cucumber.js-autotests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Amazon Cucumber.js Autotests",
+    "tags": [],
+    "uri": "features\\amazon.feature"
+  }
+]

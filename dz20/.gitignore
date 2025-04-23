@@ -1,0 +1,14 @@
+node_modules/
+.env
+browser-context.json
+videos/
+*.webm
+screenshots/
+*.png
+node_modules/
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+.cache/
+dist/
