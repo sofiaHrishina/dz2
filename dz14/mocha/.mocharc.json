@@ -1,5 +1,11 @@
 {
-    "extension": "ts",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportFilename": "customReportFilename",
+      "quiet": true
+    },
+    "extension": ["ts"],
     "spec": "test/**/*.spec.ts",
     "require": ["tsx"]
-}
+  }
+  
