@@ -1,0 +1,1555 @@
+# Test info
+
+- Name: Amazon tests >> should click random valid card section and verify text
+- Location: C:\Users\sofka\alldz\dz18-19\tests\amazon.spec.ts:55:9
+
+# Error details
+
+```
+Error: expect(received).toBeTruthy()
+
+Received: false
+    at AmazonCardSection.verifyTextOnPage (C:\Users\sofka\alldz\dz18-19\src\elements\amazon-4-cards-section.ts:62:23)
+    at C:\Users\sofka\alldz\dz18-19\tests\amazon.spec.ts:60:9
+```
+
+# Page snapshot
+
+```yaml
+- navigation "Shortcuts menu":
+  - heading "Skip to" [level=2]
+  - list "Skip to":
+    - listitem:
+      - link "main content":
+        - /url: "#skippedLink"
+        - text: Main content
+    - listitem:
+      - link "Results":
+        - /url: .s-asin a:has(h2)
+    - listitem:
+      - link "Filters":
+        - /url: "#s-skipLinkTargetForFilterOptions"
+  - heading "Keyboard shortcuts" [level=2]
+  - list "Keyboard shortcuts":
+    - listitem:
+      - link "Search, alt, forward slash"
+    - listitem:
+      - link "Cart, shift, alt, c"
+    - listitem:
+      - link "Home, shift, alt, h"
+    - listitem:
+      - link "Your orders, shift, alt, o"
+    - listitem:
+      - button "Show/hide shortcuts, shift, alt, z"
+  - text: To move between items, use your keyboard's up or down arrows.
+- banner:
+  - navigation "Primary":
+    - link "Amazon":
+      - /url: /ref=nav_logo
+    - button "Deliver to Ukraine"
+    - search:
+      - text: All
+      - combobox "Select the department you want to search in":
+        - option "All Departments" [selected]
+        - option "Arts & Crafts"
+        - option "Automotive"
+        - option "Baby"
+        - option "Beauty & Personal Care"
+        - option "Books"
+        - option "Boys' Fashion"
+        - option "Computers"
+        - option "Deals"
+        - option "Digital Music"
+        - option "Electronics"
+        - option "Girls' Fashion"
+        - option "Health & Household"
+        - option "Home & Kitchen"
+        - option "Industrial & Scientific"
+        - option "Kindle Store"
+        - option "Luggage"
+        - option "Men's Fashion"
+        - option "Movies & TV"
+        - option "Music, CDs & Vinyl"
+        - option "Pet Supplies"
+        - option "Prime Video"
+        - option "Software"
+        - option "Sports & Outdoors"
+        - option "Tools & Home Improvement"
+        - option "Toys & Games"
+        - option "Video Games"
+        - option "Women's Fashion"
+      - searchbox "Search Amazon": kitchen
+      - button "Go"
+    - link "Choose a language for shopping in Amazon United States. The current selection is English (EN).":
+      - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang_ais
+      - img "United States"
+      - text: EN
+    - button "Expand to Change Language or Country"
+    - link "Hello, Sofiia Account & Lists":
+      - /url: https://www.amazon.com/gp/css/homepage.html?ref_=nav_youraccount_btn
+    - button "Expand Account and Lists"
+    - link "Returns & Orders":
+      - /url: /gp/css/order-history?ref_=nav_orders_first
+    - link "0 items in cart":
+      - /url: /gp/cart/view.html?ref_=nav_cart
+    - alertdialog "International Shopping Transition Alert":
+      - text: We're showing you items that ship to
+      - strong: Ukraine
+      - text: . To see items that ship to a different country, change your delivery address.
+      - button "Submit"
+      - button "Submit"
+    - button "Open All Categories Menu": All
+    - button "Open Rufus panel": Rufus
+    - list:
+      - listitem:
+        - link "Today's Deals":
+          - /url: /gp/goldbox?ref_=nav_cs_gb
+      - listitem:
+        - link "Prime Video":
+          - /url: /Amazon-Video/b/?ie=UTF8&node=2858778011&ref_=nav_cs_prime_video
+      - listitem:
+        - link "Buy Again":
+          - /url: /gp/buyagain?ie=UTF8&ref_=nav_cs_buy_again
+      - listitem:
+        - link "Customer Service":
+          - /url: /gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_help
+      - listitem:
+        - link "Registry":
+          - /url: /gp/browse.html?node=16115931011&ref_=nav_cs_registry
+      - listitem:
+        - link "Gift Cards":
+          - /url: /gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc
+      - listitem:
+        - link "Sell":
+          - /url: /b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell
+      - link "Click to call our Disability Customer Support line, or reach us directly at 1-888-283-1678":
+        - /url: /gp/help/customer/accessibility
+        - text: Disability Customer Support
+    - dialog
+- 'heading "1-48 of over 100,000 results for \"kitchen\" Sort by: Featured" [level=1]':
+  - heading "1-48 of over 100,000 results for \"kitchen\"" [level=2]
+  - text: "Sort by:"
+  - combobox "Sort by:":
+    - option "Featured" [selected]
+    - 'option "Price: Low to High"'
+    - 'option "Price: High to Low"'
+    - option "Avg. Customer Review"
+    - option "Newest Arrivals"
+    - option "Best Sellers"
+- heading "Results" [level=2]
+- text: Check each product page for other buying options. Price and other details may vary based on product size and color.
+- list:
+  - listitem:
+    - text: Overall Pick
+    - link:
+      - /url: /Airtight-Stainless-Attachments-Non-Slip-Bottoms/dp/B0BWHJ1FNK/ref=sr_1_1?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-1
+    - button "Khaki"
+    - button "Black"
+    - button "Colorful"
+    - link "Mixing Bowls with Airtight Lids Set, 26PCS Stainless Steel Khaki Bowls with Grater Attachments, Non-Slip Bottoms & Kitchen Gadgets Set, Size 7, 4, 2.5, 2.0,1.5, 1QT, Great for Mixing & Serving":
+      - /url: /Airtight-Stainless-Attachments-Non-Slip-Bottoms/dp/B0BWHJ1FNK/ref=sr_1_1?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-1
+      - heading "Mixing Bowls with Airtight Lids Set, 26PCS Stainless Steel Khaki Bowls with Grater Attachments, Non-Slip Bottoms & Kitchen Gadgets Set, Size 7, 4, 2.5, 2.0,1.5, 1QT, Great for Mixing & Serving" [level=2]
+    - button "4.7 out of 5 stars, rating details"
+    - link "2,470 ratings":
+      - /url: /Airtight-Stainless-Attachments-Non-Slip-Bottoms/dp/B0BWHJ1FNK/ref=sr_1_1?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-1#customerReviews
+    - text: 3K+ bought in past month
+    - link "See options":
+      - /url: /Airtight-Stainless-Attachments-Non-Slip-Bottoms/dp/B0BWHJ1FNK/ref=sr_1_1_so_DISHWARE_BOWL?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-1
+    - text: No featured offers available $32.31
+    - link "(3 used & new offers)":
+      - /url: /gp/offer-listing/B0BWHJ1FNK/ref=sr_1_1_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-1
+  - listitem:
+    - group "Best Seller in Steak Knife Sets"
+    - link:
+      - /url: /Silverware-Food-Grade-Stainless-Tableware-Restaurant/dp/B0BYX1XT81/ref=sr_1_2?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-2
+    - link "24-Piece Black Silverware Set with Steak Knives, Black Flatware Set for 4, Food-Grade Stainless Steel Tableware Cutlery Set, Mirror Finished Utensil Sets for Home Restaurant":
+      - /url: /Silverware-Food-Grade-Stainless-Tableware-Restaurant/dp/B0BYX1XT81/ref=sr_1_2?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-2
+      - heading "24-Piece Black Silverware Set with Steak Knives, Black Flatware Set for 4, Food-Grade Stainless Steel Tableware Cutlery Set, Mirror Finished Utensil Sets for Home Restaurant" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "6,987 ratings":
+      - /url: /Silverware-Food-Grade-Stainless-Tableware-Restaurant/dp/B0BYX1XT81/ref=sr_1_2?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-2#customerReviews
+    - text: 10K+ bought in past month
+    - link "See options":
+      - /url: /Silverware-Food-Grade-Stainless-Tableware-Restaurant/dp/B0BYX1XT81/ref=sr_1_2_so_FLATWARE?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-2
+    - text: No featured offers available $19.99
+    - link "(1 new offer)":
+      - /url: /gp/offer-listing/B0BYX1XT81/ref=sr_1_2_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-2
+  - listitem:
+    - link:
+      - /url: /Dishwasher-Kitchen-kitchen-Sharpening-Anti-slip/dp/B0BKRVT66L/ref=sr_1_3?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-3
+    - link "Knife Set, 15 Pcs Kitchen Knife Set with Block Self Sharpening, Dishwasher Safe, 6 Steak Knives, Anti-slip handle, Black":
+      - /url: /Dishwasher-Kitchen-kitchen-Sharpening-Anti-slip/dp/B0BKRVT66L/ref=sr_1_3?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-3
+      - heading "Knife Set, 15 Pcs Kitchen Knife Set with Block Self Sharpening, Dishwasher Safe, 6 Steak Knives, Anti-slip handle, Black" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "2,094 ratings":
+      - /url: /Dishwasher-Kitchen-kitchen-Sharpening-Anti-slip/dp/B0BKRVT66L/ref=sr_1_3?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-3#customerReviews
+    - text: 9K+ bought in past month
+    - button "1 sustainability feature"
+    - link "See options":
+      - /url: /Dishwasher-Kitchen-kitchen-Sharpening-Anti-slip/dp/B0BKRVT66L/ref=sr_1_3_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-3
+    - text: No featured offers available $69.99
+    - link "(3 new offers)":
+      - /url: /gp/offer-listing/B0BKRVT66L/ref=sr_1_3_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-3
+  - listitem:
+    - group "Best Seller in Digital Kitchen Scales"
+    - link:
+      - /url: /Etekcity-Multifunction-Stainless-Batteries-Included/dp/B0113UZJE2/ref=sr_1_4?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-4
+    - link "Etekcity Food Kitchen Scale, Digital Grams and Ounces for Weight Loss, Baking, Cooking, Keto and Meal Prep, LCD Display, Medium, 304 Stainless Steel":
+      - /url: /Etekcity-Multifunction-Stainless-Batteries-Included/dp/B0113UZJE2/ref=sr_1_4?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-4
+      - heading "Etekcity Food Kitchen Scale, Digital Grams and Ounces for Weight Loss, Baking, Cooking, Keto and Meal Prep, LCD Display, Medium, 304 Stainless Steel" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "158,875 ratings":
+      - /url: /Etekcity-Multifunction-Stainless-Batteries-Included/dp/B0113UZJE2/ref=sr_1_4?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-4#customerReviews
+    - text: 50K+ bought in past month
+    - link "See options":
+      - /url: /Etekcity-Multifunction-Stainless-Batteries-Included/dp/B0113UZJE2/ref=sr_1_4_so_WEIGH_SCALE?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-4
+    - text: No featured offers available $10.39
+    - link "(3 used & new offers)":
+      - /url: /gp/offer-listing/B0113UZJE2/ref=sr_1_4_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-4
+  - listitem:
+    - group "Best Seller in Kitchen Utility Knives"
+    - link:
+      - /url: /Brewin-Kitchen-Universal-Dishwasher-Stainless/dp/B0CWRCCFTM/ref=sr_1_5?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-5
+    - button "Charcoal"
+    - button "Dune"
+    - link "Knife Set, Brewin Kitchen Knife Set, Knives Set for Kitchen, Universal Knife Block, Utility Knife Block Set, Kitchen Essentials, New Home Essentials, Apartment Essentials, Dishwasher Safe":
+      - /url: /Brewin-Kitchen-Universal-Dishwasher-Stainless/dp/B0CWRCCFTM/ref=sr_1_5?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-5
+      - heading "Knife Set, Brewin Kitchen Knife Set, Knives Set for Kitchen, Universal Knife Block, Utility Knife Block Set, Kitchen Essentials, New Home Essentials, Apartment Essentials, Dishwasher Safe" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "588 ratings":
+      - /url: /Brewin-Kitchen-Universal-Dishwasher-Stainless/dp/B0CWRCCFTM/ref=sr_1_5?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-5#customerReviews
+    - text: 3K+ bought in past month
+    - link "See options":
+      - /url: /Brewin-Kitchen-Universal-Dishwasher-Stainless/dp/B0CWRCCFTM/ref=sr_1_5_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-5
+    - text: No featured offers available $46.40
+    - link "(5 used & new offers)":
+      - /url: /gp/offer-listing/B0CWRCCFTM/ref=sr_1_5_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-5
+  - listitem:
+    - link:
+      - /url: /Organizer-Storage-Cabinet-Shelves-Bathroom/dp/B0C5DBMYZF/ref=sr_1_6?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-6
+    - button "Black"
+    - button "Grey"
+    - button "White"
+    - link "REALINN Under Sink Organizer, Pull Out Cabinet Organizer Slide Out Sink Shelf Cabinet Storage Shelves, Storages for Kitchen Bathroom, Black, 2 Pack":
+      - /url: /Organizer-Storage-Cabinet-Shelves-Bathroom/dp/B0C5DBMYZF/ref=sr_1_6?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-6
+      - heading "REALINN Under Sink Organizer, Pull Out Cabinet Organizer Slide Out Sink Shelf Cabinet Storage Shelves, Storages for Kitchen Bathroom, Black, 2 Pack" [level=2]
+    - button "4.4 out of 5 stars, rating details"
+    - link "11,281 ratings":
+      - /url: /Organizer-Storage-Cabinet-Shelves-Bathroom/dp/B0C5DBMYZF/ref=sr_1_6?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-6#customerReviews
+    - text: 6K+ bought in past month
+    - link "See options":
+      - /url: /Organizer-Storage-Cabinet-Shelves-Bathroom/dp/B0C5DBMYZF/ref=sr_1_6_so_CADDY?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-6
+    - text: No featured offers available $41.15
+    - link "(3 used & new offers)":
+      - /url: /gp/offer-listing/B0C5DBMYZF/ref=sr_1_6_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-6
+  - listitem:
+    - link:
+      - /url: /Kitchen-Black-book-Banana-Yoshimoto/dp/0802142443/ref=sr_1_7?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-7
+    - link "Kitchen":
+      - /url: /Kitchen-Black-book-Banana-Yoshimoto/dp/0802142443/ref=sr_1_7?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-7
+      - heading "Kitchen" [level=2]
+    - text: by
+    - link "Banana Yoshimoto":
+      - /url: /Banana-Yoshimoto/e/B000APBC7K?ref=sr_ntt_srch_lnk_7&qid=1745415431&sr=8-7
+    - text: and Megan Backus
+    - button "4.3 out of 5 stars, rating details"
+    - link "2,695 ratings":
+      - /url: /Kitchen-Black-book-Banana-Yoshimoto/dp/0802142443/ref=sr_1_7?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-7#customerReviews
+    - link "Paperback":
+      - /url: /Kitchen-Black-book-Banana-Yoshimoto/dp/0802142443/ref=sr_1_7?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-7
+    - text: "You Earn: 12 pts No featured offers available $3.50"
+    - link "(35 used & new offers)":
+      - /url: /gp/offer-listing/0802142443/ref=sr_1_7_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-7
+    - text: "Other formats:"
+    - link "Audible Audiobook,":
+      - /url: /Kitchen-Banana-Yoshimoto-audiobook/dp/B011463SRA/ref=sr_1_7?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-7
+    - link "Kindle,":
+      - /url: /Kitchen-Banana-Yoshimoto-ebook/dp/B07KPWGBKV/ref=sr_1_7?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-7
+    - link "Hardcover,":
+      - /url: /Kitchen-Banana-Yoshimoto/dp/0802115160/ref=sr_1_7?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-7
+    - link "MP3 CD":
+      - /url: /Kitchen-Banana-Yoshimoto/dp/150127760X/ref=sr_1_7?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-7
+  - listitem:
+    - group "Best Seller in Countertop Blenders"
+    - link:
+      - /url: /Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506/ref=sr_1_8?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-8
+    - link "Ninja BL610 Professional 72 Oz Countertop Blender with 1000-Watt Base and Total Crushing Technology for-Smoothies, Ice and Frozen Fruit, Black":
+      - /url: /Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506/ref=sr_1_8?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-8
+      - heading "Ninja BL610 Professional 72 Oz Countertop Blender with 1000-Watt Base and Total Crushing Technology for-Smoothies, Ice and Frozen Fruit, Black" [level=2]
+    - button "4.7 out of 5 stars, rating details"
+    - link "105,526 ratings":
+      - /url: /Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506/ref=sr_1_8?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-8#customerReviews
+    - text: 10K+ bought in past month
+    - link "See options":
+      - /url: /Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506/ref=sr_1_8_so_FOOD_BLENDER?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-8
+    - text: No featured offers available $62.98
+    - link "(11 used & new offers)":
+      - /url: /gp/offer-listing/B00NGV4506/ref=sr_1_8_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-8
+  - listitem:
+    - link:
+      - /url: /Kitchen-HUNTER-DUAL-Sharpener-Dishwasher-Stainless/dp/B0C8159M6Y/ref=sr_1_9?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-9
+    - link "Knife Sets for Kitchen with Block, 15 Piece Knife Set with Built-in Sharpener, Dishwasher Safe, German Stainless Steel, Black":
+      - /url: /Kitchen-HUNTER-DUAL-Sharpener-Dishwasher-Stainless/dp/B0C8159M6Y/ref=sr_1_9?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-9
+      - heading "Knife Sets for Kitchen with Block, 15 Piece Knife Set with Built-in Sharpener, Dishwasher Safe, German Stainless Steel, Black" [level=2]
+    - button "4.4 out of 5 stars, rating details"
+    - link "585 ratings":
+      - /url: /Kitchen-HUNTER-DUAL-Sharpener-Dishwasher-Stainless/dp/B0C8159M6Y/ref=sr_1_9?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-9#customerReviews
+    - text: 1K+ bought in past month
+    - button "1 sustainability feature"
+    - link "See options":
+      - /url: /Kitchen-HUNTER-DUAL-Sharpener-Dishwasher-Stainless/dp/B0C8159M6Y/ref=sr_1_9_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-9
+    - text: No featured offers available $129.99
+    - link "(3 new offers)":
+      - /url: /gp/offer-listing/B0C8159M6Y/ref=sr_1_9_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-9
+  - listitem:
+    - group "Best Seller in Ice Cream Machines"
+    - link:
+      - /url: /Ninja-NC301-placeholder-Cream-Maker/dp/B08QXB9BH5/ref=sr_1_10?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-10
+    - link "Ninja NC301 CREAMi Ice Cream Maker, for Gelato, Mix-ins, Milkshakes, Sorbet, Smoothie Bowls & More, 7 One-Touch Programs, with (2) Pint Containers & Lids, Compact Size, Perfect for Kids, Silver":
+      - /url: /Ninja-NC301-placeholder-Cream-Maker/dp/B08QXB9BH5/ref=sr_1_10?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-10
+      - heading "Ninja NC301 CREAMi Ice Cream Maker, for Gelato, Mix-ins, Milkshakes, Sorbet, Smoothie Bowls & More, 7 One-Touch Programs, with (2) Pint Containers & Lids, Compact Size, Perfect for Kids, Silver" [level=2]
+    - button "4.4 out of 5 stars, rating details"
+    - link "9,150 ratings":
+      - /url: /Ninja-NC301-placeholder-Cream-Maker/dp/B08QXB9BH5/ref=sr_1_10?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-10#customerReviews
+    - text: 9K+ bought in past month
+    - link "See options":
+      - /url: /Ninja-NC301-placeholder-Cream-Maker/dp/B08QXB9BH5/ref=sr_1_10_so_ICE_CREAM_MAKER?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-10
+    - text: No featured offers available $149.18
+    - link "(17 used & new offers)":
+      - /url: /gp/offer-listing/B08QXB9BH5/ref=sr_1_10_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-10
+  - listitem:
+    - link:
+      - /url: /Amorston-Kitchen-Dishwasher-Sharpener-Stainless/dp/B0CFXNZ26Z/ref=sr_1_11?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-11
+    - link "Knife Set, Amorston 15 Pieces Knife Sets for Kitchen with Block, Dishwasher Safe Kitchen Knife Set with Built in Sharpener Block, German Stainless Steel Knife Block Set, Black":
+      - /url: /Amorston-Kitchen-Dishwasher-Sharpener-Stainless/dp/B0CFXNZ26Z/ref=sr_1_11?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-11
+      - heading "Knife Set, Amorston 15 Pieces Knife Sets for Kitchen with Block, Dishwasher Safe Kitchen Knife Set with Built in Sharpener Block, German Stainless Steel Knife Block Set, Black" [level=2]
+    - button "4.7 out of 5 stars, rating details"
+    - link "1,065 ratings":
+      - /url: /Amorston-Kitchen-Dishwasher-Sharpener-Stainless/dp/B0CFXNZ26Z/ref=sr_1_11?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-11#customerReviews
+    - text: 2K+ bought in past month
+    - link "See options":
+      - /url: /Amorston-Kitchen-Dishwasher-Sharpener-Stainless/dp/B0CFXNZ26Z/ref=sr_1_11_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-11
+    - text: No featured offers available $39.16
+    - link "(3 used & new offers)":
+      - /url: /gp/offer-listing/B0CFXNZ26Z/ref=sr_1_11_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-11
+  - listitem:
+    - group "Best Seller in Hand Mixers"
+    - link:
+      - /url: /Hamilton-Beach-62682RZ-Mixer-Snap/dp/B001CH0ZLE/ref=sr_1_12?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-12
+    - link "Hamilton Beach 6-Speed Electric Hand Mixer with Whisk, Traditional Beaters, Snap-On Storage Case, 250 Watts, White":
+      - /url: /Hamilton-Beach-62682RZ-Mixer-Snap/dp/B001CH0ZLE/ref=sr_1_12?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-12
+      - heading "Hamilton Beach 6-Speed Electric Hand Mixer with Whisk, Traditional Beaters, Snap-On Storage Case, 250 Watts, White" [level=2]
+    - button "4.5 out of 5 stars, rating details"
+    - link "62,322 ratings":
+      - /url: /Hamilton-Beach-62682RZ-Mixer-Snap/dp/B001CH0ZLE/ref=sr_1_12?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-12#customerReviews
+    - text: 10K+ bought in past month
+    - link "See options":
+      - /url: /Hamilton-Beach-62682RZ-Mixer-Snap/dp/B001CH0ZLE/ref=sr_1_12_so_FOOD_MIXER?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-12
+    - text: No featured offers available $16.77
+    - link "(2 used & new offers)":
+      - /url: /gp/offer-listing/B001CH0ZLE/ref=sr_1_12_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-12
+  - listitem:
+    - link:
+      - /url: /Utensils-Umite-Chef-Silicone-Resistant/dp/B0C991SKFS/ref=sr_1_13?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-13
+    - link "Umite Chef Silicone Kitchen Utensil Set, 34PCS Heat Resistant Kitchen Gadgets and Tools With Grater, Wood Handles for Nonstick Cookware":
+      - /url: /Utensils-Umite-Chef-Silicone-Resistant/dp/B0C991SKFS/ref=sr_1_13?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-13
+      - heading "Umite Chef Silicone Kitchen Utensil Set, 34PCS Heat Resistant Kitchen Gadgets and Tools With Grater, Wood Handles for Nonstick Cookware" [level=2]
+    - button "4.5 out of 5 stars, rating details"
+    - link "1,589 ratings":
+      - /url: /Utensils-Umite-Chef-Silicone-Resistant/dp/B0C991SKFS/ref=sr_1_13?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-13#customerReviews
+    - text: 2K+ bought in past month
+    - link "See options":
+      - /url: /Utensils-Umite-Chef-Silicone-Resistant/dp/B0C991SKFS/ref=sr_1_13_so_FOOD_SPATULA?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-13
+    - text: No featured offers available $35.99
+    - link "(1 new offer)":
+      - /url: /gp/offer-listing/B0C991SKFS/ref=sr_1_13_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-13
+  - listitem:
+    - group "Best Seller in Under-Counter Light Fixtures"
+    - link:
+      - /url: /Rechargeable-Operated-Magnetic-Dimmable-Wireless/dp/B0BDF8CVBN/ref=sr_1_14?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-14
+    - button "White Light"
+    - button "Warm White Light"
+    - link "Under Cabinet Lighting,40 LED Rechargeable Battery Operated Motion Sensor Light Indoor, 2 Pack Magnetic Dimmable Closet Lights, Wireless Under Counter Lights for Kitchen, Stairs":
+      - /url: /Rechargeable-Operated-Magnetic-Dimmable-Wireless/dp/B0BDF8CVBN/ref=sr_1_14?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-14
+      - heading "Under Cabinet Lighting,40 LED Rechargeable Battery Operated Motion Sensor Light Indoor, 2 Pack Magnetic Dimmable Closet Lights, Wireless Under Counter Lights for Kitchen, Stairs" [level=2]
+    - text: "Options:"
+    - link "2 sizes":
+      - /url: /Rechargeable-Operated-Magnetic-Dimmable-Wireless/dp/B0BDF8CVBN/ref=vo_sr_l_dp?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-14
+    - button "4.5 out of 5 stars, rating details"
+    - link "31,597 ratings":
+      - /url: /Rechargeable-Operated-Magnetic-Dimmable-Wireless/dp/B0BDF8CVBN/ref=sr_1_14?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-14#customerReviews
+    - text: 10K+ bought in past month
+    - link "See options":
+      - /url: /Rechargeable-Operated-Magnetic-Dimmable-Wireless/dp/B0BDF8CVBN/ref=sr_1_14_so_LIGHT_FIXTURE?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-14
+    - text: No featured offers available $19.58
+    - link "(7 used & new offers)":
+      - /url: /gp/offer-listing/B0BDF8CVBN/ref=sr_1_14_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-14
+  - listitem:
+    - link:
+      - /url: /Astercook-Sharpener-Stainless-Dishwasher-Ergonomic/dp/B0DBVG4ZPZ/ref=sr_1_15?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-15
+    - button "Crystal Pink"
+    - button "A Elegant Black"
+    - button "Bright White"
+    - button "Delicate Blue"
+    - button "Morandi Yellow"
+    - link "Astercook Knife Set, Kitchen Knives Set with Block and Sharpener Ceramic Coating 15 Pcs German Stainless Steel Knives Sharp Blade Dishwasher Safe Knife Block Set with Ergonomic Handle, Crystal Pink":
+      - /url: /Astercook-Sharpener-Stainless-Dishwasher-Ergonomic/dp/B0DBVG4ZPZ/ref=sr_1_15?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-15
+      - heading "Astercook Knife Set, Kitchen Knives Set with Block and Sharpener Ceramic Coating 15 Pcs German Stainless Steel Knives Sharp Blade Dishwasher Safe Knife Block Set with Ergonomic Handle, Crystal Pink" [level=2]
+    - button "4.5 out of 5 stars, rating details"
+    - link "300 ratings":
+      - /url: /Astercook-Sharpener-Stainless-Dishwasher-Ergonomic/dp/B0DBVG4ZPZ/ref=sr_1_15?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-15#customerReviews
+    - text: 900+ bought in past month
+    - link "See options":
+      - /url: /Astercook-Sharpener-Stainless-Dishwasher-Ergonomic/dp/B0DBVG4ZPZ/ref=sr_1_15_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-15
+    - text: No featured offers available $39.99
+    - link "(1 new offer)":
+      - /url: /gp/offer-listing/B0DBVG4ZPZ/ref=sr_1_15_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-15
+  - listitem:
+    - link:
+      - /url: /Magic-Bullet-Blender-Small-Silver/dp/B012T634SM/ref=sr_1_16?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-16
+    - button "Silver/Black"
+    - button "black"
+    - link "Magic Bullet Blender, Small, Silver, 11 Piece Set":
+      - /url: /Magic-Bullet-Blender-Small-Silver/dp/B012T634SM/ref=sr_1_16?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-16
+      - heading "Magic Bullet Blender, Small, Silver, 11 Piece Set" [level=2]
+    - button "4.4 out of 5 stars, rating details"
+    - link "113,549 ratings":
+      - /url: /Magic-Bullet-Blender-Small-Silver/dp/B012T634SM/ref=sr_1_16?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-16#customerReviews
+    - text: 10K+ bought in past month
+    - link "See options":
+      - /url: /Magic-Bullet-Blender-Small-Silver/dp/B012T634SM/ref=sr_1_16_so_FOOD_BLENDER?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-16
+    - text: No featured offers available $29.18
+    - link "(7 used & new offers)":
+      - /url: /gp/offer-listing/B012T634SM/ref=sr_1_16_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-16
+  - listitem:
+    - link:
+      - /url: /HUNTER-Dishwasher-Kitchen-Sharpening-Knives/dp/B09Z65MVY5/ref=sr_1_17?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-17
+    - link "Knife Set, HUNTER.DUAL 15 Pcs Kitchen Knife Set with Block Self Sharpening, Dishwasher Safe, Anti-slip Handle, Black":
+      - /url: /HUNTER-Dishwasher-Kitchen-Sharpening-Knives/dp/B09Z65MVY5/ref=sr_1_17?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-17
+      - heading "Knife Set, HUNTER.DUAL 15 Pcs Kitchen Knife Set with Block Self Sharpening, Dishwasher Safe, Anti-slip Handle, Black" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "4,871 ratings":
+      - /url: /HUNTER-Dishwasher-Kitchen-Sharpening-Knives/dp/B09Z65MVY5/ref=sr_1_17?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-17#customerReviews
+    - text: 5K+ bought in past month
+    - link "See options":
+      - /url: /HUNTER-Dishwasher-Kitchen-Sharpening-Knives/dp/B09Z65MVY5/ref=sr_1_17_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-17
+    - text: No featured offers available $39.98
+    - link "(3 new offers)":
+      - /url: /gp/offer-listing/B09Z65MVY5/ref=sr_1_17_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-17
+  - listitem:
+    - link:
+      - /url: /Joseph-Stainless-Steel-Extendable-Non-Scratch-Drainage/dp/B07YLGKFR9/ref=sr_1_18?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-18
+    - link "Joseph Joseph Extendable Dish Drying Rack with Dual Parts - Stainless Steel, Non-Scratch, Movable Utensil Drainer & Drainage Spout, Gray":
+      - /url: /Joseph-Stainless-Steel-Extendable-Non-Scratch-Drainage/dp/B07YLGKFR9/ref=sr_1_18?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-18
+      - heading "Joseph Joseph Extendable Dish Drying Rack with Dual Parts - Stainless Steel, Non-Scratch, Movable Utensil Drainer & Drainage Spout, Gray" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "9,035 ratings":
+      - /url: /Joseph-Stainless-Steel-Extendable-Non-Scratch-Drainage/dp/B07YLGKFR9/ref=sr_1_18?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-18#customerReviews
+    - text: 2K+ bought in past month
+    - link "See options":
+      - /url: /Joseph-Stainless-Steel-Extendable-Non-Scratch-Drainage/dp/B07YLGKFR9/ref=sr_1_18_so_DRYING_RACK?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-18
+    - text: No featured offers available $36.61
+    - link "(6 used & new offers)":
+      - /url: /gp/offer-listing/B07YLGKFR9/ref=sr_1_18_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-18
+  - listitem:
+    - link:
+      - /url: /HENCKELS-Razor-Sharp-Engineered-Lightweight-Dishwasher/dp/B00GHX5HGG/ref=sr_1_19?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-19
+    - button "Natural"
+    - button "Brown"
+    - button "Dark Brown"
+    - button "Black"
+    - link "HENCKELS Premium Quality 15-Piece Knife Set with Block, Razor-Sharp, German Engineered Knife Informed by over 100 Years of Masterful Knife Making, Lightweight and Strong, Dishwasher Safe":
+      - /url: /HENCKELS-Razor-Sharp-Engineered-Lightweight-Dishwasher/dp/B00GHX5HGG/ref=sr_1_19?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-19
+      - heading "HENCKELS Premium Quality 15-Piece Knife Set with Block, Razor-Sharp, German Engineered Knife Informed by over 100 Years of Masterful Knife Making, Lightweight and Strong, Dishwasher Safe" [level=2]
+    - button "4.5 out of 5 stars, rating details"
+    - link "17,029 ratings":
+      - /url: /HENCKELS-Razor-Sharp-Engineered-Lightweight-Dishwasher/dp/B00GHX5HGG/ref=sr_1_19?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-19#customerReviews
+    - text: 3K+ bought in past month
+    - link "See options":
+      - /url: /HENCKELS-Razor-Sharp-Engineered-Lightweight-Dishwasher/dp/B00GHX5HGG/ref=sr_1_19_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-19
+    - text: No featured offers available $86.18
+    - link "(34 used & new offers)":
+      - /url: /gp/offer-listing/B00GHX5HGG/ref=sr_1_19_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-19
+  - listitem:
+    - link:
+      - /url: /AmazonBasics-15-Piece-Non-Stick-Kitchen-Cookware/dp/B07481LPMF/ref=sr_1_20?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-20
+    - link "Amazon Basics Non Stick Kitchen Cookware 15-Piece Set, Non-Induction, Includes Pots, Pans, and Utensils, Black":
+      - /url: /AmazonBasics-15-Piece-Non-Stick-Kitchen-Cookware/dp/B07481LPMF/ref=sr_1_20?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-20
+      - heading "Amazon Basics Non Stick Kitchen Cookware 15-Piece Set, Non-Induction, Includes Pots, Pans, and Utensils, Black" [level=2]
+    - button "4.5 out of 5 stars, rating details"
+    - link "59,362 ratings":
+      - /url: /AmazonBasics-15-Piece-Non-Stick-Kitchen-Cookware/dp/B07481LPMF/ref=sr_1_20?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-20#customerReviews
+    - text: 6K+ bought in past month
+    - link "See options":
+      - /url: /AmazonBasics-15-Piece-Non-Stick-Kitchen-Cookware/dp/B07481LPMF/ref=sr_1_20_so_COOKWARE_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-20
+    - text: No featured offers available $47.49
+    - link "(4 used & new offers)":
+      - /url: /gp/offer-listing/B07481LPMF/ref=sr_1_20_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-20
+  - listitem:
+    - group "Best Seller in Skillets"
+    - link:
+      - /url: /Lodge-Skillet-Pre-Seasoned-Ready-Stove/dp/B00006JSUA/ref=sr_1_21?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-21
+    - link "Lodge 10.25 Inch Cast Iron Pre-Seasoned Skillet – Signature Teardrop Handle - Use in the Oven, on the Stove, on the Grill, or Over a Campfire, Black":
+      - /url: /Lodge-Skillet-Pre-Seasoned-Ready-Stove/dp/B00006JSUA/ref=sr_1_21?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-21
+      - heading "Lodge 10.25 Inch Cast Iron Pre-Seasoned Skillet – Signature Teardrop Handle - Use in the Oven, on the Stove, on the Grill, or Over a Campfire, Black" [level=2]
+    - text: Cast Iron
+    - button "4.6 out of 5 stars, rating details"
+    - link "125,532 ratings":
+      - /url: /Lodge-Skillet-Pre-Seasoned-Ready-Stove/dp/B00006JSUA/ref=sr_1_21?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-21#customerReviews
+    - text: 20K+ bought in past month
+    - link "See options":
+      - /url: /Lodge-Skillet-Pre-Seasoned-Ready-Stove/dp/B00006JSUA/ref=sr_1_21_so_SAUTE_FRY_PAN?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-21
+    - text: No featured offers available $16.71
+    - link "(18 used & new offers)":
+      - /url: /gp/offer-listing/B00006JSUA/ref=sr_1_21_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-21
+  - listitem:
+    - link:
+      - /url: /Amorston-Kitchen-Stainless-Sharpening-Dishwasher/dp/B0DS247VYV/ref=sr_1_22?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-22
+    - button "Black"
+    - button "White"
+    - link "Knife Set, 14 Pcs Kitchen Knives Block Set for Mirror Blade Design, German Stainless Steel Knife Sets with Sharpening Stone, Dishwasher Safe Perfect Holiday Gifts for Kitchen, Black":
+      - /url: /Amorston-Kitchen-Stainless-Sharpening-Dishwasher/dp/B0DS247VYV/ref=sr_1_22?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-22
+      - heading "Knife Set, 14 Pcs Kitchen Knives Block Set for Mirror Blade Design, German Stainless Steel Knife Sets with Sharpening Stone, Dishwasher Safe Perfect Holiday Gifts for Kitchen, Black" [level=2]
+    - button "4.5 out of 5 stars, rating details"
+    - link "52 ratings":
+      - /url: /Amorston-Kitchen-Stainless-Sharpening-Dishwasher/dp/B0DS247VYV/ref=sr_1_22?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-22#customerReviews
+    - text: 50+ bought in past month
+    - link "See options":
+      - /url: /Amorston-Kitchen-Stainless-Sharpening-Dishwasher/dp/B0DS247VYV/ref=sr_1_22_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-22
+    - text: No featured offers available $99.99
+    - link "(1 new offer)":
+      - /url: /gp/offer-listing/B0DS247VYV/ref=sr_1_22_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-22
+  - listitem:
+    - link:
+      - /url: /49-Piece-Silverware-Organizer-Stainless-Tableware/dp/B09HKCMFCF/ref=sr_1_23?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-23
+    - link "49-Piece Stainless Steel Silverware Set with Cutlery Organizer, Service for 8 with Steak Knives and Kitchen Utensils":
+      - /url: /49-Piece-Silverware-Organizer-Stainless-Tableware/dp/B09HKCMFCF/ref=sr_1_23?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-23
+      - heading "49-Piece Stainless Steel Silverware Set with Cutlery Organizer, Service for 8 with Steak Knives and Kitchen Utensils" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "3,061 ratings":
+      - /url: /49-Piece-Silverware-Organizer-Stainless-Tableware/dp/B09HKCMFCF/ref=sr_1_23?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-23#customerReviews
+    - text: 1K+ bought in past month
+    - link "See options":
+      - /url: /49-Piece-Silverware-Organizer-Stainless-Tableware/dp/B09HKCMFCF/ref=sr_1_23_so_FLATWARE?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-23
+    - text: No featured offers available $39.99
+    - link "(1 new offer)":
+      - /url: /gp/offer-listing/B09HKCMFCF/ref=sr_1_23_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-23
+  - listitem:
+    - link:
+      - /url: /XANAPON-Kitchen-Stainless-Dishwasher-Cutlery/dp/B0DQ8WWPGP/ref=sr_1_24?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-24
+    - link "XANAPON Knife Set, 14 Pieces Kitchen Knife Set, High Carbon German Stainless Steel, Dishwasher Safe Cutlery, Black":
+      - /url: /XANAPON-Kitchen-Stainless-Dishwasher-Cutlery/dp/B0DQ8WWPGP/ref=sr_1_24?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-24
+      - heading "XANAPON Knife Set, 14 Pieces Kitchen Knife Set, High Carbon German Stainless Steel, Dishwasher Safe Cutlery, Black" [level=2]
+    - button "4.4 out of 5 stars, rating details"
+    - link "123 ratings":
+      - /url: /XANAPON-Kitchen-Stainless-Dishwasher-Cutlery/dp/B0DQ8WWPGP/ref=sr_1_24?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-24#customerReviews
+    - text: 800+ bought in past month
+    - link "See options":
+      - /url: /XANAPON-Kitchen-Stainless-Dishwasher-Cutlery/dp/B0DQ8WWPGP/ref=sr_1_24_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-24
+    - text: No featured offers available $28.68
+    - link "(4 used & new offers)":
+      - /url: /gp/offer-listing/B0DQ8WWPGP/ref=sr_1_24_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-24
+  - listitem:
+    - link:
+      - /url: /40-Piece-Silverware-Stainless-Restaurant-Dishwasher/dp/B07ZVC6DMM/ref=sr_1_25?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-25
+    - link "HIWARE 48-Piece Silverware Set with Steak Knives for 8, 18/8 Stainless Steel Flatware Cutlery Set For Home Kitchen Restaurant Hotel, Kitchen Utensils Set, Mirror Polished, Dishwasher Safe":
+      - /url: /40-Piece-Silverware-Stainless-Restaurant-Dishwasher/dp/B07ZVC6DMM/ref=sr_1_25?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-25
+      - heading "HIWARE 48-Piece Silverware Set with Steak Knives for 8, 18/8 Stainless Steel Flatware Cutlery Set For Home Kitchen Restaurant Hotel, Kitchen Utensils Set, Mirror Polished, Dishwasher Safe" [level=2]
+    - button "4.5 out of 5 stars, rating details"
+    - link "32,817 ratings":
+      - /url: /40-Piece-Silverware-Stainless-Restaurant-Dishwasher/dp/B07ZVC6DMM/ref=sr_1_25?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-25#customerReviews
+    - text: 4K+ bought in past month
+    - button "1 sustainability feature"
+    - link "See options":
+      - /url: /40-Piece-Silverware-Stainless-Restaurant-Dishwasher/dp/B07ZVC6DMM/ref=sr_1_25_so_FLATWARE?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-25
+    - text: No featured offers available $25.19
+    - link "(6 used & new offers)":
+      - /url: /gp/offer-listing/B07ZVC6DMM/ref=sr_1_25_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-25
+  - listitem:
+    - link:
+      - /url: /HUNTER-DUAL-Colorful-Kitchen-Chopping-Multicolor/dp/B0D22VWX36/ref=sr_1_26?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-26
+    - link "Knife Set, 12-PC Colorful Kitchen Knife Set, 6 Sharp Kitchen Knives with Built-in Sharpener Covers for Cooking, Cutting&Chopping (Multicolor)":
+      - /url: /HUNTER-DUAL-Colorful-Kitchen-Chopping-Multicolor/dp/B0D22VWX36/ref=sr_1_26?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-26
+      - heading "Knife Set, 12-PC Colorful Kitchen Knife Set, 6 Sharp Kitchen Knives with Built-in Sharpener Covers for Cooking, Cutting&Chopping (Multicolor)" [level=2]
+    - button "4.5 out of 5 stars, rating details"
+    - link "222 ratings":
+      - /url: /HUNTER-DUAL-Colorful-Kitchen-Chopping-Multicolor/dp/B0D22VWX36/ref=sr_1_26?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-26#customerReviews
+    - text: 5K+ bought in past month
+    - button "1 sustainability feature"
+    - link "See options":
+      - /url: /HUNTER-DUAL-Colorful-Kitchen-Chopping-Multicolor/dp/B0D22VWX36/ref=sr_1_26_so_KITCHEN_KNIFE?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-26
+    - text: No featured offers available $18.18
+    - link "(3 used & new offers)":
+      - /url: /gp/offer-listing/B0D22VWX36/ref=sr_1_26_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-26
+  - listitem:
+    - link:
+      - /url: /CHEFMAN-Multifunction-Rotisserie-Dehydrator-Convection/dp/B08DL8WH9V/ref=sr_1_27?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-27
+    - link "CHEFMAN Multifunctional Digital Air Fryer+ Rotisserie, Dehydrator, Convection Oven, 17 Touch Screen Presets Fry, Roast, Dehydrate, Bake, XL 10L Family Size, Auto Shutoff, Large Easy-View Window, Black":
+      - /url: /CHEFMAN-Multifunction-Rotisserie-Dehydrator-Convection/dp/B08DL8WH9V/ref=sr_1_27?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-27
+      - heading "CHEFMAN Multifunctional Digital Air Fryer+ Rotisserie, Dehydrator, Convection Oven, 17 Touch Screen Presets Fry, Roast, Dehydrate, Bake, XL 10L Family Size, Auto Shutoff, Large Easy-View Window, Black" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "43,494 ratings":
+      - /url: /CHEFMAN-Multifunction-Rotisserie-Dehydrator-Convection/dp/B08DL8WH9V/ref=sr_1_27?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-27#customerReviews
+    - text: 9K+ bought in past month
+    - link "See options":
+      - /url: /CHEFMAN-Multifunction-Rotisserie-Dehydrator-Convection/dp/B08DL8WH9V/ref=sr_1_27_so_AIR_FRYER?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-27
+    - text: No featured offers available $77.35
+    - link "(2 used & new offers)":
+      - /url: /gp/offer-listing/B08DL8WH9V/ref=sr_1_27_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-27
+  - listitem:
+    - link:
+      - /url: /JoyJolt-Borosilicate-Containers-Airtight-Container/dp/B09N4ZKCH6/ref=sr_1_28?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-28
+    - link "JoyJolt JoyFul 24pc(12 Airtight, Freezer Safe Food Storage Containers and 12 Lids), Pantry Kitchen Storage Containers, Glass Meal Prep Container for Lunch, Glass Storage Containers with Lids":
+      - /url: /JoyJolt-Borosilicate-Containers-Airtight-Container/dp/B09N4ZKCH6/ref=sr_1_28?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-28
+      - heading "JoyJolt JoyFul 24pc(12 Airtight, Freezer Safe Food Storage Containers and 12 Lids), Pantry Kitchen Storage Containers, Glass Meal Prep Container for Lunch, Glass Storage Containers with Lids" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "16,734 ratings":
+      - /url: /JoyJolt-Borosilicate-Containers-Airtight-Container/dp/B09N4ZKCH6/ref=sr_1_28?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-28#customerReviews
+    - text: 8K+ bought in past month
+    - button "Small Business"
+    - link "See options":
+      - /url: /JoyJolt-Borosilicate-Containers-Airtight-Container/dp/B09N4ZKCH6/ref=sr_1_28_so_FOOD_STORAGE_CONTAINER?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-28
+    - text: No featured offers available $34.18
+    - link "(5 used & new offers)":
+      - /url: /gp/offer-listing/B09N4ZKCH6/ref=sr_1_28_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-28
+  - listitem:
+    - link:
+      - /url: /Fssvcd-Sink-Stainless-Rustproof-Accessories/dp/B0CQJWVP8B/ref=sr_1_29?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-29
+    - button "Black"
+    - button "Bronze"
+    - button "Dark Gold Yellow"
+    - button "Lacquer Silver"
+    - button "White"
+    - link "Maifan Sink Caddy Sponge Holder for Kitchen with Brush Holder and Stainless Steel Self Drain Tray, Rustproof Kitchen Sink Organizer for Sponge, Soap Dispenser Storage Accessories":
+      - /url: /Fssvcd-Sink-Stainless-Rustproof-Accessories/dp/B0CQJWVP8B/ref=sr_1_29?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-29
+      - heading "Maifan Sink Caddy Sponge Holder for Kitchen with Brush Holder and Stainless Steel Self Drain Tray, Rustproof Kitchen Sink Organizer for Sponge, Soap Dispenser Storage Accessories" [level=2]
+    - button "4.4 out of 5 stars, rating details"
+    - link "1,099 ratings":
+      - /url: /Fssvcd-Sink-Stainless-Rustproof-Accessories/dp/B0CQJWVP8B/ref=sr_1_29?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-29#customerReviews
+    - text: 4K+ bought in past month
+    - link "See options":
+      - /url: /Fssvcd-Sink-Stainless-Rustproof-Accessories/dp/B0CQJWVP8B/ref=sr_1_29_so_CADDY?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-29
+    - text: No featured offers available $29.38
+    - link "(1 new offer)":
+      - /url: /gp/offer-listing/B0CQJWVP8B/ref=sr_1_29_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-29
+  - listitem:
+    - link:
+      - /url: /Ninja-Kitchen-BL770-Processor-Smoothies/dp/B00939I7EK/ref=sr_1_30?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-30
+    - link "Ninja Blender, Mega Kitchen System, 1500W, 4 Functions for Smoothies, Processing, Dough, Drinks & More, with 72 Blender Pitcher, 64 Processor Bowl, 2 Nutri Cups + Lids, Black, BL770":
+      - /url: /Ninja-Kitchen-BL770-Processor-Smoothies/dp/B00939I7EK/ref=sr_1_30?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-30
+      - heading "Ninja Blender, Mega Kitchen System, 1500W, 4 Functions for Smoothies, Processing, Dough, Drinks & More, with 72 Blender Pitcher, 64 Processor Bowl, 2 Nutri Cups + Lids, Black, BL770" [level=2]
+    - text: "#1 Top Rated"
+    - button "4.7 out of 5 stars, rating details"
+    - link "44,111 ratings":
+      - /url: /Ninja-Kitchen-BL770-Processor-Smoothies/dp/B00939I7EK/ref=sr_1_30?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-30#customerReviews
+    - text: 8K+ bought in past month
+    - link "See options":
+      - /url: /Ninja-Kitchen-BL770-Processor-Smoothies/dp/B00939I7EK/ref=sr_1_30_so_FOOD_PROCESSOR?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-30
+    - text: No featured offers available $131.78
+    - link "(14 used & new offers)":
+      - /url: /gp/offer-listing/B00939I7EK/ref=sr_1_30_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-30
+  - listitem:
+    - link:
+      - /url: /OdorShield-Kitchen-Drawstring-Fresh-Gallon/dp/B07T9MBNTT/ref=sr_1_31?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-31
+    - link "Glad Tall Kitchen Drawstring Trash Bags - Odorshield 13 Gallon White Trash Bag, Febreze Fresh Clean, 110 Count":
+      - /url: /OdorShield-Kitchen-Drawstring-Fresh-Gallon/dp/B07T9MBNTT/ref=sr_1_31?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-31
+      - heading "Glad Tall Kitchen Drawstring Trash Bags - Odorshield 13 Gallon White Trash Bag, Febreze Fresh Clean, 110 Count" [level=2]
+    - text: "110 Count (Pack of 1) Options:"
+    - link "7 sizes":
+      - /url: /OdorShield-Kitchen-Drawstring-Fresh-Gallon/dp/B07T9MBNTT/ref=vo_sr_l_dp?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-31
+    - button "4.7 out of 5 stars, rating details"
+    - link "50,333 ratings":
+      - /url: /OdorShield-Kitchen-Drawstring-Fresh-Gallon/dp/B07T9MBNTT/ref=sr_1_31?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-31#customerReviews
+    - text: 70K+ bought in past month
+    - button "1 sustainability certification"
+    - link "See options":
+      - /url: /OdorShield-Kitchen-Drawstring-Fresh-Gallon/dp/B07T9MBNTT/ref=sr_1_31_so_WASTE_BAG?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-31
+    - text: No featured offers available $21.03
+    - link "(20 used & new offers)":
+      - /url: /gp/offer-listing/B07T9MBNTT/ref=sr_1_31_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-31
+  - listitem:
+    - link:
+      - /url: /Toaster-Fits-anywhereTM-Kitchenware-Setting-Removable/dp/B0CYJBB2JQ/ref=sr_1_32?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-32
+    - link "bella 2 Slice Slim Toaster, Fits-anywhere™ Kitchenware, 6 Setting Shade Control with Reheat & Cancel Buttons, Removable Crumb Tray, 10” Long Slot, Anti Jam & Auto Shutoff, 900 Watt, Oatmilk":
+      - /url: /Toaster-Fits-anywhereTM-Kitchenware-Setting-Removable/dp/B0CYJBB2JQ/ref=sr_1_32?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-32
+      - heading "bella 2 Slice Slim Toaster, Fits-anywhere™ Kitchenware, 6 Setting Shade Control with Reheat & Cancel Buttons, Removable Crumb Tray, 10” Long Slot, Anti Jam & Auto Shutoff, 900 Watt, Oatmilk" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "2,752 ratings":
+      - /url: /Toaster-Fits-anywhereTM-Kitchenware-Setting-Removable/dp/B0CYJBB2JQ/ref=sr_1_32?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-32#customerReviews
+    - text: 7K+ bought in past month
+    - link "See options":
+      - /url: /Toaster-Fits-anywhereTM-Kitchenware-Setting-Removable/dp/B0CYJBB2JQ/ref=sr_1_32_so_TOASTER?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-32
+    - text: No featured offers available $41.00
+    - link "(2 new offers)":
+      - /url: /gp/offer-listing/B0CYJBB2JQ/ref=sr_1_32_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-32
+  - listitem:
+    - link:
+      - /url: /Farberware-5152501-Sharpening-High-Carbon-Stainless/dp/B01DB285NW/ref=sr_1_33?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-33
+    - link "Farberware 22-Piece Never Needs Sharpening Triple Rivet High-Carbon Stainless Steel Knife Block and Kitchen Tool Set, Black, Durable ANDPrecision Cutlery":
+      - /url: /Farberware-5152501-Sharpening-High-Carbon-Stainless/dp/B01DB285NW/ref=sr_1_33?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-33
+      - heading "Farberware 22-Piece Never Needs Sharpening Triple Rivet High-Carbon Stainless Steel Knife Block and Kitchen Tool Set, Black, Durable ANDPrecision Cutlery" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "24,274 ratings":
+      - /url: /Farberware-5152501-Sharpening-High-Carbon-Stainless/dp/B01DB285NW/ref=sr_1_33?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-33#customerReviews
+    - text: 2K+ bought in past month
+    - link "See options":
+      - /url: /Farberware-5152501-Sharpening-High-Carbon-Stainless/dp/B01DB285NW/ref=sr_1_33_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-33
+    - text: No featured offers available $25.17
+    - link "(2 new offers)":
+      - /url: /gp/offer-listing/B01DB285NW/ref=sr_1_33_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-33
+  - listitem:
+    - link:
+      - /url: /T-fal-Signature-Dishwasher-Thermo-Spot-Indicator/dp/B001167VIQ/ref=sr_1_34?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-34
+    - link "T-fal Signature Nonstick Cookware Set 12 Piece, Oven Broiler Safe 350F, Pots and Pans, Kitchen Cooking Set w/Fry Pans, Saucepans, Saute Pan, Dutch Oven, Griddle, Kitchen, Home, Dishwasher Safe, Black":
+      - /url: /T-fal-Signature-Dishwasher-Thermo-Spot-Indicator/dp/B001167VIQ/ref=sr_1_34?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-34
+      - heading "T-fal Signature Nonstick Cookware Set 12 Piece, Oven Broiler Safe 350F, Pots and Pans, Kitchen Cooking Set w/Fry Pans, Saucepans, Saute Pan, Dutch Oven, Griddle, Kitchen, Home, Dishwasher Safe, Black" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "18,370 ratings":
+      - /url: /T-fal-Signature-Dishwasher-Thermo-Spot-Indicator/dp/B001167VIQ/ref=sr_1_34?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-34#customerReviews
+    - text: 2K+ bought in past month
+    - button "3 sustainability features"
+    - link "See options":
+      - /url: /T-fal-Signature-Dishwasher-Thermo-Spot-Indicator/dp/B001167VIQ/ref=sr_1_34_so_HOME?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-34
+    - text: No featured offers available $59.75
+    - link "(4 used & new offers)":
+      - /url: /gp/offer-listing/B001167VIQ/ref=sr_1_34_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-34
+  - listitem:
+    - link:
+      - /url: /Brewin-Professional-Chef-Knife-Set/dp/B09YQXJDX5/ref=sr_1_35?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-35
+    - link "Brewin Professional Kitchen Knives, 3PC Chef Knife Set Sharp Knives for Kitchen High Carbon Stainless Steel, Japanese Cooking Knife with Gift Box":
+      - /url: /Brewin-Professional-Chef-Knife-Set/dp/B09YQXJDX5/ref=sr_1_35?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-35
+      - heading "Brewin Professional Kitchen Knives, 3PC Chef Knife Set Sharp Knives for Kitchen High Carbon Stainless Steel, Japanese Cooking Knife with Gift Box" [level=2]
+    - button "4.7 out of 5 stars, rating details"
+    - link "1,027 ratings":
+      - /url: /Brewin-Professional-Chef-Knife-Set/dp/B09YQXJDX5/ref=sr_1_35?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-35#customerReviews
+    - text: 2K+ bought in past month
+    - link "See options":
+      - /url: /Brewin-Professional-Chef-Knife-Set/dp/B09YQXJDX5/ref=sr_1_35_so_KITCHEN_KNIFE?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-35
+    - text: No featured offers available $66.99
+    - link "(2 new offers)":
+      - /url: /gp/offer-listing/B09YQXJDX5/ref=sr_1_35_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-35
+  - listitem:
+    - link:
+      - /url: /Stainless-Nonstick-Induction-Cookware-Dishwasher/dp/B0BHXSQWH9/ref=sr_1_36?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-36
+    - link "Stainless Steel pots and pans set, 6 Piece Nonstick Kitchen Induction Cookware Set,Works with Induction/Electric and Gas Cooktops, Nonstick, Dishwasher":
+      - /url: /Stainless-Nonstick-Induction-Cookware-Dishwasher/dp/B0BHXSQWH9/ref=sr_1_36?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-36
+      - heading "Stainless Steel pots and pans set, 6 Piece Nonstick Kitchen Induction Cookware Set,Works with Induction/Electric and Gas Cooktops, Nonstick, Dishwasher" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "2,030 ratings":
+      - /url: /Stainless-Nonstick-Induction-Cookware-Dishwasher/dp/B0BHXSQWH9/ref=sr_1_36?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-36#customerReviews
+    - text: 1K+ bought in past month
+    - link "See options":
+      - /url: /Stainless-Nonstick-Induction-Cookware-Dishwasher/dp/B0BHXSQWH9/ref=sr_1_36_so_COOKWARE_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-36
+    - text: No featured offers available $35.46
+    - link "(3 used & new offers)":
+      - /url: /gp/offer-listing/B0BHXSQWH9/ref=sr_1_36_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-36
+  - listitem:
+    - link:
+      - /url: /Astercook-Kitchen-Anti-Rust-Dishwasher-Stainless/dp/B0D9B96TBX/ref=sr_1_37?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-37
+    - link "Astercook Knife Set, 13 Pieces Kitchen Knives Set with Healthy Anti-Rust Coating, Dishwasher Safe, Stainless Steel Chef Knife Sets with 6 Blade Guards, Perfect Holiday Gifts for Kitchen":
+      - /url: /Astercook-Kitchen-Anti-Rust-Dishwasher-Stainless/dp/B0D9B96TBX/ref=sr_1_37?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-37
+      - heading "Astercook Knife Set, 13 Pieces Kitchen Knives Set with Healthy Anti-Rust Coating, Dishwasher Safe, Stainless Steel Chef Knife Sets with 6 Blade Guards, Perfect Holiday Gifts for Kitchen" [level=2]
+    - button "4.7 out of 5 stars, rating details"
+    - link "427 ratings":
+      - /url: /Astercook-Kitchen-Anti-Rust-Dishwasher-Stainless/dp/B0D9B96TBX/ref=sr_1_37?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-37#customerReviews
+    - text: 3K+ bought in past month
+    - link "See options":
+      - /url: /Astercook-Kitchen-Anti-Rust-Dishwasher-Stainless/dp/B0D9B96TBX/ref=sr_1_37_so_KITCHEN_KNIFE?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-37
+    - text: No featured offers available $17.99
+    - link "(1 new offer)":
+      - /url: /gp/offer-listing/B0D9B96TBX/ref=sr_1_37_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-37
+  - listitem:
+    - group "Goodreads Choice Award nominee"
+    - link:
+      - /url: /Kitchen-House-Novel-Kathleen-Grissom/dp/1439153663/ref=sr_1_38?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-38
+    - 'link "The Kitchen House: A Novel"':
+      - /url: /Kitchen-House-Novel-Kathleen-Grissom/dp/1439153663/ref=sr_1_38?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-38
+      - 'heading "The Kitchen House: A Novel" [level=2]'
+    - 'link "Book 1 of 2: Kitchen House"':
+      - /url: /dp/B083V2CM5F?binding=paperback&searchxofy=true&ref_=dbs_s_aps_series_rwt_tpbk&qid=1745415431&sr=8-38
+    - button "4.5 out of 5 stars, rating details"
+    - link "32,639 ratings":
+      - /url: /Kitchen-House-Novel-Kathleen-Grissom/dp/1439153663/ref=sr_1_38?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-38#customerReviews
+    - link "Paperback":
+      - /url: /Kitchen-House-Novel-Kathleen-Grissom/dp/1439153663/ref=sr_1_38?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-38
+    - text: "You Earn: 10 pts No featured offers available $1.99"
+    - link "(42 used & new offers)":
+      - /url: /gp/offer-listing/1439153663/ref=sr_1_38_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-38
+    - text: "Other formats:"
+    - link "Audible Audiobook,":
+      - /url: /The-Kitchen-House-audiobook/dp/B075TH6L63/ref=sr_1_38?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-38
+    - link "Kindle,":
+      - /url: /Kitchen-House-Novel-Kathleen-Grissom-ebook/dp/B0034DGPEU/ref=sr_1_38?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-38
+    - link "Hardcover,":
+      - /url: /Kitchen-House-Kathleen-Grissom/dp/1615238948/ref=sr_1_38?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-38
+    - link "Audio CD":
+      - /url: /Kitchen-House-Novel-Kathleen-Grissom/dp/1441761268/ref=sr_1_38?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-38
+  - listitem:
+    - link:
+      - /url: /Gsiekare-Vegetable-Stackable-Organizer-Bathroom/dp/B0BPSNPLY2/ref=sr_1_39?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-39
+    - link "Fruit Vegetable Basket for Kitchen, 5 Tier Stackable Fruit Vegetable Storage Baskets with Wheels, Metal Wire Storage Basket Organizer Baskets for Kitchen, Pantry, Bathroom":
+      - /url: /Gsiekare-Vegetable-Stackable-Organizer-Bathroom/dp/B0BPSNPLY2/ref=sr_1_39?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-39
+      - heading "Fruit Vegetable Basket for Kitchen, 5 Tier Stackable Fruit Vegetable Storage Baskets with Wheels, Metal Wire Storage Basket Organizer Baskets for Kitchen, Pantry, Bathroom" [level=2]
+    - text: "Options:"
+    - link "2 sizes":
+      - /url: /Gsiekare-Vegetable-Stackable-Organizer-Bathroom/dp/B0BPSNPLY2/ref=vo_sr_l_dp?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-39
+    - button "4.5 out of 5 stars, rating details"
+    - link "778 ratings":
+      - /url: /Gsiekare-Vegetable-Stackable-Organizer-Bathroom/dp/B0BPSNPLY2/ref=sr_1_39?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-39#customerReviews
+    - text: 1K+ bought in past month
+    - link "See options":
+      - /url: /Gsiekare-Vegetable-Stackable-Organizer-Bathroom/dp/B0BPSNPLY2/ref=sr_1_39_so_BASKET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-39
+    - text: No featured offers available $39.09
+    - link "(12 used & new offers)":
+      - /url: /gp/offer-listing/B0BPSNPLY2/ref=sr_1_39_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-39
+  - listitem:
+    - link:
+      - /url: /BLACK-DECKER-BL1230SG-PowerCrush-Multi-Function/dp/B07RQVL8D5/ref=sr_1_40?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-40
+    - link "BLACK+DECKER PowerCrush Countertop Blender, 6-Cup Glass Jar, For Smoothies and More, Stainless Steel Blade, 4 Speed Settings to Puree, Crush Ice, Chop, Dice, and Pulse, Dishwasher Safe, 700W Motor":
+      - /url: /BLACK-DECKER-BL1230SG-PowerCrush-Multi-Function/dp/B07RQVL8D5/ref=sr_1_40?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-40
+      - heading "BLACK+DECKER PowerCrush Countertop Blender, 6-Cup Glass Jar, For Smoothies and More, Stainless Steel Blade, 4 Speed Settings to Puree, Crush Ice, Chop, Dice, and Pulse, Dishwasher Safe, 700W Motor" [level=2]
+    - button "4.3 out of 5 stars, rating details"
+    - link "10,186 ratings":
+      - /url: /BLACK-DECKER-BL1230SG-PowerCrush-Multi-Function/dp/B07RQVL8D5/ref=sr_1_40?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-40#customerReviews
+    - text: 10K+ bought in past month
+    - link "See options":
+      - /url: /BLACK-DECKER-BL1230SG-PowerCrush-Multi-Function/dp/B07RQVL8D5/ref=sr_1_40_so_FOOD_BLENDER?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-40
+    - text: No featured offers available $26.99
+    - link "(5 used & new offers)":
+      - /url: /gp/offer-listing/B07RQVL8D5/ref=sr_1_40_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-40
+  - listitem:
+    - link:
+      - /url: /Cuisinart-C77WTR-15P-Collection-15-Piece-Cutlery/dp/B01ALYD1WI/ref=sr_1_41?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-41
+    - button "White"
+    - button "Black/Black"
+    - button "Black/Gray"
+    - button "Cherry/White"
+    - button "Natural"
+    - button "Navy/White"
+    - link "+2":
+      - /url: /Cuisinart-C77WTR-15P-Collection-15-Piece-Cutlery/dp/B01ALYD1WI/ref=cs_sr_dp_n?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-41
+    - link "Cuisinart 15-Piece Knife Set with Block, High Carbon Stainless Steel, Forged Triple Rivet, White, C77WTR-15P":
+      - /url: /Cuisinart-C77WTR-15P-Collection-15-Piece-Cutlery/dp/B01ALYD1WI/ref=sr_1_41?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-41
+      - heading "Cuisinart 15-Piece Knife Set with Block, High Carbon Stainless Steel, Forged Triple Rivet, White, C77WTR-15P" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "11,394 ratings":
+      - /url: /Cuisinart-C77WTR-15P-Collection-15-Piece-Cutlery/dp/B01ALYD1WI/ref=sr_1_41?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-41#customerReviews
+    - text: 2K+ bought in past month
+    - link "See options":
+      - /url: /Cuisinart-C77WTR-15P-Collection-15-Piece-Cutlery/dp/B01ALYD1WI/ref=sr_1_41_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-41
+    - text: No featured offers available $53.16
+    - link "(2 used & new offers)":
+      - /url: /gp/offer-listing/B01ALYD1WI/ref=sr_1_41_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-41
+  - listitem:
+    - link:
+      - /url: /FikShot-Sharpener-Razor-Sharp-Stainless-Dishwasher/dp/B0DQ73CCBS/ref=sr_1_42?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-42
+    - link "14-Piece Kitchen Knife Set with Block and Sharpener, Razor-Sharp, Rust Proof German High Carbon Stainless Steel With Ergonomic and Dishwasher Safe, Gifts as Presents":
+      - /url: /FikShot-Sharpener-Razor-Sharp-Stainless-Dishwasher/dp/B0DQ73CCBS/ref=sr_1_42?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-42
+      - heading "14-Piece Kitchen Knife Set with Block and Sharpener, Razor-Sharp, Rust Proof German High Carbon Stainless Steel With Ergonomic and Dishwasher Safe, Gifts as Presents" [level=2]
+    - button "4.7 out of 5 stars, rating details"
+    - link "60 ratings":
+      - /url: /FikShot-Sharpener-Razor-Sharp-Stainless-Dishwasher/dp/B0DQ73CCBS/ref=sr_1_42?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-42#customerReviews
+    - text: 1K+ bought in past month
+    - link "See options":
+      - /url: /FikShot-Sharpener-Razor-Sharp-Stainless-Dishwasher/dp/B0DQ73CCBS/ref=sr_1_42_so_KNIFE_BLOCK_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-42
+    - text: No featured offers available $39.80
+    - link "(1 new offer)":
+      - /url: /gp/offer-listing/B0DQ73CCBS/ref=sr_1_42_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-42
+  - listitem:
+    - link:
+      - /url: /Keurig-K-Mini-Coffee-Single-Brewer/dp/B08323NVL1/ref=sr_1_43?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-43
+    - link "Keurig K-Mini Single Serve K-Cup Pod Coffee Maker, 6 to 12oz Brew size, with Cord Storage, Perfect for Small Spaces, Dusty Rose":
+      - /url: /Keurig-K-Mini-Coffee-Single-Brewer/dp/B08323NVL1/ref=sr_1_43?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-43
+      - heading "Keurig K-Mini Single Serve K-Cup Pod Coffee Maker, 6 to 12oz Brew size, with Cord Storage, Perfect for Small Spaces, Dusty Rose" [level=2]
+    - button "4.4 out of 5 stars, rating details"
+    - link "106,717 ratings":
+      - /url: /Keurig-K-Mini-Coffee-Single-Brewer/dp/B08323NVL1/ref=sr_1_43?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-43#customerReviews
+    - text: 1K+ bought in past month
+    - link "See options":
+      - /url: /Keurig-K-Mini-Coffee-Single-Brewer/dp/B08323NVL1/ref=sr_1_43_so_COFFEE_MAKER?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-43
+    - text: No featured offers available $30.31
+    - link "(3 used & new offers)":
+      - /url: /gp/offer-listing/B08323NVL1/ref=sr_1_43_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-43
+  - listitem:
+    - link:
+      - /url: /Brewin-CHEFILOSOPHI-Pakkawood-Ergonomic-Professional/dp/B09YQY517H/ref=sr_1_44?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-44
+    - link "Brewin CHEFILOSOPHI Japanese Chef Knife Set 5 PCS with Elegant Red Pakkawood Handle Ergonomic Design,Professional Ultra Sharp Kitchen Knives for Cooking High Carbon Stainless Steel":
+      - /url: /Brewin-CHEFILOSOPHI-Pakkawood-Ergonomic-Professional/dp/B09YQY517H/ref=sr_1_44?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-44
+      - heading "Brewin CHEFILOSOPHI Japanese Chef Knife Set 5 PCS with Elegant Red Pakkawood Handle Ergonomic Design,Professional Ultra Sharp Kitchen Knives for Cooking High Carbon Stainless Steel" [level=2]
+    - button "4.7 out of 5 stars, rating details"
+    - link "1,864 ratings":
+      - /url: /Brewin-CHEFILOSOPHI-Pakkawood-Ergonomic-Professional/dp/B09YQY517H/ref=sr_1_44?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-44#customerReviews
+    - text: 3K+ bought in past month
+    - link "See options":
+      - /url: /Brewin-CHEFILOSOPHI-Pakkawood-Ergonomic-Professional/dp/B09YQY517H/ref=sr_1_44_so_KITCHEN_KNIFE?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-44
+    - text: No featured offers available $89.99
+    - link "(2 new offers)":
+      - /url: /gp/offer-listing/B09YQY517H/ref=sr_1_44_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-44
+  - listitem:
+    - link:
+      - /url: /Americas-Test-Kitchen-Next-Generation/dp/B0DT9FC3GV/ref=sr_1_45?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-45
+    - 'heading "America''s Test Kitchen: The Next Generation (TV Series)" [level=2]':
+      - 'link "America''s Test Kitchen: The Next Generation (TV Series)"':
+        - /url: /Americas-Test-Kitchen-Next-Generation/dp/B0DT9FC3GV/ref=sr_1_45?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-45
+    - text: "2022"
+    - link "Prime Video":
+      - /url: /Americas-Test-Kitchen-Next-Generation/dp/B0DT9FC3GV/ref=sr_1_45?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-45
+    - 'link "Watch now: Free with ads"':
+      - /url: https://watch.amazon.com/watch?asin=B0B8TNTK9F
+    - text: Or $0.00 with a Prime membership
+  - listitem:
+    - link:
+      - /url: /Ultimate-Anodized-Nonstick-Saucepans-Dishwasher/dp/B00TQJWERI/ref=sr_1_46?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-46
+    - link "T-fal Ultimate Hard Anodized Nonstick Cookware Set 14 Piece, Oven Broiler Safe 400F, Lid Safe 350F, Kitchen Cooking Set w/Fry Pans, Saucepans, Griddle, Dutch Oven, Pots & Pans, Dishwasher Safe, Black":
+      - /url: /Ultimate-Anodized-Nonstick-Saucepans-Dishwasher/dp/B00TQJWERI/ref=sr_1_46?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-46
+      - heading "T-fal Ultimate Hard Anodized Nonstick Cookware Set 14 Piece, Oven Broiler Safe 400F, Lid Safe 350F, Kitchen Cooking Set w/Fry Pans, Saucepans, Griddle, Dutch Oven, Pots & Pans, Dishwasher Safe, Black" [level=2]
+    - button "4.7 out of 5 stars, rating details"
+    - link "39,678 ratings":
+      - /url: /Ultimate-Anodized-Nonstick-Saucepans-Dishwasher/dp/B00TQJWERI/ref=sr_1_46?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-46#customerReviews
+    - text: 1K+ bought in past month
+    - link "See options":
+      - /url: /Ultimate-Anodized-Nonstick-Saucepans-Dishwasher/dp/B00TQJWERI/ref=sr_1_46_so_COOKWARE_SET?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-46
+    - text: No featured offers available $122.02
+    - link "(4 used & new offers)":
+      - /url: /gp/offer-listing/B00TQJWERI/ref=sr_1_46_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-46
+  - listitem:
+    - group "Best Seller in Cosmetic Display Cases"
+    - link:
+      - /url: /Stackable-Organizer-Vtopmart-Organizers%EF%BC%8CClear-Organization/dp/B09ZKYQMVD/ref=sr_1_47?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-47
+    - link "Vtopmart 4 Pack Clear Stackable Storage Drawers, 4.4'' Tall Acrylic Bathroom Makeup Organizer,Plastic Storage Bins For Vanity, Undersink, Kitchen Cabinets, Pantry, Home Organization":
+      - /url: /Stackable-Organizer-Vtopmart-Organizers%EF%BC%8CClear-Organization/dp/B09ZKYQMVD/ref=sr_1_47?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-47
+      - heading "Vtopmart 4 Pack Clear Stackable Storage Drawers, 4.4'' Tall Acrylic Bathroom Makeup Organizer,Plastic Storage Bins For Vanity, Undersink, Kitchen Cabinets, Pantry, Home Organization" [level=2]
+    - button "4.6 out of 5 stars, rating details"
+    - link "12,767 ratings":
+      - /url: /Stackable-Organizer-Vtopmart-Organizers%EF%BC%8CClear-Organization/dp/B09ZKYQMVD/ref=sr_1_47?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-47#customerReviews
+    - text: 20K+ bought in past month
+    - link "See options":
+      - /url: /Stackable-Organizer-Vtopmart-Organizers%EF%BC%8CClear-Organization/dp/B09ZKYQMVD/ref=sr_1_47_so_STORAGE_DRAWER?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-47
+    - text: No featured offers available $23.21
+    - link "(2 new offers)":
+      - /url: /gp/offer-listing/B09ZKYQMVD/ref=sr_1_47_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-47
+  - listitem:
+    - link:
+      - /url: /KitchenAid-KQ909-Platform-Digital-capacity/dp/B07YP9KN8P/ref=sr_1_48?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-48
+    - link "KitchenAid KQ909 Dual Platform Digital Kitchen and Food Scale, 11 pound capacity and Precision 16oz capacity, Black with Stainless Steel":
+      - /url: /KitchenAid-KQ909-Platform-Digital-capacity/dp/B07YP9KN8P/ref=sr_1_48?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-48
+      - heading "KitchenAid KQ909 Dual Platform Digital Kitchen and Food Scale, 11 pound capacity and Precision 16oz capacity, Black with Stainless Steel" [level=2]
+    - button "4.2 out of 5 stars, rating details"
+    - link "2,533 ratings":
+      - /url: /KitchenAid-KQ909-Platform-Digital-capacity/dp/B07YP9KN8P/ref=sr_1_48?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-48#customerReviews
+    - text: 4K+ bought in past month
+    - link "See options":
+      - /url: /KitchenAid-KQ909-Platform-Digital-capacity/dp/B07YP9KN8P/ref=sr_1_48_so_WEIGH_SCALE?_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&dib_tag=se&keywords=kitchen&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&qid=1745415431&sr=8-48
+    - text: No featured offers available $24.57
+    - link "(19 used & new offers)":
+      - /url: /gp/offer-listing/B07YP9KN8P/ref=sr_1_48_olp?keywords=kitchen&dib_tag=se&_encoding=UTF8&pd_rd_wg=3sNEv&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_w=hu7R2&dib=eyJ2IjoiMSJ9.oQ8aa-mqzQzNTOdwtUWNJojdlCako7pFREyjnIJ7MQSxVoqujsWKCB6sKJo24hbjqe-hlmfMklFGEhi4ycL7wleaBk0CI0HMlo9JqIpDnje1YOYuTfA_a8U1Q-Nrx1aR0fnJyz5_I5JOLjOuDRvZROVdw3p0c_b9DL66EnYedPPU2HHuUyQC5xmmaP7nsiuGD8LCRScJAt1rDHavZtAJ0NQKaqAVbA-ePuVuZORIUzoW_Xt_08acvQhvcCdcDltM_PjYRwQnaIu9-5SemQJD2DqpWPxYNDVqRZKcm2AeE0s.c0hmprX8LCFotlH9hNuKH0uGRSbCRYDfigURyoiCx9s&qid=1745415431&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&sr=8-48
+- heading "Related searches" [level=2]
+- list:
+  - listitem:
+    - link "kitchen organizer and storage":
+      - /url: /s?k=kitchen+organizer+and+storage&ref=rsl_sug_0_0&pd_rd_w=VY6bm&content-id=amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95:amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_p=2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=u6lxg&pd_rd_r=467ba7a1-ca96-4369-95bc-7852be6447fa&qid=1745415431
+  - listitem:
+    - link "kitchen utensil set":
+      - /url: /s?k=kitchen+utensil+set&ref=rsl_sug_0_3&pd_rd_w=VY6bm&content-id=amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95:amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_p=2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=u6lxg&pd_rd_r=467ba7a1-ca96-4369-95bc-7852be6447fa&qid=1745415431
+  - listitem:
+    - link "kitchen gadgets":
+      - /url: /s?k=kitchen+gadgets&ref=rsl_sug_0_1&pd_rd_w=VY6bm&content-id=amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95:amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_p=2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=u6lxg&pd_rd_r=467ba7a1-ca96-4369-95bc-7852be6447fa&qid=1745415431
+  - listitem:
+    - link "kitchen decor":
+      - /url: /s?k=kitchen+decor&ref=rsl_sug_0_4&pd_rd_w=VY6bm&content-id=amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95:amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_p=2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=u6lxg&pd_rd_r=467ba7a1-ca96-4369-95bc-7852be6447fa&qid=1745415431
+  - listitem:
+    - link "bathroom":
+      - /url: /s?k=bathroom&ref=rsl_sug_0_2&pd_rd_w=VY6bm&content-id=amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95:amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_p=2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=u6lxg&pd_rd_r=467ba7a1-ca96-4369-95bc-7852be6447fa&qid=1745415431
+  - listitem:
+    - link "kitchen towels":
+      - /url: /s?k=kitchen+towels&ref=rsl_sug_0_5&pd_rd_w=VY6bm&content-id=amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95:amzn1.sym.2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_p=2e97d935-d5f5-4935-88bd-cb6d2a136d95&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=u6lxg&pd_rd_r=467ba7a1-ca96-4369-95bc-7852be6447fa&qid=1745415431
+- navigation:
+  - region "pagination":
+    - list:
+      - button "Previous" [disabled]
+      - listitem:
+        - button "Page 1": "1"
+      - listitem:
+        - button "Go to page 2": "2"
+      - listitem:
+        - button "Go to page 3": "3"
+      - button [disabled]
+      - button "7" [disabled]
+      - listitem:
+        - button "Go to next page, page 2": Next
+- heading "Brands related to your search"
+- button "Leave feedback on Sponsored ad": Sponsored
+- link "Branded image from SpaceAid":
+  - /url: https://aax-us-iad.amazon.com/x/c/JHOvUvqu4JqEeqsZSSSJTd8AAAGWYt3pNgEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDvCSFh/https://www.amazon.com/stores/page/F0FB67CD-CEFF-4BBA-946F-0E856F06C577/?_encoding=UTF8&store_ref=SB_A072324835UTHULDFPIME-A0425576U1UYQS3GLHUX&pd_rd_plhdr=t&aaxitk=532c2c70c62700969cd24b78fc19e8f0&hsa_cr_id=7233729180901&lp_asins=B09GB35JP1%2CB0B3RJSZTJ%2CB0B3R16JNC&lp_query=kitchen&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_ls&pd_rd_w=hT9Rl&content-id=amzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a%3Aamzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_p=5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=VbgtA&pd_rd_r=9c5c7913-7dce-4b21-b269-8431087eaecc
+  - img "Branded image from SpaceAid"
+- link "SpaceAid":
+  - /url: https://aax-us-iad.amazon.com/x/c/JHOvUvqu4JqEeqsZSSSJTd8AAAGWYt3pNgEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDvCSFh/https://www.amazon.com/stores/page/F0FB67CD-CEFF-4BBA-946F-0E856F06C577/?_encoding=UTF8&store_ref=SB_A072324835UTHULDFPIME-A0425576U1UYQS3GLHUX&pd_rd_plhdr=t&aaxitk=532c2c70c62700969cd24b78fc19e8f0&hsa_cr_id=7233729180901&lp_asins=B09GB35JP1%2CB0B3RJSZTJ%2CB0B3R16JNC&lp_query=kitchen&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=hT9Rl&content-id=amzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a%3Aamzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_p=5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=VbgtA&pd_rd_r=9c5c7913-7dce-4b21-b269-8431087eaecc
+  - img "SpaceAid"
+- link "Spice Organizer with Jars & Labels":
+  - /url: https://aax-us-iad.amazon.com/x/c/JHOvUvqu4JqEeqsZSSSJTd8AAAGWYt3pNgEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDvCSFh/https://www.amazon.com/stores/page/F0FB67CD-CEFF-4BBA-946F-0E856F06C577/?_encoding=UTF8&store_ref=SB_A072324835UTHULDFPIME-A0425576U1UYQS3GLHUX&pd_rd_plhdr=t&aaxitk=532c2c70c62700969cd24b78fc19e8f0&hsa_cr_id=7233729180901&lp_asins=B09GB35JP1%2CB0B3RJSZTJ%2CB0B3R16JNC&lp_query=kitchen&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=hT9Rl&content-id=amzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a%3Aamzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_p=5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=VbgtA&pd_rd_r=9c5c7913-7dce-4b21-b269-8431087eaecc
+- link "Branded image from Chef Preserve":
+  - /url: https://aax-us-iad.amazon.com/x/c/JDAnbI0k39HeNB4Rf85-364AAAGWYt3pNwEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICCymNSe/https://www.amazon.com/stores/page/7BCCFE61-19D2-4F68-8C93-0528115974E1/?_encoding=UTF8&store_ref=SB_A01304202727I8UU5VLOW-A07762463FHI5E5PBVSCD&pd_rd_plhdr=t&aaxitk=5de5d373f702465748ea4fbff1ae6cc5&hsa_cr_id=0&lp_asins=B0D3ZBFMW6%2CB0D3ZBWNZT%2CB0D3Z8VWBH&lp_query=kitchen&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_ls&pd_rd_w=hT9Rl&content-id=amzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a%3Aamzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_p=5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=VbgtA&pd_rd_r=9c5c7913-7dce-4b21-b269-8431087eaecc
+  - img "Branded image from Chef Preserve"
+- link "Chef Preserve":
+  - /url: https://aax-us-iad.amazon.com/x/c/JDAnbI0k39HeNB4Rf85-364AAAGWYt3pNwEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICCymNSe/https://www.amazon.com/stores/page/7BCCFE61-19D2-4F68-8C93-0528115974E1/?_encoding=UTF8&store_ref=SB_A01304202727I8UU5VLOW-A07762463FHI5E5PBVSCD&pd_rd_plhdr=t&aaxitk=5de5d373f702465748ea4fbff1ae6cc5&hsa_cr_id=0&lp_asins=B0D3ZBFMW6%2CB0D3ZBWNZT%2CB0D3Z8VWBH&lp_query=kitchen&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=hT9Rl&content-id=amzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a%3Aamzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_p=5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=VbgtA&pd_rd_r=9c5c7913-7dce-4b21-b269-8431087eaecc
+  - img "Chef Preserve"
+- link "The Original Chef Preserve Vacuum Sealer":
+  - /url: https://aax-us-iad.amazon.com/x/c/JDAnbI0k39HeNB4Rf85-364AAAGWYt3pNwEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICCymNSe/https://www.amazon.com/stores/page/7BCCFE61-19D2-4F68-8C93-0528115974E1/?_encoding=UTF8&store_ref=SB_A01304202727I8UU5VLOW-A07762463FHI5E5PBVSCD&pd_rd_plhdr=t&aaxitk=5de5d373f702465748ea4fbff1ae6cc5&hsa_cr_id=0&lp_asins=B0D3ZBFMW6%2CB0D3ZBWNZT%2CB0D3Z8VWBH&lp_query=kitchen&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=hT9Rl&content-id=amzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a%3Aamzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_p=5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=VbgtA&pd_rd_r=9c5c7913-7dce-4b21-b269-8431087eaecc
+- link "Branded image from KINGSTONE":
+  - /url: https://aax-us-iad.amazon.com/x/c/JF6SFNwZq29HQhimRrwydnkAAAGWYt3pNwEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDhcxuA/https://www.amazon.com/stores/page/0C4E4596-6AF9-4534-BE15-45159FE13039/?_encoding=UTF8&store_ref=SB_A049580635UNQHJL0WAXU-A10391741C5NDOQERNW51&pd_rd_plhdr=t&aaxitk=eba18a7691aa9e7b86379330b8035586&hsa_cr_id=0&lp_asins=B0D2XNSCCD%2CB0CG69W9R9%2CB0CHVQS738&lp_query=kitchen&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_ls&pd_rd_w=hT9Rl&content-id=amzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a%3Aamzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_p=5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=VbgtA&pd_rd_r=9c5c7913-7dce-4b21-b269-8431087eaecc
+  - img "Branded image from KINGSTONE"
+- link "KINGSTONE":
+  - /url: https://aax-us-iad.amazon.com/x/c/JF6SFNwZq29HQhimRrwydnkAAAGWYt3pNwEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDhcxuA/https://www.amazon.com/stores/page/0C4E4596-6AF9-4534-BE15-45159FE13039/?_encoding=UTF8&store_ref=SB_A049580635UNQHJL0WAXU-A10391741C5NDOQERNW51&pd_rd_plhdr=t&aaxitk=eba18a7691aa9e7b86379330b8035586&hsa_cr_id=0&lp_asins=B0D2XNSCCD%2CB0CG69W9R9%2CB0CHVQS738&lp_query=kitchen&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_logo&pd_rd_w=hT9Rl&content-id=amzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a%3Aamzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_p=5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=VbgtA&pd_rd_r=9c5c7913-7dce-4b21-b269-8431087eaecc
+  - img "KINGSTONE"
+- link "German Stainless Steel Knife Set":
+  - /url: https://aax-us-iad.amazon.com/x/c/JF6SFNwZq29HQhimRrwydnkAAAGWYt3pNwEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICDhcxuA/https://www.amazon.com/stores/page/0C4E4596-6AF9-4534-BE15-45159FE13039/?_encoding=UTF8&store_ref=SB_A049580635UNQHJL0WAXU-A10391741C5NDOQERNW51&pd_rd_plhdr=t&aaxitk=eba18a7691aa9e7b86379330b8035586&hsa_cr_id=0&lp_asins=B0D2XNSCCD%2CB0CG69W9R9%2CB0CHVQS738&lp_query=kitchen&lp_slot=desktop-hsa-3psl&ref_=sbx_be_s_3psl_mbd_mb2_hl&pd_rd_w=hT9Rl&content-id=amzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a%3Aamzn1.sym.5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_p=5594c86b-e694-4e3e-9301-a074f0faf98a&pf_rd_r=JFANZA88XT18GSG2MY8E&pd_rd_wg=VbgtA&pd_rd_r=9c5c7913-7dce-4b21-b269-8431087eaecc
+- heading "Need help?" [level=2]
+- link "Visit the help section":
+  - /url: /gp/help/customer/display.html?nodeId=468556
+- text: or
+- link "contact us":
+  - /url: /gp/help/customer/contact-us
+- iframe
+- button "Leave feedback on Sponsored ad"
+- link "Go back to filtering menu":
+  - /url: "#s-skipLinkTargetForFilterOptions"
+- link "Skip to main search results":
+  - /url: "#s-skipLinkTargetForMainSearchResults"
+- group:
+  - heading "Popular Shopping Ideas" [level=2]
+  - list:
+    - listitem:
+      - link "Silicone":
+        - /url: /s?k=silicone+kitchen&ref=sr_nr_p_cosmo_multi_pt_0
+    - listitem:
+      - link "Counter":
+        - /url: /s?k=counter+kitchen&ref=sr_nr_p_cosmo_multi_pt_1
+    - listitem:
+      - link "Plastic":
+        - /url: /s?k=plastic+kitchen&ref=sr_nr_p_cosmo_multi_pt_2
+    - listitem:
+      - link "Stainless Steel":
+        - /url: /s?k=stainless+steel+kitchen&ref=sr_nr_p_cosmo_multi_pt_3
+    - listitem:
+      - button "See more"
+- group:
+  - text: Price $0 $20,000+
+  - slider "Minimum price": "0"
+  - slider "Maximum price": "195"
+  - button "Go - Submit price range"
+  - heading "Deals & Discounts" [level=2]
+  - list "Deals & Discounts":
+    - listitem:
+      - link "All Discounts":
+        - /url: /s?k=kitchen&rh=p_n_deal_type%3A23566065011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=23566063011&ref=sr_nr_p_n_deal_type_1&ds=v1%3A1PNCg8QhyHJYKHN2YX83ISdKROVYw4u%2FxUlxCS0BKtY
+    - listitem:
+      - link "Today's Deals":
+        - /url: /s?k=kitchen&rh=p_n_deal_type%3A23566064011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=23566063011&ref=sr_nr_p_n_deal_type_2&ds=v1%3AMlcT4dugWxdM2ioBxA1Z%2FwqGSyuWqsjmQKbplSaTK%2FI
+- group "Customer Reviews":
+  - heading "Customer Reviews" [level=2]
+  - list "Customer Reviews":
+    - listitem:
+      - link "Apply 4 Stars & Up filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_72%3A1248915011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=1248913011&ref=sr_nr_p_72_1&ds=v1%3AdkFj4VkLUym%2B9nSjWIK9dxtmqwwcQrp8kWzhejRTnUI
+        - text: 4 Stars & Up & Up
+- group "Department":
+  - heading "Department" [level=2]
+  - list "Department":
+    - listitem:
+      - link "Home & Kitchen":
+        - /url: /s?k=kitchen&rh=n%3A1055398&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=2941120011&ref=sr_nr_n_1&ds=v1%3A0gV6XOEbb3ptP%2B%2BHN5ehSlnqcIxAYfzphywiK%2B3GRSc
+    - listitem:
+      - link "Kitchen & Table Linens":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cn%3A1063916&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=2941120011&ref=sr_nr_n_2&ds=v1%3ACQlESjFEvXhPamFCPBUZ64e5pfgXHC9XfLUkkkcmb%2FQ
+    - listitem:
+      - link "Kitchen Racks & Holders":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cn%3A23691552011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=2941120011&ref=sr_nr_n_3&ds=v1%3AoHhqIcmoh3MrOcWKjGHFxI3G4xKRwhcOqRuadLV09J8
+    - listitem:
+      - link "Cooking Utensils":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cn%3A16439841&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=2941120011&ref=sr_nr_n_4&ds=v1%3AFEzPm7gSkMpBXBWKIx8jN%2BXOba5kcb5VA5tcl2XrP9I
+    - listitem:
+      - link "Seasoning & Spice Tools":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cn%3A289779&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=2941120011&ref=sr_nr_n_5&ds=v1%3AEQXawmu5QXxQVwEZaIrZgkTIcYQPnY6NIaAMx8ceuGk
+    - listitem:
+      - link "Food Storage":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cn%3A9768326011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=2941120011&ref=sr_nr_n_6&ds=v1%3ATEkvS%2BS%2BX68e1dxc%2BuomqswKR%2By28T87RcSFhET%2B7lU
+    - listitem:
+      - link "Kitchen Small Appliances":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cn%3A289913&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=2941120011&ref=sr_nr_n_7&ds=v1%3AOSvwIdEXBWTfUOGpcS7lgDEdg%2F4mLSo2EmhsHocY3Ng
+    - listitem:
+      - link "Kitchen Storage Accessories":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cn%3A3744031&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=2941120011&ref=sr_nr_n_8&ds=v1%3Ali%2Bjt7oS073rY1RnnFEXdPR5qnqZmIi6YLfFrVh51Lo
+- group "Condition":
+  - heading "Condition" [level=2]
+  - list "Condition":
+    - listitem:
+      - link "Renewed":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_condition-type%3A16907721011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=6358194011&ref=sr_nr_p_n_condition-type_1&ds=v1%3AUlLTmVAmwHgjUA7Dt%2BSEyzJzLS2jmOrVvzYvLPAzSZ8
+    - listitem:
+      - link "New":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_condition-type%3A6358196011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=6358194011&ref=sr_nr_p_n_condition-type_2&ds=v1%3ASZPivPsu4xiaqRtPghjO44%2BH8VPnfwihPq8EhX7TIAI
+    - listitem:
+      - link "Used":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_condition-type%3A6358198011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=6358194011&ref=sr_nr_p_n_condition-type_3&ds=v1%3A%2Bi6z4C7O4sUi8kWb33MmYwEIMD8C1LfrXr4HOPT1RKQ
+- group "Brands":
+  - heading "Brands" [level=2]
+  - list "Brands":
+    - listitem "Popular Shopping Ideas":
+      - link "Apply KitchenAid filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_123%3A46640&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=85457740011&ref=sr_nr_p_123_1&ds=v1%3AyFPfokduRht7R%2FiBoRanrL%2BtOThybsgpALYlbruyg4o
+        - checkbox
+        - text: KitchenAid
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Ninja filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_123%3A391646&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=85457740011&ref=sr_nr_p_123_2&ds=v1%3A%2Blo0uMmeQqfRv9I4bsX5eNEVRsi5H2%2B9NMWyehbMBb4
+        - checkbox
+        - text: Ninja
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Hamilton Beach filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_123%3A64426&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=85457740011&ref=sr_nr_p_123_3&ds=v1%3AtVguk7CdC2QU8zHjxVzZEnyhfnPH6fmzEuS%2B07rMxLA
+        - checkbox
+        - text: Hamilton Beach
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Scrub Daddy filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_123%3A57680&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=85457740011&ref=sr_nr_p_123_4&ds=v1%3AhbwZ2khtOJABHReVJELIUEP%2B2dpX0hanNhw59yibF4Y
+        - checkbox
+        - text: Scrub Daddy
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Amazon Basics filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_123%3A234478&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=85457740011&ref=sr_nr_p_123_5&ds=v1%3A579Vu%2FZcnEmAk5bPxuspivb9r5arbpv0mSGmR5sgsPo
+        - checkbox
+        - text: Amazon Basics
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Chefman filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_123%3A216074&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=85457740011&ref=sr_nr_p_123_6&ds=v1%3AZ1fEGl%2BAnqNPI4uMixxZ5YFXx8DtZg9IEIh3X5%2Fw5GI
+        - checkbox
+        - text: Chefman
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Cuisinart filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_123%3A255187&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=85457740011&ref=sr_nr_p_123_7&ds=v1%3AVpoOfZr8cTCyimhyFRKTHesAErTBb79JY4zHNgKzYXc
+        - checkbox
+        - text: Cuisinart
+    - listitem:
+      - button "See more, Brands": See more
+  - heading "All Top Brands" [level=2]
+  - list "All Top Brands":
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Top Brands filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_forty-one_browse-bin%3A119653281011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=119653280011&ref=sr_nr_p_n_feature_forty-one_browse-bin_1&ds=v1%3AIZbuzvRTu3dGTCsldFZxGOLTIPvqQBW4mO1zm%2BYE77A
+        - checkbox
+        - text: Top Brands
+- group "Seller":
+  - heading "Seller" [level=2]
+  - list "Seller":
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Amazon Germany filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_6%3AA2DKF1L73WUF4Q&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=331544011&ref=sr_nr_p_6_1&ds=v1%3AMjJTcUaPKejJ2L0TUCn6I1ZntOBb2zJSS6pSJNzdabE
+        - checkbox
+        - text: Amazon Germany
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Amazon Japan filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_6%3AA3GZEOQINOCL0Y&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=331544011&ref=sr_nr_p_6_2&ds=v1%3AbZZKhSVKAKT6sRmNdQnYoXPNxvoqgbDjCTgDYweJZco
+        - checkbox
+        - text: Amazon Japan
+    - listitem:
+      - button "See more, Seller": See more
+- group "Color":
+  - heading "Color" [level=2]
+  - list "Color":
+    - listitem:
+      - link "Apply Black filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254098011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_1&ds=v1%3AwIe2m3fJ4MIFIKRDGPC%2BDuuYgU68blF8llWBGrLVxQ4
+    - listitem:
+      - link "Apply White filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254100011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_2&ds=v1%3AnjTs%2FWpsA%2F1mKBf%2BscrD4Ejw8vVMO7SpSuDfGo%2F41kY
+    - listitem:
+      - link "Apply Silver filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254112011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_3&ds=v1%3ACi1JL%2BHNyN1LZb9qxI85VqEv07raUrhcgGAu2wWKVMA
+    - listitem:
+      - link "Apply Grey filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254099011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_4&ds=v1%3AtXzxxAsQVwcR3ShfMS2sRZhPzZpW7fHrjtUXn0Eb%2Flc
+    - listitem:
+      - link "Apply Brown filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254101011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_5&ds=v1%3AGf3aulbQYewjTVevkQnh8af1XFjf4KjfeMn22n1MG9E
+    - listitem:
+      - link "Apply Beige filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254102011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_6&ds=v1%3AV6dCWeXzXYip3vYycdEU0JGkvkkAmx7ggKg17MlCH1I
+    - listitem:
+      - link "Apply Red filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254103011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_7&ds=v1%3AfJx2WHU4nMKZodBTp7UZ5OhKqBdchUfYJvSJFKz16Mo
+    - listitem:
+      - link "Apply Pink filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254104011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_8&ds=v1%3A%2Fb3sYM%2BNd3bs8zOQkIsBwZd%2B4YWZM3fJ06TpC3hgZ5U
+    - listitem:
+      - link "Apply Orange filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254105011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_9&ds=v1%3A3LzLFyQArUsWVJ5Od2pQshHI5h5Dma35He60d7KrwyE
+    - listitem:
+      - link "Apply Yellow filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254106011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_10&ds=v1%3AA5Ddw2QEOFQeB7XV6zbrMkrqOZbcySz6qu7ORAcA8VM
+    - listitem:
+      - link "Apply Ivory filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254107011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_11&ds=v1%3A%2FW4s5Cw4wtz0NZdztZMtfLk%2FGFmkfQE92Sg32MOGDdE
+    - listitem:
+      - link "Apply Green filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254108011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_12&ds=v1%3Am1U21bJbynAn281cJU%2F41tNlEUZ7C7kkgYtXQWWAMRc
+    - listitem:
+      - link "Apply Blue filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254109011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_13&ds=v1%3A%2Bw2XaDpod0b0f7EKEXquL0BlMrMp02roXQVErBxM5zU
+    - listitem:
+      - link "Apply Purple filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254110011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_14&ds=v1%3AtHrC9X9sShXjXr4OW5dCe3wEyfj%2Fou5omB3zcn%2FXFPs
+    - listitem:
+      - link "Apply Gold filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254111011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_15&ds=v1%3A89V%2Bjfe61hfINeiJQ8uAR3mAxTKCn78BU8L8yU1pMaQ
+    - listitem:
+      - link "Apply Multi filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254113011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_16&ds=v1%3AC2bK7HnpRWdrLYQwvC22qXfUiqxsr1Om2PmXqTXMe%2BY
+    - listitem:
+      - link "Apply Clear filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254114011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_17&ds=v1%3AcIpheoB1qcAT7d%2BeKLsb%2B63ptlRSCMNxvAoBjmZtL2A
+    - listitem:
+      - link "Apply Stainless Steel filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_six_browse-bin%3A3254115011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=3254097011&ref=sr_nr_p_n_feature_keywords_six_browse-bin_18&ds=v1%3AEEijf2v62C0I0ZLMB05U46j5nIrQ8KtcBsMJmNicPp0
+- group "From Our Brands":
+  - heading "From Our Brands" [level=2]
+  - list "From Our Brands":
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Amazon Brands filter to narrow results":
+        - /url: /s?k=kitchen&rh=p_n_feature_forty-seven_browse-bin%3A24677333011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=21180941011&ref=sr_nr_p_n_feature_forty-seven_browse-bin_1&ds=v1%3Ax1aojwzXbi0aJjxBNXKDOuip5cce6V%2FLhvPjRMTjRtg
+        - checkbox
+        - text: Amazon Brands
+- group "Amazon Brands":
+  - heading "Amazon Brands" [level=2]
+  - list "Amazon Brands":
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Premium Brands filter to narrow results":
+        - /url: /s?k=kitchen&rh=n%3A1055398%2Cp_n_feature_keywords_browse-bin%3A204376014011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=204376013011&ref=sr_nr_p_n_feature_keywords_browse-bin_1&ds=v1%3Al6o1i7%2BnNYbB0vm5gWpMevzaXQZBvO7BW3tT8jT1Rzo
+        - checkbox
+        - text: Premium Brands
+- group "Amazon Certified":
+  - heading "Amazon Certified" [level=2]
+  - list "Amazon Certified":
+    - listitem "Popular Shopping Ideas":
+      - link "Apply Works with Alexa filter to narrow results":
+        - /url: /s?k=kitchen&rh=p_n_amazon_certified%3A16741513011&dc&_encoding=UTF8&content-id=amzn1.sym.740d173c-08e5-421b-b03f-523d153a6621&pd_rd_r=8ae2cac8-3470-4c80-86de-fdebbc88a06d&pd_rd_w=hu7R2&pd_rd_wg=3sNEv&pf_rd_p=740d173c-08e5-421b-b03f-523d153a6621&pf_rd_r=D6JE9JZ8A951VH9XMRA2&qid=1745415431&rnid=16741512011&ref=sr_nr_p_n_amazon_certified_1&ds=v1%3AYbq0C9CzBnRovq2ELp1dSECdE%2Bz4E8a4%2BP5KVoFVuJQ
+        - checkbox
+        - text: Works with Alexa
+- iframe
+- button "Leave feedback on Sponsored ad"
+- iframe
+- button "Leave feedback on Sponsored ad"
+- complementary "Your recently viewed items and featured recommendations"
+- button "Back to top"
+- heading "Get to Know Us" [level=6]
+- list:
+  - listitem:
+    - link "Careers":
+      - /url: https://www.amazon.jobs
+  - listitem:
+    - link "Blog":
+      - /url: https://blog.aboutamazon.com/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "About Amazon":
+      - /url: https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer
+  - listitem:
+    - link "Investor Relations":
+      - /url: https://www.amazon.com/ir
+  - listitem:
+    - link "Amazon Devices":
+      - /url: /gp/browse.html?node=2102313011&ref_=footer_devices
+  - listitem:
+    - link "Amazon Science":
+      - /url: https://www.amazon.science
+- heading "Make Money with Us" [level=6]
+- list:
+  - listitem:
+    - link "Sell products on Amazon":
+      - /url: https://services.amazon.com/sell.html?ld=AZFSSOA&ref_=footer_soa
+  - listitem:
+    - link "Sell on Amazon Business":
+      - /url: https://services.amazon.com/amazon-business.html?ld=usb2bunifooter&ref_=footer_b2b
+  - listitem:
+    - link "Sell apps on Amazon":
+      - /url: https://developer.amazon.com
+  - listitem:
+    - link "Become an Affiliate":
+      - /url: https://affiliate-program.amazon.com/
+  - listitem:
+    - link "Advertise Your Products":
+      - /url: https://advertising.amazon.com/?ref=ext_amzn_ftr
+  - listitem:
+    - link "Self-Publish with Us":
+      - /url: /gp/seller-account/mm-summary-page.html?ld=AZFooterSelfPublish&topic=200260520&ref_=footer_publishing
+  - listitem:
+    - link "Host an Amazon Hub":
+      - /url: https://go.thehub-amazon.com/amazon-hub-locker
+  - listitem:
+    - link "See More Make Money with Us":
+      - /url: /b/?node=18190131011&ld=AZUSSOA-seemore&ref_=footer_seemore
+- heading "Amazon Payment Products" [level=6]
+- list:
+  - listitem:
+    - link "Amazon Business Card":
+      - /url: /dp/B07984JN3L?plattr=ACOMFO&ie=UTF-8
+  - listitem:
+    - link "Shop with Points":
+      - /url: /gp/browse.html?node=16218619011&ref_=footer_swp
+  - listitem:
+    - link "Reload Your Balance":
+      - /url: /dp/B0CHTVMXZJ?th=1?ref_=footer_reload_us
+  - listitem:
+    - link "Amazon Currency Converter":
+      - /url: /gp/browse.html?node=388305011&ref_=footer_tfx
+- heading "Let Us Help You" [level=6]
+- list:
+  - listitem:
+    - link "Amazon and COVID-19":
+      - /url: /gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid
+  - listitem:
+    - link "Your Account":
+      - /url: https://www.amazon.com/gp/css/homepage.html?ref_=footer_ya
+  - listitem:
+    - link "Your Orders":
+      - /url: https://www.amazon.com/gp/css/order-history?ref_=footer_yo
+  - listitem:
+    - link "Shipping Rates & Policies":
+      - /url: /gp/help/customer/display.html?nodeId=468520&ref_=footer_shiprates
+  - listitem:
+    - link "Returns & Replacements":
+      - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+  - listitem:
+    - link "Manage Your Content and Devices":
+      - /url: /gp/digital/fiona/manage?ref_=footer_myk
+  - listitem:
+    - link "Help":
+      - /url: /gp/help/customer/display.html?nodeId=508510&ref_=footer_gw_m_b_he
+- link "Amazon US Home":
+  - /url: /?ref_=footer_logo
+- link "Choose a language for shopping. Current selection is English.":
+  - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dkitchen%26_encoding%3DUTF8%26content-id%3Damzn1.sym.740d173c-08e5-421b-b03f-523d153a6621%26pd_rd_r%3D8ae2cac8-3470-4c80-86de-fdebbc88a06d%26pd_rd_w%3Dhu7R2%26pd_rd_wg%3D3sNEv%26pf_rd_p%3D740d173c-08e5-421b-b03f-523d153a6621%26pf_rd_r%3DD6JE9JZ8A951VH9XMRA2%26ref%3Dpd_hp_d_btf_unk&ref_=footer_lang
+  - text: English
+  - button "Expand to Change Language or Country"
+- link "$ USD - U.S. Dollar":
+  - /url: /customer-preferences/edit?ie=UTF8&ref_=footer_cop&preferencesReturnUrl=%2Fs%3Fk%3Dkitchen%26_encoding%3DUTF8%26content-id%3Damzn1.sym.740d173c-08e5-421b-b03f-523d153a6621%26pd_rd_r%3D8ae2cac8-3470-4c80-86de-fdebbc88a06d%26pd_rd_w%3Dhu7R2%26pd_rd_wg%3D3sNEv%26pf_rd_p%3D740d173c-08e5-421b-b03f-523d153a6621%26pf_rd_r%3DD6JE9JZ8A951VH9XMRA2%26ref%3Dpd_hp_d_btf_unks%2F
+- button "Choose a country/region for shopping. The current selection is United States.": United States
+- navigation "More on Amazon":
+  - list:
+    - listitem:
+      - link "Amazon Music Stream millions of songs":
+        - /url: https://music.amazon.com?ref=dm_aff_amz_com
+        - heading "Amazon Music" [level=5]
+        - text: Stream millions of songs
+    - listitem:
+      - link "Amazon Ads Reach customers wherever they spend their time":
+        - /url: https://advertising.amazon.com/?ref=footer_advtsing_amzn_com
+        - heading "Amazon Ads" [level=5]
+        - text: Reach customers wherever they spend their time
+    - listitem:
+      - link "6pm Score deals on fashion brands":
+        - /url: https://www.6pm.com
+        - heading "6pm" [level=5]
+        - text: Score deals on fashion brands
+    - listitem:
+      - link "AbeBooks Books, art & collectibles":
+        - /url: https://www.abebooks.com
+        - heading "AbeBooks" [level=5]
+        - text: Books, art & collectibles
+    - listitem:
+      - link "ACX Audiobook Publishing Made Easy":
+        - /url: https://www.acx.com/
+        - heading "ACX" [level=5]
+        - text: Audiobook Publishing Made Easy
+    - listitem:
+      - link "Sell on Amazon Start a Selling Account":
+        - /url: https://sell.amazon.com/?ld=AZUSSOA-footer-aff&ref_=footer_sell
+        - heading "Sell on Amazon" [level=5]
+        - text: Start a Selling Account
+    - listitem:
+      - link "Veeqo Shipping Software Inventory Management":
+        - /url: https://www.veeqo.com/?utm_source=amazon&utm_medium=website&utm_campaign=footer
+        - heading "Veeqo" [level=5]
+        - text: Shipping Software Inventory Management
+  - list:
+    - listitem:
+      - link "Amazon Business Everything For Your Business":
+        - /url: /business?ref_=footer_retail_b2b
+        - heading "Amazon Business" [level=5]
+        - text: Everything For Your Business
+    - listitem:
+      - link "AmazonGlobal Ship Orders Internationally":
+        - /url: /gp/browse.html?node=230659011&ref_=footer_amazonglobal
+        - heading "AmazonGlobal" [level=5]
+        - text: Ship Orders Internationally
+    - listitem:
+      - link "Amazon Web Services Scalable Cloud Computing Services":
+        - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=amazonfooter
+        - heading "Amazon Web Services" [level=5]
+        - text: Scalable Cloud Computing Services
+    - listitem:
+      - link "Audible Listen to Books & Original Audio Performances":
+        - /url: https://www.audible.com
+        - heading "Audible" [level=5]
+        - text: Listen to Books & Original Audio Performances
+    - listitem:
+      - link "Box Office Mojo Find Movie Box Office Data":
+        - /url: https://www.boxofficemojo.com/?ref_=amzn_nav_ftr
+        - heading "Box Office Mojo" [level=5]
+        - text: Find Movie Box Office Data
+    - listitem:
+      - link "Goodreads Book reviews & recommendations":
+        - /url: https://www.goodreads.com
+        - heading "Goodreads" [level=5]
+        - text: Book reviews & recommendations
+    - listitem:
+      - link "IMDb Movies, TV & Celebrities":
+        - /url: https://www.imdb.com
+        - heading "IMDb" [level=5]
+        - text: Movies, TV & Celebrities
+  - list:
+    - listitem:
+      - link "IMDbPro Get Info Entertainment Professionals Need":
+        - /url: https://pro.imdb.com?ref_=amzn_nav_ftr
+        - heading "IMDbPro" [level=5]
+        - text: Get Info Entertainment Professionals Need
+    - listitem:
+      - link "Kindle Direct Publishing Indie Digital & Print Publishing Made Easy":
+        - /url: https://kdp.amazon.com
+        - heading "Kindle Direct Publishing" [level=5]
+        - text: Indie Digital & Print Publishing Made Easy
+    - listitem:
+      - link "Prime Video Direct Video Distribution Made Easy":
+        - /url: https://videodirect.amazon.com/home/landing
+        - heading "Prime Video Direct" [level=5]
+        - text: Video Distribution Made Easy
+    - listitem:
+      - link "Shopbop Designer Fashion Brands":
+        - /url: https://www.shopbop.com
+        - heading "Shopbop" [level=5]
+        - text: Designer Fashion Brands
+    - listitem:
+      - link "Woot! Deals and Shenanigans":
+        - /url: https://www.woot.com/
+        - heading "Woot!" [level=5]
+        - text: Deals and Shenanigans
+    - listitem:
+      - link "Zappos Shoes & Clothing":
+        - /url: https://www.zappos.com
+        - heading "Zappos" [level=5]
+        - text: Shoes & Clothing
+    - listitem:
+      - link "Ring Smart Home Security Systems":
+        - /url: https://ring.com
+        - heading "Ring" [level=5]
+        - text: Smart Home Security Systems
+  - list:
+    - listitem:
+      - link "eero WiFi Stream 4K Video in Every Room":
+        - /url: https://eero.com/
+        - heading "eero WiFi" [level=5]
+        - text: Stream 4K Video in Every Room
+    - listitem:
+      - link "Blink Smart Security for Every Home":
+        - /url: https://blinkforhome.com/?ref=nav_footer
+        - heading "Blink" [level=5]
+        - text: Smart Security for Every Home
+    - listitem:
+      - link "Neighbors App Real-Time Crime & Safety Alerts":
+        - /url: https://shop.ring.com/pages/neighbors-app
+        - heading "Neighbors App" [level=5]
+        - text: Real-Time Crime & Safety Alerts
+    - listitem:
+      - link "Amazon Subscription Boxes Top subscription boxes – right to your door":
+        - /url: /gp/browse.html?node=14498690011&ref_=amzn_nav_ftr_swa
+        - heading "Amazon Subscription Boxes" [level=5]
+        - text: Top subscription boxes – right to your door
+    - listitem:
+      - link "PillPack Pharmacy Simplified":
+        - /url: https://www.pillpack.com
+        - heading "PillPack" [level=5]
+        - text: Pharmacy Simplified
+- list:
+  - listitem:
+    - link "Conditions of Use":
+      - /url: /gp/help/customer/display.html?nodeId=508088&ref_=footer_cou
+  - listitem:
+    - link "Privacy Notice":
+      - /url: /gp/help/customer/display.html?nodeId=468496&ref_=footer_privacy
+  - listitem:
+    - link "Consumer Health Data Privacy Disclosure":
+      - /url: /gp/help/customer/display.html?ie=UTF8&nodeId=TnACMrGVghHocjL8KB&ref_=footer_consumer_health_data_privacy
+  - listitem:
+    - link "Your Ads Privacy Choices":
+      - /url: /privacyprefs?ref_=footer_iba
+- text: © 1996-2025, Amazon.com, Inc. or its affiliates
+```
+
+# Test source
+
+```ts
+   1 | import { Locator, Page, expect } from '@playwright/test';
+   2 |
+   3 | export class AmazonCardSection {
+   4 |     private allCardCandidates: Locator;
+   5 |
+   6 |     public constructor(private page: Page) {
+   7 |         this.allCardCandidates = page.locator('[id^="CardInstance"]');
+   8 |     }
+   9 |
+  10 |     private async getValidCards(): Promise<Locator[]> {
+  11 |         const validCards: Locator[] = [];
+  12 |         const count = await this.allCardCandidates.count();
+  13 |
+  14 |         for (let i = 0; i < count; i++) {
+  15 |             const card = this.allCardCandidates.nth(i);
+  16 |             const hasQuadBlock = await card.locator('div._fluid-quad-image-label-v2_style_gridRowOne__1t0zL').count();
+  17 |
+  18 |             if (hasQuadBlock > 0) {
+  19 |                 validCards.push(card);
+  20 |             }
+  21 |         }
+  22 |
+  23 |         return validCards;
+  24 |     }
+  25 |
+  26 |     public async selectRandomValidCard(): Promise<Locator> {
+  27 |         const validCards = await this.getValidCards();
+  28 |
+  29 |         if (validCards.length === 0) {
+  30 |             throw new Error('No cards found');
+  31 |         }
+  32 |
+  33 |         const randomIndex = Math.floor(Math.random() * validCards.length);
+  34 |         return validCards[randomIndex];
+  35 |     }
+  36 |
+  37 |     public async clickRandomSectionInCard(cardLocator: Locator): Promise<string> {
+  38 |         const links = cardLocator.locator('a.a-link-normal span.truncate-2line');
+  39 |         const count = await links.count();
+  40 |         if (count === 0) {
+  41 |             throw new Error('No section spans found');
+  42 |         }
+  43 |
+  44 |         const randomIndex = Math.floor(Math.random() * count);
+  45 |         const chosenSpan = links.nth(randomIndex);
+  46 |         const parentLink = chosenSpan.locator('..');
+  47 |
+  48 |         const text = (await chosenSpan.textContent())?.trim();
+  49 |         if (!text) throw new Error('text not found');
+  50 |
+  51 |         await Promise.all([
+  52 |             this.page.waitForLoadState('domcontentloaded'),
+  53 |             parentLink.click()
+  54 |         ]);
+  55 |
+  56 |         return text;
+  57 |     }
+  58 |
+  59 |     public async verifyTextOnPage(text: string): Promise<void> {
+  60 |         await this.page.waitForSelector('[data-component-type="s-search-results"]', { timeout: 10000 });
+  61 |         const found = await this.page.locator(`text=${text}`).first().isVisible();
+> 62 |         expect(found).toBeTruthy();
+     |                       ^ Error: expect(received).toBeTruthy()
+  63 |     }
+  64 | }
+  65 |
+```
